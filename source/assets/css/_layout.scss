@@ -22,6 +22,17 @@ ul {
   margin-bottom: 110px;
   position: relative;
 
+  .Cover {
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 100%;
+    background: white;
+    height: 9px;
+    z-index: 2;
+    transform: translateX(-50%);
+  }
+
   nav {
     float: right;
 

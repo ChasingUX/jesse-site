@@ -4,7 +4,7 @@
   background: white;
   position: absolute;
   left: 50%;
-  margin-left: -55px;
+  transform: translateX(-50%);
   padding: $box-padding;
   top: 49px;
 
@@ -108,7 +108,7 @@
 
   &.Registration--blue {
     .Circle {
-      border-color: lighten($neon-blue, 10%);
+      border-color: lighten($neon-blue, 1%);
 
       &:before {
         background: $neon-blue;
@@ -128,7 +128,7 @@
 
   &.Registration--green {
     .Circle {
-      border-color: lighten($neon-green, 10%);
+      border-color: lighten($neon-green, 1%);
 
       &:before {
         background: $neon-green;

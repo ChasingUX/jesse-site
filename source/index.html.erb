@@ -33,8 +33,31 @@ blog: work
 
 <section class="Wrapper">
   <h4 class="Offset Offset--left">Selected Work</h4>
-  <% page_articles.select{|a| a.tags.include?("regular")}.each_slice(3) do |array_of_3_items|%>
+
+  <% page_articles.each_slice(3).with_index do |articles| %>
     <ul class="ProjectsWrap">
+      <% articles.each do |article|%>
+        <% unless article.data['tags'].include?('featured') %>
+          <li class="Project">
+            <h3><%= article.title %></h3>
+            <p><%= article.data['summary'] %></p>
+            <ul class="meta">
+              <li class="date">
+                <span><%= article.date.strftime("%b %Y") %></span>
+              </li>
+              <li class="view">
+                <%= link_to article.data['link_copy'], article.url %>
+              </li>
+            </ul>
+          </li>
+        <% end %>
+      <% end %>
+    </ul>
+    <%= partial "register" %>
+  <% end %>
+
+  <!-- 
+<% page_articles.select{|a| a.tags.include?("regular")}.each_slice(3) do |array_of_3_items|%>
     <% array_of_3_items.each do |article|%>
       <li class="Project">
         <h3><%= article.title %></h3>
@@ -52,4 +75,5 @@ blog: work
   </ul>
   <%= partial "register" %>
 <% end %>
+  -->
 </section>
