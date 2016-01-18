@@ -1,5 +1,9 @@
 .LogoSVG {
   display: none;
+
+  rect, circle, line {
+    stroke: $neon-blue;
+  } 
 }
 
 .Logo, .LogoSVG{
@@ -10,11 +14,7 @@
   left: 50%;
   margin-left: -55px;
   padding: $box-padding;
-  top: 40px;
-
-  rect, circle, line {
-    stroke: $neon-blue;
-  } 
+  top: 49px;
 
   span{
     width: $square-dimension;
