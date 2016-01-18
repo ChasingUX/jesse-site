@@ -1,12 +1,4 @@
-.LogoSVG {
-  display: none;
-
-  rect, circle, line {
-    stroke: $neon-blue;
-  } 
-}
-
-.Logo, .LogoSVG{
+.Logo {
   width: 104px;
   height: 108px;
   background: white;
