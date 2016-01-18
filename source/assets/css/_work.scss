@@ -1,36 +1,12 @@
-.ProjectsWrap--featured {
-  display: flex;
-  color: $neon-blue;
+.ProjectsWrap, .ProjectsWrap--featured {
   font-family: 'GT Pressura';
   font-size: 16.5px;
+  display: flex;
 
   & > li {
     flex: 1;
-    background: $polar-purple;
-    padding: 40px;
     margin: 15px;
-  }
-
-  .Project-blue {
-    background: $polar-purple;
-  }
-
-  .Project-green {
-    background: $polar-green;
-    color: $neon-green;
-
-    a {
-      color: $neon-green;
-    }
-  }
-
-  p {
-    opacity: .9;
-    min-height: 120px;
-  }
-
-  h3 {
-    font-family: 'Circular';    
+    padding: 40px;
   }
 
   .meta {
@@ -42,15 +18,69 @@
     }
 
     .view {
-      flex: 1;
       text-align: right;
+    }
+  }
+}
 
-      a {
-        &:before {
-          background: white;
-        }
+.ProjectsWrap {
+  color: $navy;
+
+  .Project {
+    border: 1px solid $border-grey;
+  }
+
+  p {
+    opacity: .8;
+    min-height: 150px;
+  }
+
+  .meta {
+    a {
+      color: $navy;
+
+      &:before {
+        background: $polar-purple;
       }
     }
   }
-  
+}
+
+.ProjectsWrap--featured {
+  color: $neon-blue;
+
+  & > li {
+    background: $polar-purple;
+    padding: 40px;
+  }
+
+  .Project--blue {
+    background: $polar-purple;
+  }
+
+  .Project--green {
+    background: $polar-green;
+    color: $neon-green;
+
+    a {
+      color: $neon-green;
+    }
+  }
+
+  .meta {
+    a {
+      &:before {
+        background: white;
+      }
+    }
+
+    .view {
+      flex: 1;
+    }
+  }
+
+  p {
+    opacity: .9;
+    min-height: 120px;
+  }
 }

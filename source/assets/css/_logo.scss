@@ -42,12 +42,19 @@
       top: $three;
     }
   }
+
+  .Registration {
+    left: $three;
+    top: $three;
+    margin: auto;
+    position: absolute;
+  } 
 }
 
 .Registration {
-  position: absolute;
-  left: $three;
-  top: $three;
+  position: relative;
+  margin: -4px 0 0 -4px;
+  left: 50%;
 
   .Circle {
     border-radius: 50%;

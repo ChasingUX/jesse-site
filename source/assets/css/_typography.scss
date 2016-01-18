@@ -21,6 +21,7 @@
 
 h1, h2, h3, h4 {
   font-weight: normal;
+  font-family: 'Circular';
 }
 
 h1 {
@@ -41,7 +42,7 @@ a {
   &:focus {
     outline: 0;
   }
-  
+
   &:before {
     content: '';
     position: absolute;
