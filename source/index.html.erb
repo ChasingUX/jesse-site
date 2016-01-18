@@ -1,5 +1,6 @@
 ---
 title: The Portfolio of Jesse Chase
+blog: work
 ---
 
 <header class="Header-intro">
@@ -10,31 +11,20 @@ title: The Portfolio of Jesse Chase
   <h4 class="Offset Offset--left">Featured Work</h4>
   <h4 class="Offset Offset--right">Standard Issue</h4>
   <ul class="ProjectsWrap--featured">
-    <li class="Project--blue">
-      <h3>FontReach</h3>
-      <p>FontReach crawls the top million websites and surfaces data about font usage across the web.</p>
-      <ul class="meta">
-        <li class="date">
-          <span>Launched Oct. 2015 </span>
-        </li>
-        <li class="view">
-          <a href="#">Reach for Fonts</a>
-        </li>
-      </ul>
-    </li>
-
-    <li class="Project--green">
-      <h3>Libscore</h3>
-      <p>Libscore reports statistics on JavaScript library usage across the top million sites. Updated Monthly.</p>
-      <ul class="meta">
-        <li class="date">
-          <span>Launched Jan. 2015 </span>
-        </li>
-        <li class="view">
-          <a href="#">View js Trends</a>
-        </li>
-      </ul>
-    </li>
+    <% page_articles.select{|a| a.tags.include?("featured")}.each_with_index do |article, i| %>    
+      <li class="Project--<%= article.data['color'] %>">
+        <h3><%= link_to article.title, article.url %></h3>
+        <p><%= article.data['summary'] %></p>
+        <ul class="meta">
+          <li class="date">
+            <span><%= article.date.strftime("%b %Y") %></span>
+          </li>
+          <li class="view">
+            <%= link_to article.data['link_copy'], article.url %>
+          </li>
+        </ul>
+      </li>
+    <% end %>
   </ul>
 </section>
 
@@ -42,91 +32,23 @@ title: The Portfolio of Jesse Chase
 
 <section class="Wrapper">
   <h4 class="Offset Offset--left">Selected Work</h4>
-  
   <ul class="ProjectsWrap">
-    <li class="Project">
-      <h3>FontReach</h3>
-      <p>FontReach crawls the top million websites and surfaces data about font usage across the web.</p>
-      <ul class="meta">
-        <li class="date">
-          <span>Oct. 2015 </span>
+    <% page_articles.each_with_index do |article, i| %>
+      <% unless article.data['tags'].include?('featured') %>
+        <li class="Project">
+          <h3><%= link_to article.title, article.url %></h3>
+          <p><%= article.data['summary'] %></p>
+          <ul class="meta">
+            <li class="date">
+              <span><%= article.date.strftime("%b %Y") %></span>
+            </li>
+            <li class="view">
+              <%= link_to article.data['link_copy'], article.url %>
+            </li>
+          </ul>
         </li>
-        <li class="view">
-          <a href="#">Reach for Fonts</a>
-        </li>
-      </ul>
-    </li>
-
-    <li class="Project">
-      <h3>FontReach</h3>
-      <p>FontReach crawls the top million websites and surfaces data about font usage across the web.</p>
-      <ul class="meta">
-        <li class="date">
-          <span>Oct. 2015 </span>
-        </li>
-        <li class="view">
-          <a href="#">Reach for Fonts</a>
-        </li>
-      </ul>
-    </li>
-
-    <li class="Project">
-      <h3>FontReach</h3>
-      <p>FontReach crawls the top million websites and surfaces data about font usage across the web.</p>
-      <ul class="meta">
-        <li class="date">
-          <span>Oct. 2015 </span>
-        </li>
-        <li class="view">
-          <a href="#">Reach for Fonts</a>
-        </li>
-      </ul>
-    </li>
-  </ul>
-</section>
-
-<%= partial "register" %>
-
-<section class="Wrapper">
-  <ul class="ProjectsWrap">
-    <li class="Project">
-      <h3>FontReach</h3>
-      <p>FontReach crawls the top million websites and surfaces data about font usage across the web.</p>
-      <ul class="meta">
-        <li class="date">
-          <span>Oct. 2015 </span>
-        </li>
-        <li class="view">
-          <a href="#">Reach for Fonts</a>
-        </li>
-      </ul>
-    </li>
-
-    <li class="Project">
-      <h3>FontReach</h3>
-      <p>FontReach crawls the top million websites and surfaces data about font usage across the web.</p>
-      <ul class="meta">
-        <li class="date">
-          <span>Oct. 2015 </span>
-        </li>
-        <li class="view">
-          <a href="#">Reach for Fonts</a>
-        </li>
-      </ul>
-    </li>
-
-    <li class="Project">
-      <h3>FontReach</h3>
-      <p>FontReach crawls the top million websites and surfaces data about font usage across the web.</p>
-      <ul class="meta">
-        <li class="date">
-          <span>Oct. 2015 </span>
-        </li>
-        <li class="view">
-          <a href="#">Reach for Fonts</a>
-        </li>
-      </ul>
-    </li>
+      <% end %>
+    <% end %>
   </ul>
 </section>
 

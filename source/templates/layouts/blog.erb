@@ -1,0 +1,14 @@
+<% wrap_layout :layout do %>
+  <section class="Wrapper">
+    <article>
+      <h1><%= current_page.title %></h1>
+      <p class="article-metadata"><%= current_page.date.strftime('%B %e, %Y') %></p>
+      <% if current_page.data.has_key?('hero') %>
+        <% link_to current_page.url, class: 'hero-link' do %>
+          <%= image_tag current_page.data['hero'], class: 'hero' %>
+        <% end %>
+      <% end %>
+      <%= yield %>
+    </article>
+  </section>
+<% end %>

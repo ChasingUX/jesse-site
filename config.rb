@@ -36,9 +36,7 @@
 # activate :automatic_image_sizes
 
 # Reload the browser automatically whenever files change
-configure :development do
-  activate :livereload
-end
+activate :livereload
 
 activate :directory_indexes
 
@@ -80,4 +78,28 @@ configure :build do
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
+end
+
+activate :blog do |work|
+  work.name      = "work"
+  work.paginate  = false
+  work.prefix    = "work"
+
+  work.layout    = :blog
+
+  work.permalink = "{title}.html"
+  work.sources   = "{title}.html"
+  work.page_link = "page/{num}"
+end
+
+activate :blog do |labs|
+  labs.name      = "labs"
+  labs.paginate  = false
+  labs.prefix    = "labs"
+
+  labs.layout    = :labs
+
+  labs.permalink = "{title}.html"
+  labs.sources   = "{title}.html"
+  labs.page_link = "page/{num}"
 end

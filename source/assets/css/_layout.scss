@@ -49,6 +49,26 @@ ul {
   }
 }
 
+.work {
+  .Header-nav {
+    li:first-child {
+      a:before {
+        display: block;
+      }
+    }
+  }
+}
+
+.labs {
+  .Header-nav {
+    li:last-child {
+      a:before {
+        display: block;
+      }
+    }
+  }
+}
+
 .Header-intro {
   margin-bottom: 100px;
   h1 {
@@ -77,6 +97,10 @@ section {
   text-transform: uppercase;
   color: lighten($neon-blue, 25%);
   font-family: 'GT Pressura';
+
+  @media (max-width: 1265px) {
+    display: none;
+  }
 }
 
 .Offset--left {

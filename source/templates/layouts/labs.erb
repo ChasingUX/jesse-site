@@ -1,0 +1,16 @@
+<% wrap_layout :layout do %>
+  <% page_articles.each_with_index do |article, i| %>
+  <section class="Wrapper">
+    <article>
+      <h1><%= article.title %></h1>
+      <p class="article-metadata"><%= article.date.strftime('%B %e, %Y') %></p>
+      <% if article.data.has_key?('hero') %>
+        <% link_to article.url, class: 'hero-link' do %>
+          <%= image_tag article.data['hero'], class: 'hero' %>
+        <% end %>
+      <% end %>
+      <%= yield %>
+    </article>
+  </section>
+  <% end %>
+<% end %>

@@ -8,6 +8,10 @@
 
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || "Jesse Chase" %></title>
+    
+    <% if content_for?(:head) %>
+      <%= yield_content :head %>
+    <% end %>
 
     <%= stylesheet_link_tag "all" %>
   </head>
@@ -15,6 +19,13 @@
   <body class="<%= page_classes %>">
     <%= partial "header" %>
     <%= yield %>
+
+    <% if content_for?(:footer) %>
+      <%= yield_content :footer %>
+    <% else %>
+      <%= partial "footer" %>
+    <% end %>
+      
     <%= javascript_include_tag  "application" %>
   </body>
 </html>
