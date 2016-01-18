@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'GT Pressura';
+    src: url($font-path + 'GT-Pressura-Mono-Light.eot');
+    src: url($font-path + 'GT-Pressura-Mono-Light.eot?#iefix') format('embedded-opentype'),
+       url($font-path + 'GT-Pressura-Mono-Light.woff') format('woff'),
+       url($font-path + 'GT-Pressura-Mono-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// Monospace Font Bold
+@font-face {
+    font-family: 'GT Pressura';
+    src: url($font-path + 'GT-Pressura-Mono-Regular.eot');
+    src: url($font-path + 'GT-Pressura-Mono-Regular.eot?#iefix') format('embedded-opentype'),
+       url($font-path + 'GT-Pressura-Mono-Regular.woff') format('woff'),
+       url($font-path + 'GT-Pressura-Mono-Regular.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+h1, h2, h3, h4 {
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+
+a {
+  color: $neon-blue;
+  text-decoration: none;
+  position: relative;
+  z-index: 1;
+
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: -20%;
+    width: 125%;
+    z-index: -1;
+    height: .7em;
+    background: $polar-green-trans;
+  }
+}
