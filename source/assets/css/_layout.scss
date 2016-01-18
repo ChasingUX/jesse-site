@@ -63,10 +63,32 @@ ul {
 .Wrapper {
   max-width: 1070px;
   margin: 0 auto;
-  overflow: hidden;
 }
 
-.Register {
-  padding: 15px;
-  margin: 13px 0;
+section {
+  position: relative;
+}
+
+.Offset {
+  position: absolute;
+  font-size: 17px;
+  top: 208px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: lighten($neon-blue, 25%);
+  font-family: 'GT Pressura';
+}
+
+.Offset--left {
+  left: 50%;
+  margin-left: $sideways-offset;
+  transform: rotate(-90deg);
+  transform-origin: left;
+}
+
+.Offset--right {
+  right: 50%;
+  margin-right: $sideways-offset;
+  transform: rotate(90deg);
+  transform-origin: right;
 }
