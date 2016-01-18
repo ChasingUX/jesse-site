@@ -40,7 +40,7 @@
       color: $navy;
 
       &:before {
-        background: $polar-purple;
+        background: darken($polar-purple, 1%);
       }
     }
   }

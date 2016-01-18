@@ -3,6 +3,7 @@ title: The Portfolio of Jesse Chase
 blog: work
 ---
 
+
 <header class="Header-intro">
   <h1>Jesse Chase is a product designer by trade, currently Creative Director at DigitalOcean</h1>
 </header>
@@ -32,24 +33,23 @@ blog: work
 
 <section class="Wrapper">
   <h4 class="Offset Offset--left">Selected Work</h4>
-  <ul class="ProjectsWrap">
-    <% page_articles.each_with_index do |article, i| %>
-      <% unless article.data['tags'].include?('featured') %>
-        <li class="Project">
-          <h3><%= link_to article.title, article.url %></h3>
-          <p><%= article.data['summary'] %></p>
-          <ul class="meta">
-            <li class="date">
-              <span><%= article.date.strftime("%b %Y") %></span>
-            </li>
-            <li class="view">
-              <%= link_to article.data['link_copy'], article.url %>
-            </li>
-          </ul>
-        </li>
-      <% end %>
+  <% page_articles.select{|a| a.tags.include?("regular")}.each_slice(3) do |array_of_3_items|%>
+    <ul class="ProjectsWrap">
+    <% array_of_3_items.each do |article|%>
+      <li class="Project">
+        <h3><%= article.title %></h3>
+        <p><%= article.data['summary'] %></p>
+        <ul class="meta">
+          <li class="date">
+            <span><%= article.date.strftime("%b %Y") %></span>
+          </li>
+          <li class="view">
+            <%= link_to article.data['link_copy'], article.url %>
+          </li>
+        </ul>
+      </li>
     <% end %>
   </ul>
+  <%= partial "register" %>
+<% end %>
 </section>
-
-<%= partial "register" %>

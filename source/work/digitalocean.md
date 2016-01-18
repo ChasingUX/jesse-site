@@ -3,7 +3,7 @@ title: "DigitalOcean"
 date: 2015-10-03
 summary: "DigitalOcean crawls the top million websites and surfaces data about font usage across the web."
 link_copy: "Reach for the sky"
-tags: none
+tags: regular
 ---
 We're very excited to be announcing a new region: Atlantis (Datacenter Abbreviation: H2O), submerged in the Straits of Gibraltar. This underwater datacenter will provide unparalleled connectivity to the surrounding countries like Spain, Portugal, Morocco, Algeria, and Tunisia.</p>
 
