@@ -48,18 +48,113 @@ ul {
     }
   }
 
-  .Logo{
+  $box-padding: 30px;
+  $square-dimension: 6px;
+  $circle-dimension: 7px;
+
+  .LogoSVG {
+    display: none;
+  }
+
+  .Logo, .LogoSVG{
     width: 104px;
     height: 108px;
     background: white;
     position: absolute;
     left: 50%;
     margin-left: -55px;
-    padding: 30px;
+    padding: $box-padding;
     top: 40px;
 
     rect, circle, line {
       stroke: $neon-blue;
+    } 
+
+    $three: calc(#{$box-padding} + ( #{$square-dimension} * 3));
+    $six: calc(#{$box-padding} + ( #{$square-dimension} * 6));
+
+    span{
+      width: $square-dimension;
+      height: $square-dimension;
+      position: absolute;
+      top: $box-padding;
+      left: $box-padding;
+      display: block;
+      border: 1px solid $neon-blue;
+
+      &.tm {
+        left: $three;
+      }
+      &.tr {
+        left: $six;
+      }
+      &.rm {
+        left: $six;
+        top: $three;
+      }
+      &.rb {
+        left: $six;
+        top: $six;
+      }
+      &.mb {
+        left: $three;
+        top: $six;
+      }
+      &.lb {
+        top: $six;
+      }
+      &.ml {
+        top: $three;
+      }
+    }
+
+    .Center {
+      position: absolute;
+      left: $three;
+      top: $three;
+    }
+
+    .Circle {
+      border-radius: 50%;
+      width: $circle-dimension;
+      height: $circle-dimension;
+      position: absolute;
+      left: 0;
+      top: 0;
+      border: 1px solid lighten($neon-blue, 15%);
+      background: white;
+      z-index: 1;
+
+      &:before {
+        width: 1px;
+        height: 1px;
+        left: 50%;
+        top: 50%;
+        border-radius: 50%;
+        margin: -.5px 0 0 -.5px;
+        position: absolute;
+        background: $neon-blue;
+        content: '';
+      }
+    }
+
+    .Cross {
+      position: absolute;
+      z-index: 0;
+      
+      &.Cross--left {
+        height: 9px;
+        border-right: 1px solid $neon-blue;
+        left: 3px;
+        top: -1px;
+      }
+
+      &.Cross--right {
+        width: 9px;
+        border-top: 1px solid $neon-blue;
+        left: -1px;
+        top: 3px;
+      }
     }
   }
 }
