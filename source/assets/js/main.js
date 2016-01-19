@@ -2,9 +2,11 @@ var tl = new TimelineLite({delay:0.3});
 var tlB = new TimelineLite();
 
  var $cover = $(".Cover"),
-  $registration = $('.Registration'),
-  $leftCross = $(".Cross--left"),
-  $rightCross = $(".Cross--right"),
+  $header = $('.Header-nav'),
+  $nav = $header.find('li'),
+  $registration = $header.find('.Registration'),
+  $leftCross = $header.find('.Cross--left'),
+  $rightCross = $header.find('.Cross--right'),
   $topLeft = $(".tl"),
   $topMiddle = $(".tm"),
   $topRight = $(".tr"),
@@ -13,14 +15,11 @@ var tlB = new TimelineLite();
   $BottomMiddle = $(".mb"),
   $BottomLeft = $(".lb"),
   $MiddleLeft = $(".ml"),
-  $header = $('.Header-nav'),
-  $nav = $header.find('li'),
   $fade = $('.Fade');
 
   console.log(CSSRulePlugin.getRule("a:before"))
 tlB
   .to($cover, 1.5, {width:"0", ease:Power4.easeOut})
-  //.staggerFromTo($nav, 0.4, {autoAlpha: 0, y: '+=10'}, {autoAlpha: 1, y: '0'}, 0.08, '-=1')
   .fromTo($nav, 1, {y: 6}, {y: 0, autoAlpha: 1, ease: Linear.easeNone}, '-=1')
   .to($fade, 1.5, {autoAlpha: 1, ease: Linear.easeNone}, '-=1')
   .fromTo($fade, 1, {y: 10}, {y: 0, ease: Power2.easeOut}, '-=1.5')

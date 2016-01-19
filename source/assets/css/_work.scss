@@ -6,7 +6,60 @@
   & > li {
     flex: 1;
     margin: 15px;
+  }
+
+  .Register {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+  }
+
+  p, ul, a, h3, .Register {
+    transition: all .3s ease-out;
+
+    &:before {
+      transition: all .3s ease-out;
+    }
+  }
+
+  .Link--box {
     padding: 40px;
+    display: block;
+
+    &:hover {
+      background-color: #FAF9FC;
+      border-color: #E6E5E9;
+
+      .Register {
+        opacity: 1;
+      }
+
+      h3 {
+        color: #898989;
+      }
+
+      p {
+        opacity: .2;
+        color: #8F7CB2;
+      }
+
+      ul {
+        opacity: .15;
+        color: #8F7CB2;
+
+        a, .Link--faux {
+          color: #8F7CB2;
+
+          &:before {
+            display: none;
+          }
+        }
+      }
+    }
   }
 
   .meta {
@@ -26,7 +79,7 @@
 .ProjectsWrap {
   color: $navy;
 
-  .Project {
+  .Link--box {
     border: 1px solid $border-grey;
   }
 

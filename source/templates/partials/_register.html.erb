@@ -1,5 +1,13 @@
 <div class="Register">
+  <% if(is_dark_grey) %>
+  <div class="Registration Registration--darkGrey">
+  <% elsif(is_blue) %>
   <div class="Registration Registration--blue">
+  <% elsif(is_green) %>
+  <div class="Registration Registration--green">
+  <% else %>
+  <div class="Registration">
+  <% end %>
     <div class="Circle"></div>
     <div class="Cross Cross--left"></div>
     <div class="Cross Cross--right"></div>

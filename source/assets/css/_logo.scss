@@ -160,4 +160,24 @@
       }
     }
   }
+
+  &.Registration--darkGrey {
+    .Circle {
+      border-color: lighten($dark-grey, 28%);
+
+      &:before {
+        background: $dark-grey;
+      }
+    }
+
+    .Cross {
+      &.Cross--left {
+        border-color: $dark-grey;
+      }
+
+      &.Cross--right {
+        border-color: $dark-grey;
+      }
+    }
+  }
 }

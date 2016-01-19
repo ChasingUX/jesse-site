@@ -14,7 +14,7 @@ blog: work
   <ul class="ProjectsWrap--featured">
     <% page_articles.select{|a| a.tags.include?("featured")}.each_with_index do |article, i| %>    
       <li class="Project--<%= article.data['color'] %>">
-        <h3><%= link_to article.title, article.url %></h3>
+        <h3><%= article.title %></h3>
         <p><%= article.data['summary'] %></p>
         <ul class="meta">
           <li class="date">
@@ -29,7 +29,7 @@ blog: work
   </ul>
 </section>
 
-<%= partial "register" %>
+<%= partial "register", locals: { is_dark_grey: false, is_blue: true, is_green: false  } %>
 
 <section class="Wrapper">
   <h4 class="Offset Offset--left">Selected Work</h4>
@@ -39,21 +39,26 @@ blog: work
       <% articles.each do |article|%>
         <% unless article.data['tags'].include?('featured') %>
           <li class="Project">
-            <h3><%= article.title %></h3>
-            <p><%= article.data['summary'] %></p>
-            <ul class="meta">
-              <li class="date">
-                <span><%= article.date.strftime("%b %Y") %></span>
-              </li>
-              <li class="view">
-                <%= link_to article.data['link_copy'], article.url %>
-              </li>
-            </ul>
+            <% link_to article.url, class: "Link--box" do %>
+              <h3><%= article.title %></h3>
+              <p><%= article.data['summary'] %></p>
+              <ul class="meta">
+                <li class="date">
+                  <span><%= article.date.strftime("%b %Y") %></span>
+                </li>
+                <li class="view">
+                  <span class="Link--faux">
+                    <%= article.data['link_copy'] %>
+                  </span>
+                </li>
+              </ul>
+              <%= partial "register", locals: { is_dark_grey: true, is_blue: false, is_green: false  } %>
+            <% end %>
           </li>
         <% end %>
       <% end %>
     </ul>
-    <%= partial "register" %>
+    <%= partial "register", locals: { is_dark_grey: false, is_blue: true, is_green: false } %>
   <% end %>
 
   <!-- 
