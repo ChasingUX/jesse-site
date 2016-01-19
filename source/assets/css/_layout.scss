@@ -14,6 +14,11 @@ ul {
   list-style: none;
 }
 
+.Fade {
+  opacity: 0;
+  visibility: hidden;
+}
+
 .Header-nav {
   border-bottom: 1px solid $border-polar-purple;
   height: 100px;
@@ -39,6 +44,8 @@ ul {
     li {
       display: inline-block;
       padding: 0 10px;
+      opacity: 0;
+      visibility: hidden;
 
       a {
         font-size: 16px;

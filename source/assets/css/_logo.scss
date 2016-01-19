@@ -1,3 +1,4 @@
+
 .Logo {
   width: 104px;
   height: 108px;
@@ -7,6 +8,7 @@
   transform: translateX(-50%);
   padding: $box-padding;
   top: 49px;
+  z-index: 10;
 
   span{
     width: $square-dimension;
@@ -16,6 +18,8 @@
     left: $box-padding;
     display: block;
     border: 1px solid $neon-blue;
+    opacity: 0;
+    visibility: hidden;
 
     &.tm {
       left: $three;
@@ -51,6 +55,13 @@
   } 
 }
 
+.Header-nav {
+  .Registration {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
 .Register {
   padding: 15px;
   margin: 13px 0;
@@ -60,6 +71,10 @@
 
 .Registration {
   position: relative;
+  width: $circle-dimension;
+  height: $circle-dimension;
+  overflow: visible;
+  transform-origin: 50% 50%;
   margin: -4px 0 0 -4px;
   left: 50%;
 
