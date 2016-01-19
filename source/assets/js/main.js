@@ -13,7 +13,8 @@ var tlB = new TimelineLite();
   $BottomMiddle = $(".mb"),
   $BottomLeft = $(".lb"),
   $MiddleLeft = $(".ml"),
-  $nav = $('.Header-nav li'),
+  $header = $('.Header-nav'),
+  $nav = $header.find('li'),
   $fade = $('.Fade');
 
   console.log(CSSRulePlugin.getRule("a:before"))
@@ -25,7 +26,6 @@ tlB
   .fromTo($fade, 1, {y: 10}, {y: 0, ease: Power2.easeOut}, '-=1.5')
 
 tl
-  
   .to($registration, 1.5, {autoAlpha: 1, rotation: "+=540", ease:Power1.easeOut})
   .fromTo($leftCross, .4, {height: "+=4", y: -2}, {height: "-=4", y: 0, ease: Linear.easeNone}, '-=1')
   .fromTo($rightCross, .4, {width: "+=4", x: -2}, {width: "-=4", x: 0, ease: Linear.easeNone}, '-=1')
@@ -40,3 +40,11 @@ tl
   .fromTo($MiddleLeft, 1, { x: 18, y: 0},{x:0, y: 0, autoAlpha: 1, ease:Back.easeOut.config(1.7)}, '-=1.15')
   
   //.fromTo($activeNav, 1, {cssRule:{left: '-70%'}}, {cssRule:{left: '-20%'}, ease: Power3.easeOut},'-=1')
+
+  $('nav a').on('click', function(){
+    var href = $(this).attr('href');
+    TweenLite.to($fade, .7,{autoAlpha: 0, ease: Linear.easeNone})
+    TweenLite.to($header, .7,{autoAlpha: 0, ease: Linear.easeNone})
+    setTimeout(function() {window.location = href}, 700);
+    return false;
+  });
