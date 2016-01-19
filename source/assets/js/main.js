@@ -15,7 +15,8 @@ var tlB = new TimelineLite();
   $BottomMiddle = $(".mb"),
   $BottomLeft = $(".lb"),
   $MiddleLeft = $(".ml"),
-  $fade = $('.Fade');
+  $fade = $('.Fade'),
+  $linkBox = $('.Link--box');
 
   console.log(CSSRulePlugin.getRule("a:before"))
 tlB
@@ -46,4 +47,16 @@ tl
     TweenLite.to($header, .7,{autoAlpha: 0, ease: Linear.easeNone})
     setTimeout(function() {window.location = href}, 700);
     return false;
+  });
+
+  // $linkBox.hover(function(){
+  //   TweenMax.to($(this), 1,{backgroundPosition: '0 0', ease: Linear.easeNone})
+  // }, function(){
+  //   TweenMax.to($(this), 1,{backgroundPosition: '0 -280px', ease: Linear.easeNone})
+  // });
+
+   $linkBox.hover(function(){
+    $(this).addClass('hover');  
+  }, function(){
+    $(this).removeClass('hover'); 
   });

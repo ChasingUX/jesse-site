@@ -29,10 +29,25 @@
   .Link--box {
     padding: 40px;
     display: block;
+    transition: none;
+    transition: all 1.2s ease-out;
+    color: $navy;
+
+    a, .Link--faux {
+      color: $navy;
+    }
+
+    &.hover {
+      background-position: 0 0;
+      transition: all .5s ease-out;
+    }
 
     &:hover {
-      background-color: #FAF9FC;
-      border-color: #E6E5E9;
+      border-color: #EBE8F0;
+      background: linear-gradient(to bottom, $polar-purple 50%, rgba(255,255,255,0) 100%);
+      background-repeat: no-repeat;
+      background-position: 0 -200px;
+      cursor: pointer;
 
       .Register {
         opacity: 1;
