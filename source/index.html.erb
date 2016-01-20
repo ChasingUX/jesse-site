@@ -14,16 +14,18 @@ blog: work
   <ul class="ProjectsWrap--featured">
     <% page_articles.select{|a| a.tags.include?("featured")}.each_with_index do |article, i| %>    
       <li class="Project--<%= article.data['color'] %>">
-        <h3><%= article.title %></h3>
-        <p><%= article.data['summary'] %></p>
-        <ul class="meta">
-          <li class="date">
-            <span><%= article.date.strftime("%b %Y") %></span>
-          </li>
-          <li class="view">
-            <%= link_to article.data['link_copy'], article.url %>
-          </li>
-        </ul>
+        <% link_to article.url, class: "Link--box" do %>
+          <h3><%= article.title %></h3>
+          <p><%= article.data['summary'] %></p>
+          <ul class="meta">
+            <li class="date">
+              <span><%= article.date.strftime("%b %Y") %></span>
+            </li>
+            <span class="Link--faux">
+              <%= article.data['link_copy'] %>
+            </span>
+          </ul>
+        <% end %> 
       </li>
     <% end %>
   </ul>

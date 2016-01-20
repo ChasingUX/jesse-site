@@ -30,50 +30,23 @@
     padding: 40px;
     display: block;
     transition: none;
-    transition: all 1.2s ease-out;
-    color: $navy;
-
-    a, .Link--faux {
-      color: $navy;
-    }
-
-    &.hover {
-      background-position: 0 0;
-      transition: all .5s ease-out;
-    }
+    transition: all 1.2s ease-in-out;
 
     &:hover {
-      border-color: #EBE8F0;
-      background: linear-gradient(to bottom, $polar-purple 50%, rgba(255,255,255,0) 100%);
-      background-repeat: no-repeat;
-      background-position: 0 -200px;
-      cursor: pointer;
-
-      .Register {
-        opacity: 1;
-      }
-
-      h3 {
-        color: #898989;
-      }
-
-      p {
-        opacity: .2;
-        color: #8F7CB2;
-      }
-
-      ul {
-        opacity: .15;
-        color: #8F7CB2;
-
-        a, .Link--faux {
-          color: #8F7CB2;
-
-          &:before {
-            display: none;
-          }
+      .Link--faux {
+        &:before {
+          left: -25%;
+          width: 130%;
+          height: 1em;
+          bottom: -4px;
         }
       }
+    }
+  }
+
+  .Link--faux {
+    &:before {
+      transition: all .3s ease-out;
     }
   }
 
@@ -83,10 +56,12 @@
 
     .date {
       flex: 1;
+      transition: all .3s ease-out;
     }
 
     .view {
       text-align: right;
+      transition: all .3s ease-out;
     }
   }
 }
@@ -96,43 +71,74 @@
 
   .Link--box {
     border: 1px solid $border-grey;
+    color: $navy;
+
+    a, .Link--faux {
+      color: $navy;
+      transition: all .3s ease;
+
+      &:before {
+        background:  darken($polar-purple, 1%);
+      }
+    }
+
+    &.hover {
+      background-position: 0 0;
+      transition: all .7s ease-out;
+    }
+
+    &:hover {
+      border-color: #EBE8F0;
+      background: linear-gradient(to bottom, $polar-purple 50%, rgba(255,255,255,0) 100%);
+      background-repeat: no-repeat;
+      background-position: 0 -170px;
+      cursor: pointer;
+
+      .Register {
+        opacity: 1;
+      }
+
+      h3 {
+        color: $neon-blue;
+      }
+
+      p {
+        opacity: .2;
+        color: #8F7CB2;
+      }
+
+      .date {
+        opacity: .15;
+      }
+
+      ul {
+        color: #8F7CB2;
+
+        a, .Link--faux {
+          color: $neon-blue;
+        }
+      }
+    }
   }
 
   p {
     opacity: .8;
     min-height: 150px;
   }
-
-  .meta {
-    a {
-      color: $navy;
-
-      &:before {
-        background: darken($polar-purple, 1%);
-      }
-    }
-  }
 }
 
 .ProjectsWrap--featured {
-  color: $neon-blue;
-
-  & > li {
-    background: $polar-purple;
-    padding: 40px;
-  }
-
-  .Project--blue {
-    background: $polar-purple;
-  }
-
-  .Project--green {
-    background: $polar-green;
-    color: $neon-green;
-
-    a {
-      color: $neon-green;
+  .Link--box {
+    &:hover {
+      p {
+        opacity: .2;
+      }
     }
+  }
+
+  p {
+    opacity: .9;
+    min-height: 120px;
   }
 
   .meta {
@@ -147,8 +153,53 @@
     }
   }
 
-  p {
-    opacity: .9;
-    min-height: 120px;
+  .Project--blue {
+    background: $polar-purple;
+    .Link--box {
+      background: $polar-purple;
+      color: $neon-blue;
+      &:hover {
+        //background: linear-gradient(to bottom, darken($polar-purple, 1%) 50%, $polar-purple 100%);
+        .date {
+          opacity: .15;
+        }
+        .Link--faux {
+          &:before {
+            background: darken($polar-purple-light, 1.3%);
+          }
+        }
+      }
+    }
+    .Link--faux {
+      color: $neon-blue;
+      &:before {
+        background: $polar-purple-light;
+      }
+    }
+  }
+
+  .Project--green {
+    background: $polar-green;
+    .Link--box {
+      background: $polar-green;
+      color: $neon-green;
+      &:hover {
+        //background: linear-gradient(to bottom, darken($polar-green, 1%) 50%, $polar-green 100%);
+        .date {
+          opacity: .3;
+        }
+        .Link--faux {
+          &:before {
+            background: darken($polar-green-trans, 7%);
+          }
+        }
+      }
+    }
+    .Link--faux {
+      color: $neon-green;
+      &:before {
+        background: $polar-green-trans;
+      }
+    }
   }
 }
