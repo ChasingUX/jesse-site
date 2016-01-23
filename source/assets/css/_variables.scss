@@ -26,3 +26,8 @@ $six: calc(#{$box-padding} + (#{$square-dimension} * 6));
 
 //layout vars
 $sideways-offset: -570px;
+
+// breakpoints
+$large: 1050px;
+$medium: 750px;
+$small: 500px;

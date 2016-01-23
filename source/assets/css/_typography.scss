@@ -51,6 +51,14 @@
   font-style: normal;
 }
 
+// #FFE5E2 is another great selection state - salmon color
+::-moz-selection {
+  background: $polar-green-light;
+}
+
+::selection {
+  background: $polar-green-light;
+}
 
 h1, h2, h3, h4 {
   font-weight: normal;
@@ -59,11 +67,24 @@ h1, h2, h3, h4 {
 
 h1 {
   font-size: 32px;
+  @media (max-width: $large) {
+    font-size: 30px;
+  }
+  @media (max-width: $medium) {
+    font-size: 24px;
+  }
+  @media (max-width: $small) {
+    font-size: 21px;
+  }
 }
 
 h3 {
   font-size: 21px;
   margin-bottom: 10px;
+
+  @media (max-width: $small) {
+    font-size: 18px;
+  }
 }
 
 a, .Link--faux {

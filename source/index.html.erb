@@ -4,8 +4,8 @@ blog: work
 ---
 
 
-<header class="Header-intro">
-  <h1>Jesse Chase is a product designer by trade, currently Creative Director at DigitalOcean</h1>
+<header class="Header-intro Wrapper">
+  <h1>Jesse Chase is a product designer by trade,<br> currently Creative Director at DigitalOcean</h1>
 </header>
 
 <section class="Wrapper">
@@ -35,51 +35,26 @@ blog: work
 
 <section class="Wrapper">
   <h4 class="Offset Offset--left">Selected Work</h4>
-
-  <% page_articles.each_slice(3).with_index do |articles| %>
-    <ul class="ProjectsWrap">
-      <% articles.each do |article|%>
-        <% unless article.data['tags'].include?('featured') %>
-          <li class="Project">
-            <% link_to article.url, class: "Link--box" do %>
-              <h3><%= article.title %></h3>
-              <p><%= article.data['summary'] %></p>
-              <ul class="meta">
-                <li class="date">
-                  <span><%= article.date.strftime("%b %Y") %></span>
-                </li>
-                <li class="view">
-                  <span class="Link--faux">
-                    <%= article.data['link_copy'] %>
-                  </span>
-                </li>
-              </ul>
-            <%#= partial "register", locals: { is_dark_grey: false, is_blue: true, is_green: false  } %>
-            <% end %>
-          </li>
-        <% end %>
+  <ul class="ProjectsWrap">
+    <% page_articles.each_with_index do |article, i| %>
+      <% unless article.data['tags'].include?('featured') %>
+        <li class="Project">
+          <% link_to article.url, class: "Link--box" do %>
+            <h3><%= article.title %></h3>
+            <p><%= article.data['summary'] %></p>
+            <ul class="meta">
+              <li class="date">
+                <span><%= article.date.strftime("%b %Y") %></span>
+              </li>
+              <li class="view">
+                <span class="Link--faux">
+                  <%= article.data['link_copy'] %>
+                </span>
+              </li>
+            </ul>
+          <% end %>
+        </li>
       <% end %>
-    </ul>
-  <% end %>
-
-  <!-- 
-<% page_articles.select{|a| a.tags.include?("regular")}.each_slice(3) do |array_of_3_items|%>
-    <% array_of_3_items.each do |article|%>
-      <li class="Project">
-        <h3><%= article.title %></h3>
-        <p><%= article.data['summary'] %></p>
-        <ul class="meta">
-          <li class="date">
-            <span><%= article.date.strftime("%b %Y") %></span>
-          </li>
-          <li class="view">
-            <%= link_to article.data['link_copy'], article.url %>
-          </li>
-        </ul>
-      </li>
     <% end %>
   </ul>
-  
-<% end %>
-  -->
 </section>

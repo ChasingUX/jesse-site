@@ -27,6 +27,15 @@ ul {
   margin-bottom: 110px;
   position: relative;
 
+  @media (max-width: $large) {
+    margin-bottom: 100px;
+  }
+
+  @media (max-width: $small) {
+    margin-bottom: 70px;
+    line-height: 75px;
+  }
+
   .Cover {
     position: absolute;
     bottom: -5px;
@@ -40,6 +49,19 @@ ul {
 
   nav {
     float: right;
+    @media (max-width: $small) {
+      margin: 0 auto;
+      float: none;
+      display: flex;
+      z-index: 10;
+      position: relative;
+    }
+
+    ul {
+      @media (max-width: $small) {
+        margin: 0 auto;
+      }
+    }
 
     li {
       display: inline-block;
@@ -87,20 +109,45 @@ ul {
   }
 }
 
-.Header-intro {
+.Header-intro.Wrapper {
   margin-bottom: 100px;
+
+  @media (max-width: $large) {
+    margin-bottom: 80px;
+  }
+
+  @media (max-width: $small) {
+    margin-bottom: 50px;
+  }
+
   h1 {
     text-align: center;
     color: $neon-purple;
-    max-width: 760px;
     line-height: 1.5;
     margin: 0 auto;
+
+    @media (max-width: $medium) {
+      max-width: 560px;
+      margin: 0 auto;
+
+      br {
+        display: none;
+      }
+    }
+    @media (max-width: $small) {
+      padding: 0 20px;
+    }
   }
 }
 
 .Wrapper {
-  max-width: 1070px;
+  max-width: 1130px;
   margin: 0 auto;
+  padding: 0 30px;
+
+  @media (max-width: $small) {
+    padding: 0 23px;
+  }
 }
 
 section {
@@ -110,13 +157,13 @@ section {
 .Offset {
   position: absolute;
   font-size: 17px;
-  top: 208px;
+  top: 230px;
   letter-spacing: 3px;
   text-transform: uppercase;
   color: lighten($neon-purple, 25%);
   font-family: 'GT Pressura';
 
-  @media (max-width: 1265px) {
+  @media (max-width: 1230px) {
     display: none;
   }
 }
