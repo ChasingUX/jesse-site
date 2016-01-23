@@ -180,20 +180,36 @@
 
 .ProjectsWrap--featured {
   & > li {
-    background:rgba(255,255,255,0);
-    transition: background .4s ease;
     flex: 1;
     @media (max-width: $medium) {
       width: 100%;
       flex: inherit;
     }
 
-    &.hover {
-      transition: background 1s ease;
-    }
+    // &.hover {
+    //   transition: background 1s ease;
+    // }
   }
 
   .Link--box {
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      background:rgba(255,255,255,0);
+      transition: background .4s ease;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+
+       &:hover {
+        transition: background 1s ease;
+      }
+    }
+
     &:hover {
       p {
         opacity: .5;
@@ -221,9 +237,11 @@
   }
 
   .Project--blue {
-    &.hover {
-      background: $polar-purple;
-    }
+    // &.hover {
+    //   background: $polar-purple;
+    // }
+
+
     .Link--box {
       @include linear-gradient(45deg, $polar-purple 0%, $transparent 80%);
       border: 1px solid darken($polar-purple, 1%);
@@ -236,6 +254,12 @@
 
       &:hover {
         background-position: -160px 0;
+
+        &:after {
+          background:$polar-purple;
+          transition: background 1s ease;
+        }
+
         .date {
           opacity: .15;
         }
@@ -255,9 +279,9 @@
   }
 
   .Project--green {
-    &.hover {
-      background: $polar-green;
-    }
+    // &.hover {
+    //   background: $polar-green;
+    // }
     .Link--box {
       @include linear-gradient(45deg, $polar-green 0%, $transparent 80%);
       color: $light-green;
@@ -270,6 +294,12 @@
 
       &:hover {
         background-position: -160px 0;
+
+        &:after {
+          background:$polar-green;
+          transition: background 1s ease;
+        }
+
         .date {
           opacity: .3;
         }

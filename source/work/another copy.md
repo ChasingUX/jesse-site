@@ -1,7 +1,7 @@
 ---
 title: "Another Project"
 date: 2015-10-03
-summary: "DigitalOcean crawls the top million websites and surfaces data about font usage across the web. DigitalOcean crawls the top million websites and surfaces data about font usage across the web. DigitalOcean crawls the top million websites and surfaces data about font usage across the web."
+summary: "DigitalOcean crawls the top million websites and surfaces data about font usage across the web. And maybe a little bit more."
 link_copy: "Visit Project"
 tags: regular
 ---
