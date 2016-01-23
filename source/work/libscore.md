@@ -2,7 +2,7 @@
 title: "Libscore"
 date: 2015-10-01
 summary: "FontReach crawls the top million websites and surfaces data about font usage across the web."
-link_copy: "Reach for the sky"
+link_copy: "Visit Project"
 tags: featured
 color: green
 ---

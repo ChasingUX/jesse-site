@@ -31,6 +31,7 @@
     display: block;
     transition: none;
     transition: all 1.2s ease-in-out;
+    font-weight: bold;
 
     &:hover {
       .Link--faux {
@@ -72,6 +73,8 @@
   .Link--box {
     border: 1px solid $border-grey;
     color: $navy;
+    background-position: -300px 0;
+    transition: all .8s ease-out;
 
     a, .Link--faux {
       color: $navy;
@@ -82,16 +85,12 @@
       }
     }
 
-    &.hover {
-      background-position: 0 0;
-      transition: all .7s ease-out;
-    }
-
     &:hover {
       border-color: #EBE8F0;
       background: linear-gradient(to bottom, $polar-purple 50%, rgba(255,255,255,0) 100%);
+      @include linear-gradient(90deg, $polar-purple 0%, $transparent 100%);
       background-repeat: no-repeat;
-      background-position: 0 -170px;
+      background-position: 0 0;
       cursor: pointer;
 
       .Register {
@@ -99,11 +98,11 @@
       }
 
       h3 {
-        color: $neon-blue;
+        color: $neon-purple;
       }
 
       p {
-        opacity: .2;
+        opacity: .4;
         color: #8F7CB2;
       }
 
@@ -115,7 +114,7 @@
         color: #8F7CB2;
 
         a, .Link--faux {
-          color: $neon-blue;
+          color: $neon-purple;
         }
       }
     }
@@ -131,13 +130,12 @@
   .Link--box {
     &:hover {
       p {
-        opacity: .2;
+        opacity: .5;
       }
     }
   }
 
   p {
-    opacity: .9;
     min-height: 120px;
   }
 
@@ -154,12 +152,18 @@
   }
 
   .Project--blue {
-    background: $polar-purple;
     .Link--box {
-      background: $polar-purple;
-      color: $neon-blue;
+      @include linear-gradient(45deg, $polar-purple 0%, $transparent 80%);
+      border: 1px solid darken($polar-purple, 1%);
+      color: $light-purple;
+      background-repeat: no-repeat;
+
+      h3 {
+        color: $neon-purple;
+      }
+
       &:hover {
-        //background: linear-gradient(to bottom, darken($polar-purple, 1%) 50%, $polar-purple 100%);
+        background-position: -160px 0;
         .date {
           opacity: .15;
         }
@@ -171,7 +175,7 @@
       }
     }
     .Link--faux {
-      color: $neon-blue;
+      color: $neon-purple;
       &:before {
         background: $polar-purple-light;
       }
@@ -179,18 +183,24 @@
   }
 
   .Project--green {
-    background: $polar-green;
     .Link--box {
-      background: $polar-green;
-      color: $neon-green;
+      @include linear-gradient(45deg, $polar-green 0%, $transparent 80%);
+      color: $light-green;
+      border: 1px solid #E9F3F0;
+      background-repeat: no-repeat;
+
+      h3 {
+        color: $neon-green;
+      }
+
       &:hover {
-        //background: linear-gradient(to bottom, darken($polar-green, 1%) 50%, $polar-green 100%);
+        background-position: -160px 0;
         .date {
           opacity: .3;
         }
         .Link--faux {
           &:before {
-            background: darken($polar-green-trans, 7%);
+            background: darken($polar-green-light, 2%);
           }
         }
       }
@@ -198,7 +208,7 @@
     .Link--faux {
       color: $neon-green;
       &:before {
-        background: $polar-green-trans;
+        background: $polar-green-light;
       }
     }
   }

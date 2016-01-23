@@ -2,7 +2,7 @@
 title: "FontReach"
 date: 2015-10-03
 summary: "FontReach crawls the top million websites and surfaces data about font usage across the web."
-link_copy: "Reach for the sky"
+link_copy: "Visit Project"
 tags: featured
 color: blue
 ---

@@ -17,7 +17,7 @@
     top: $box-padding;
     left: $box-padding;
     display: block;
-    border: 1px solid $neon-blue;
+    border: 1px solid $neon-purple;
     opacity: 0;
     visibility: hidden;
 
@@ -107,36 +107,36 @@
     z-index: 0;
     
     &.Cross--left {
-      height: 9px;
+      height: 11px;
       border-right: 1px solid $grey;
       left: 3px;
-      top: -1px;
+      top: -2px;
     }
 
     &.Cross--right {
-      width: 9px;
+      width: 11px;
       border-top: 1px solid $grey;
-      left: -1px;
+      left: -2px;
       top: 3px;
     }
   }
 
   &.Registration--blue {
     .Circle {
-      border-color: lighten($neon-blue, 1%);
+      border-color: lighten($neon-purple, 1%);
 
       &:before {
-        background: $neon-blue;
+        background: $neon-purple;
       }
     }
 
     .Cross {
       &.Cross--left {
-        border-color: $neon-blue;
+        border-color: $neon-purple;
       }
 
       &.Cross--right {
-        border-color: $neon-blue;
+        border-color: $neon-purple;
       }
     }
   }
