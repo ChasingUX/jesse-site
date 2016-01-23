@@ -185,10 +185,6 @@
       width: 100%;
       flex: inherit;
     }
-
-    // &.hover {
-    //   transition: background 1s ease;
-    // }
   }
 
   .Link--box {
@@ -237,11 +233,6 @@
   }
 
   .Project--blue {
-    // &.hover {
-    //   background: $polar-purple;
-    // }
-
-
     .Link--box {
       @include linear-gradient(45deg, $polar-purple 0%, $transparent 80%);
       border: 1px solid darken($polar-purple, 1%);
@@ -279,9 +270,6 @@
   }
 
   .Project--green {
-    // &.hover {
-    //   background: $polar-green;
-    // }
     .Link--box {
       @include linear-gradient(45deg, $polar-green 0%, $transparent 80%);
       color: $light-green;
