@@ -21,8 +21,8 @@ $dark-grey: #313131;
 $box-padding: 30px;
 $square-dimension: 6px;
 $circle-dimension: 7px;
-$three: calc(#{$box-padding} + ( #{$square-dimension} * 3));
-$six: calc(#{$box-padding} + ( #{$square-dimension} * 6));
+$three: calc(#{$box-padding} + (#{$square-dimension} * 3));
+$six: calc(#{$box-padding} + (#{$square-dimension} * 6));
 
 //layout vars
 $sideways-offset: -570px;
