@@ -56,7 +56,7 @@ tl
   // });
 
    $linkBox.hover(function(){
-    $(this).addClass('hover');  
+    $(this).parent().addClass('hover');  
   }, function(){
-    $(this).removeClass('hover'); 
+    $(this).parent().removeClass('hover'); 
   });

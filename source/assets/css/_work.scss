@@ -102,7 +102,7 @@
       }
 
       p {
-        opacity: .4;
+        opacity: .2;
         color: #8F7CB2;
       }
 
@@ -121,12 +121,21 @@
   }
 
   p {
-    opacity: .8;
+    opacity: .4;
     min-height: 150px;
   }
 }
 
 .ProjectsWrap--featured {
+  li {
+    background:rgba(255,255,255,0);
+    transition: background .4s ease;
+
+    &.hover {
+      transition: background 1s ease;
+    }
+  }
+
   .Link--box {
     &:hover {
       p {
@@ -152,6 +161,9 @@
   }
 
   .Project--blue {
+    &.hover {
+      background: $polar-purple;
+    }
     .Link--box {
       @include linear-gradient(45deg, $polar-purple 0%, $transparent 80%);
       border: 1px solid darken($polar-purple, 1%);
@@ -183,6 +195,9 @@
   }
 
   .Project--green {
+    &.hover {
+      background: $polar-green;
+    }
     .Link--box {
       @include linear-gradient(45deg, $polar-green 0%, $transparent 80%);
       color: $light-green;
