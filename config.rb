@@ -77,7 +77,7 @@ configure :build do
   # activate :asset_hash
 
   # Use relative URLs
-  activate :relative_assets
+  activate :relative_assets, true
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
