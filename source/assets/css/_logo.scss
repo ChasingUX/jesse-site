@@ -10,6 +10,10 @@
   top: 49px;
   z-index: 10;
 
+  @media (max-width: $small) {
+    top: 0;
+  }
+
   span{
     width: $square-dimension;
     height: $square-dimension;

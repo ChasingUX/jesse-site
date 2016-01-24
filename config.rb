@@ -50,8 +50,11 @@ activate :directory_indexes
 
 
 # Views
-set :layouts_dir,  'templates/layouts'
-set :partials_dir, 'templates/partials'
+# set :layouts_dir,  'templates/layouts'
+# set :partials_dir, 'templates/partials'
+
+config[:layouts_dir]  =    'templates/_layouts'
+config[:partials_dir] =    'templates/_partials'
 
 # Assets
 set :css_dir,    'assets/css'
@@ -74,7 +77,7 @@ configure :build do
   # activate :asset_hash
 
   # Use relative URLs
-  # activate :relative_assets
+  activate :relative_assets
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"

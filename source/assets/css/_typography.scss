@@ -1,55 +1,62 @@
 @font-face {
     font-family: 'GT Pressura';
-    src: url($font-path + 'GT-Pressura-Mono-Light.eot');
-    src: url($font-path + 'GT-Pressura-Mono-Light.eot?#iefix') format('embedded-opentype'),
-       url($font-path + 'GT-Pressura-Mono-Light.woff') format('woff'),
-       url($font-path + 'GT-Pressura-Mono-Light.ttf') format('truetype');
+    src: url($font-path + 'GT-Pressura/GT-Pressura-Mono-Light.eot');
+    src: url($font-path + 'GT-Pressura/GT-Pressura-Mono-Light.eot?#iefix') format('embedded-opentype'),
+       url($font-path + 'GT-Pressura/GT-Pressura-Mono-Light.woff') format('woff'),
+       url($font-path + 'GT-Pressura/GT-Pressura-Mono-Light.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
-// Monospace Font Bold
 @font-face {
     font-family: 'GT Pressura';
-    src: url($font-path + 'GT-Pressura-Mono-Regular.eot');
-    src: url($font-path + 'GT-Pressura-Mono-Regular.eot?#iefix') format('embedded-opentype'),
-       url($font-path + 'GT-Pressura-Mono-Regular.woff') format('woff'),
-       url($font-path + 'GT-Pressura-Mono-Regular.ttf') format('truetype');
+    src: url($font-path + 'GT-Pressura/GT-Pressura-Mono-Regular.eot');
+    src: url($font-path + 'GT-Pressura/GT-Pressura-Mono-Regular.eot?#iefix') format('embedded-opentype'),
+       url($font-path + 'GT-Pressura/GT-Pressura-Mono-Regular.woff') format('woff'),
+       url($font-path + 'GT-Pressura/GT-Pressura-Mono-Regular.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
-  font-family: 'Sailec_Light';
-  src: url($font-path + 'Sailec/Sailec-Light.eot');
-  src: local('☺'), url($font-path + 'Sailec/Sailec-Light.woff') format('woff'), url($font-path + 'Sailec/Sailec-Light.ttf') format('truetype'), url($font-path + 'Sailec/Sailec-Light.svg') format('svg');
+  font-family: 'Circular';
+  src: url($font-path + 'Circular/CircularStd-Book.eot');
+  src: local('☺'), url($font-path + 'Circular/CircularStd-Book.woff') format('woff'), url($font-path + 'Circular/CircularStd-Book.ttf') format('truetype'), url($font-path + 'Circular/CircularStd-Book.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'Sailec_Medium';
-  src: url($font-path + 'Sailec/Sailec Medium.eot');
-  src: local('☺'), url($font-path + 'Sailec/Sailec-Medium.woff') format('woff'), url($font-path + '/Sailec/Sailec-Medium.ttf') format('truetype'), url($font-path + 'Sailec/Sailec-Medium.svg') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
+// @font-face {
+//   font-family: 'Sailec_Light';
+//   src: url($font-path + 'Sailec/Sailec-Light.eot');
+//   src: local('☺'), url($font-path + 'Sailec/Sailec-Light.woff') format('woff'), url($font-path + 'Sailec/Sailec-Light.ttf') format('truetype'), url($font-path + 'Sailec/Sailec-Light.svg') format('svg');
+//   font-weight: normal;
+//   font-style: normal;
+// }
 
-@font-face {
-  font-family: 'Sailec';
-  src: url($font-path + 'Sailec/Sailec.eot');
-  src: local('☺'), url($font-path + 'Sailec/Sailec.woff') format('woff'), url($font-path + 'Sailec/Sailec.ttf') format('truetype'), url($font-path + 'Sailec/Sailec.svg') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
+// @font-face {
+//   font-family: 'Sailec_Medium';
+//   src: url($font-path + 'Sailec/Sailec Medium.eot');
+//   src: local('☺'), url($font-path + 'Sailec/Sailec-Medium.woff') format('woff'), url($font-path + '/Sailec/Sailec-Medium.ttf') format('truetype'), url($font-path + 'Sailec/Sailec-Medium.svg') format('svg');
+//   font-weight: normal;
+//   font-style: normal;
+// }
 
-@font-face {
-  font-family: 'Sailec_Bold';
-  src: url($font-path + 'Sailec/Sailec Bold.eot');
-  src: local('☺'), url($font-path + 'Sailec/Sailec-Bold.woff') format('woff'), url($font-path + 'Sailec/Sailec-Bold.ttf') format('truetype'), url($font-path + '/Sailec/Sailec-Bold.svg') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
+// @font-face {
+//   font-family: 'Sailec';
+//   src: url($font-path + 'Sailec/Sailec.eot');
+//   src: local('☺'), url($font-path + 'Sailec/Sailec.woff') format('woff'), url($font-path + 'Sailec/Sailec.ttf') format('truetype'), url($font-path + 'Sailec/Sailec.svg') format('svg');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: 'Sailec_Bold';
+//   src: url($font-path + 'Sailec/Sailec Bold.eot');
+//   src: local('☺'), url($font-path + 'Sailec/Sailec-Bold.woff') format('woff'), url($font-path + 'Sailec/Sailec-Bold.ttf') format('truetype'), url($font-path + '/Sailec/Sailec-Bold.svg') format('svg');
+//   font-weight: normal;
+//   font-style: normal;
+// }
 
 // #FFE5E2 is another great selection state - salmon color
 ::-moz-selection {
