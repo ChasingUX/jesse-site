@@ -20,29 +20,46 @@ ul {
 }
 
 footer {
-  border-top: 1px solid $border-polar-purple;
   height: 100px;
-  line-height: 100px; 
-  padding: 0 50px;
-  max-width: 700px;
+  line-height: 2.3;
+  padding: 0 $large-padding;
+  width: 100%;
   margin: 130px auto 50px auto;
   position: relative;
   font-size: 17px;
   font-family: 'GT Pressura';
   font-weight: bold;
+  text-align: center;
+
+  @media (max-width: $small) {
+    margin: 80px auto 40px auto;
+    padding: 0 $small-padding;
+    font-size: 15px;
+  }
 
   nav {
+    border-top: 1px solid $border-polar-purple;
+    width: 100%;
+    max-width: 650px;
     margin: 0 auto;
     z-index: 10;
     display: flex;
+   
+    @media (max-width: $medium) {
+      max-width: inherit;
+    }
 
     ul {
-      margin: 0 auto;
+      margin: 35px auto 0 auto;
     }
 
     li {
       display: inline-block;
-      padding: 0 20px;
+      padding: 0 17px;
+
+      @media (max-width: $small) {
+        padding: 0 13px;
+      }
     }
   }
 
@@ -215,10 +232,10 @@ footer {
 .Wrapper {
   max-width: 1130px;
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0 $large-padding;
 
   @media (max-width: $small) {
-    padding: 0 20px;
+    padding: 0 $small-padding;
   }
 }
 
