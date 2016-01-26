@@ -236,6 +236,7 @@
     .Link--box {
       @include linear-gradient(45deg, $polar-purple 0%, $transparent 80%);
       border: 1px solid darken($polar-purple, 1%);
+      border: 1px solid #A18FEA;
       color: $light-purple;
       background-repeat: no-repeat;
 
@@ -273,7 +274,7 @@
     .Link--box {
       @include linear-gradient(45deg, $polar-green 0%, $transparent 80%);
       color: $light-green;
-      border: 1px solid #E9F3F0;
+      border: 1px solid #24DEB2;
       background-repeat: no-repeat;
 
       h3 {
