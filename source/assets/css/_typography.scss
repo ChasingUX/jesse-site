@@ -100,6 +100,14 @@ a, .Link--faux {
   position: relative;
   z-index: 1;
 
+  &.no-link {
+    color: black;
+
+    &:before {
+      display: none;
+    }
+  }
+
   &:focus {
     outline: 0;
   }
