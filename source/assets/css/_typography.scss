@@ -113,6 +113,16 @@ a, .Link--faux {
     z-index: -1;
     height: .7em;
     background: $polar-green-light;
+    transition: all .3s ease;
+  }
+
+  &:hover {
+    &:before {
+      left: -25%;
+      width: 130%;
+      height: 1em;
+      bottom: -4px;
+    }
   }
 
   &.Link--box {

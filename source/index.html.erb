@@ -40,6 +40,11 @@ blog: work
       <% unless article.data['tags'].include?('featured') %>
         <li class="Project">
           <% link_to article.url, class: "Link--box" do %>
+            <div class="bracket topLeft"></div>
+            <div class="bracket topRight"></div>
+            <div class="bracket bottomRight"></div>
+            <div class="bracket bottomLeft"></div>
+
             <h3><%= article.title %></h3>
             <p><%= article.data['summary'] %></p>
             <ul class="meta">
