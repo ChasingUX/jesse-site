@@ -4,8 +4,10 @@ $font-path: '../fonts/';
 // logo vars
 $neon-purple: #5934f6;
 $light-purple: #B8ADFF;
+$featured-purple: #C4BBFF;
 $neon-green: #2AD4AC;
 $light-green: #9CDECF;
+$featured-green: #AAE4D7;
 $polar-green: #E8FBF6;
 $polar-green-light: #E4FBF3;
 $transparent: rgba(255,255,255,0);
@@ -28,6 +30,7 @@ $six: calc(#{$box-padding} + (#{$square-dimension} * 6));
 $sideways-offset: -570px;
 
 // breakpoints
+$large-up: 1051px;
 $large: 1050px;
 $medium: 750px;
 $small: 500px;
