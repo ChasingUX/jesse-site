@@ -19,6 +19,72 @@ ul {
   visibility: hidden;
 }
 
+footer {
+  border-top: 1px solid $border-polar-purple;
+  height: 100px;
+  line-height: 100px; 
+  padding: 0 50px;
+  max-width: 700px;
+  margin: 130px auto 50px auto;
+  position: relative;
+  font-size: 17px;
+  font-family: 'GT Pressura';
+  font-weight: bold;
+
+  nav {
+    margin: 0 auto;
+    z-index: 10;
+    display: flex;
+
+    ul {
+      margin: 0 auto;
+    }
+
+    li {
+      display: inline-block;
+      padding: 0 20px;
+    }
+  }
+
+  .Bracket--footer {
+    position: absolute;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    z-index: 10;
+    top: -7px;
+    transform: translateX(-50%);
+
+    .bracket {
+      opacity: 1;
+      visibility: visible;
+      border-color: $neon-purple;
+      &:before, &:after {
+        background: $neon-purple;
+      }
+
+      &:before {
+        height: 17px
+      }
+
+      &:after {
+        width: 17px
+      }
+    }
+  }
+
+  .Cover--footer {
+    position: absolute;
+    top: -2px;
+    left: 50%;
+    width: 70px;
+    background: #FFF;
+    height: 9px;
+    z-index: 2;
+    transform: translateX(-50%);
+  }
+}
+
 .Header-nav {
   border-bottom: 1px solid $border-polar-purple;
   height: 100px;
