@@ -234,7 +234,7 @@
 
   .Project--blue {
     .Link--box {
-      @include linear-gradient(45deg, $polar-purple 0%, $transparent 80%);
+      @include linear-gradient(35deg, $polar-purple 0%, $transparent 65%);
       border: 1px solid $light-purple;
       color: $light-purple;
       background-repeat: no-repeat;
@@ -271,7 +271,7 @@
 
   .Project--green {
     .Link--box {
-      @include linear-gradient(45deg, $polar-green 0%, $transparent 80%);
+      @include linear-gradient(35deg, $polar-green 0%, $transparent 75%);
       color: $light-green;
       border: 1px solid #9CDECF;
       background-repeat: no-repeat;
