@@ -9,8 +9,12 @@ blog: work
 </header>
 
 <section class="Wrapper">
-  <h4 class="Offset Offset--left">Featured Work</h4>
-  <h4 class="Offset Offset--right">Standard Issue</h4>
+  <div class="Offset Offset--left">
+    <h4>Featured Work</h4>
+  </div>
+  <div class="Offset Offset--right">
+    <h4>Standard Issue</h4>
+  </div>
   <ul class="ProjectsWrap--featured">
     <% page_articles.select{|a| a.tags.include?("featured")}.each_with_index do |article, i| %>    
       <li class="Project--<%= article.data['color'] %>">

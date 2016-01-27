@@ -1,8 +1,32 @@
 <% wrap_layout :layout do %>
-  <section class="Wrapper">
+  <header class="Header-intro Wrapper">
+    <h1><%= current_page.title %></h1>
+    <h3><%= current_page.data.summary %></h3>
+  
+    <% if current_page.data.has_key?('url') || current_page.data.has_key?('article') %>
+      <ul>
+        <% if current_page.data.has_key?('url') && current_page.data.has_key?('article') %>
+          <%= partial "register", locals: { is_dark_grey: false, is_blue: true, is_green: false  } %>
+          <li class="url"><a href="<%= current_page.data.url %>"><%= current_page.data.link_copy %></a></li>
+          <li class="article"><a href="<%= current_page.data.article %>">View Medium Post</a></li>
+        <% elsif current_page.data.has_key?('url') %>
+          <li><a href="<%= current_page.data.url %>"><%= current_page.data.link_copy %></a></li>
+        <% elsif current_page.data.has_key?('article') %>
+          <li><a href="<%= current_page.data.article %>">View Medium Post</a></li>
+        <% end %>
+      </ul>
+    <% end %>
+
+  </header>
+  <section class="Wrapper project">
+    <div class="Offset Offset--left">
+      <h4>Posted in. Work</h4>
+    </div>
+    <div class="Offset Offset--right">
+      <h4>Posted <%= current_page.date.strftime('%m-%e-%Y') %></h4>
+    </div>
+
     <article>
-      <h1><%= current_page.title %></h1>
-      <p class="article-metadata"><%= current_page.date.strftime('%B %e, %Y') %></p>
       <% if current_page.data.has_key?('hero') %>
         <% link_to current_page.url, class: 'hero-link' do %>
           <%= image_tag current_page.data['hero'], class: 'hero' %>

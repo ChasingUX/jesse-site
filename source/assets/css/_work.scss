@@ -1,3 +1,21 @@
+.index {
+  .Offset {
+    top: 215px;
+
+    h4 {
+      color: lighten($neon-purple, 33%);
+    }
+  }
+
+  .Offset--left {
+    margin-left: $sideways-offset-index;
+  }
+
+  .Offset--right {
+    margin-right: $sideways-offset-index;
+  }
+}
+
 .ProjectsWrap, .ProjectsWrap--featured {
   font-family: 'GT Pressura';
   font-size: 16.5px;

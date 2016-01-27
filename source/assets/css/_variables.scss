@@ -27,7 +27,8 @@ $three: calc(#{$box-padding} + (#{$square-dimension} * 3));
 $six: calc(#{$box-padding} + (#{$square-dimension} * 6));
 
 //layout vars
-$sideways-offset: -570px;
+$sideways-offset-index: -570px;
+$sideways-offset-work: -510px;
 
 // breakpoints
 $large-up: 1051px;

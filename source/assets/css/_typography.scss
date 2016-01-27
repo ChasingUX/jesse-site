@@ -158,7 +158,7 @@ a, .Link--faux {
   color: $neon-purple;
   text-decoration: none;
   position: relative;
-  //z-index: -1;
+  transition: all .3s ease;
 
   &.no-link {
     color: black;
@@ -176,8 +176,8 @@ a, .Link--faux {
     content: '';
     position: absolute;
     bottom: -3px;
-    left: -6px;
-    width: calc(100% + 8px);
+    left: -.5em;
+    width: calc(100% + .65em);
     z-index: -1;
     height: .7em;
     background: $polar-green-light;
@@ -186,10 +186,10 @@ a, .Link--faux {
 
   &:hover {
     &:before {
-      left: -25%;
-      width: 130%;
-      height: 1em;
-      bottom: -4px;
+      left: -.7em;
+      width: calc(100% + .8em);
+      height: .9em;
+      bottom: -6px;
     }
   }
 

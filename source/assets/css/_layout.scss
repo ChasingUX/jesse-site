@@ -171,9 +171,19 @@ footer {
   }
 }
 
-.work, .labs {
+.work {
   .Header-nav {
     li:first-child {
+      a:before {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.labs {
+  .Header-nav {
+    li:last-child {
       a:before {
         opacity: 1;
       }
@@ -196,7 +206,7 @@ footer {
     text-align: center;
     color: $neon-purple;
     line-height: 1.5;
-    margin: 0 auto;
+    margin: 0 auto 12px auto;
 
     @media (max-width: $medium) {
       max-width: 560px;
@@ -209,6 +219,56 @@ footer {
     @media (max-width: $small) {
       padding: 0 20px;
     }
+  }
+
+  h3 {
+    text-align: center;
+    color: $neon-purple;
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 450px;
+  }
+
+  ul {
+    text-align: center;
+    margin-top: 30px;
+    position: relative;
+    display: flex;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'GT Pressura';
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    li {
+      display: inline-block;
+      list-style: none;
+      margin: 0 38px;
+      flex: 1;
+
+      a {
+        color: $light-purple;
+
+        &:hover {
+          color: $neon-purple;
+        }
+      }
+
+      &.url {
+        text-align: right;
+      }
+
+      &.article {
+        text-align: left;
+      }
+    }
+  }
+
+  .Register {
+    position: absolute;
+    left: 0;
+    top: -11px;
+    opacity: .6;
   }
 }
 
@@ -228,12 +288,14 @@ section {
 
 .Offset {
   position: absolute;
-  font-size: 17px;
-  top: 230px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: lighten($neon-purple, 25%);
-  font-family: 'GT Pressura';
+
+  h4 {
+    font-size: 17px;
+    text-transform: uppercase;
+    font-family: 'GT Pressura';
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
 
   @media (max-width: 1230px) {
     display: none;
@@ -242,16 +304,20 @@ section {
 
 .Offset--left {
   left: 50%;
-  margin-left: $sideways-offset;
   transform: rotate(-90deg);
   transform-origin: left;
+  h4 {
+    text-align: right;
+  }
 }
 
 .Offset--right {
   right: 50%;
-  margin-right: $sideways-offset;
   transform: rotate(90deg);
   transform-origin: right;
+  h4 {
+    text-align: left;
+  }
 }
 
 .is-visible {
