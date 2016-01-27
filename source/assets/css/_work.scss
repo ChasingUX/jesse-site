@@ -5,6 +5,9 @@
     h4 {
       color: lighten($neon-purple, 33%);
     }
+    @media (max-width: 1230px) {
+      display: none;
+    }
   }
 
   .Offset--left {

@@ -1,6 +1,6 @@
 .work {
   .bg {
-    @include linear-gradient(180deg, $transparent 160px, $polar-purple 40%, $transparent 100%);
+    @include linear-gradient(180deg, $transparent 160px, #F5F4FF 40%, $transparent 100%);
     position: absolute;
     top: 0;
     left: 0;
@@ -14,14 +14,41 @@
     h4 {
       color: lighten($neon-purple, 20%);
     }
+
+    @media (max-width: 1125px) {
+      top: -10px;
+      position: inherit;
+      width: inherit;
+      float: left;
+      width: 50%;
+    }
   }
 
   .Offset--left {
     margin-left: $sideways-offset-work;
+
+    @media (max-width: 1125px) {
+      margin-left: inherit;
+      transform: none;
+      left: inherit;
+
+      h4 {
+        text-align: left;
+      }
+    }
   }
 
   .Offset--right {
     margin-right: $sideways-offset-work;
+
+    @media (max-width: 1125px) {
+      margin-right: inherit;
+      right: inherit;
+      transform: none;
+      h4 {
+        text-align: right;
+      }
+    }
   }
 }
 
@@ -33,6 +60,16 @@
   line-height: 1.9;
   z-index: -1;
 
+  @media (max-width: $medium) {
+    padding: 70px 65px;
+    font-size: 18px;
+  }
+
+  @media (max-width: $small) {
+    padding: 70px $small-padding;
+    font-size: 16px;
+  }
+
   h2 {
     @extend .ribbon;
     margin-bottom: 30px;
@@ -40,5 +77,11 @@
 
   h3 {
     font-size: 27px;
+  }
+
+  article {
+    @media (max-width: 1125px) {
+      padding-top: 50px;
+    }
   }
 }
