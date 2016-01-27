@@ -1,9 +1,3 @@
-// .about {
-//   .Wrapper {
-//     max-width: 750px;
-//   }
-// }
-
 .flex {
   display: flex;
   justify-content: center;
@@ -11,18 +5,31 @@
 }
 
 .headshot {
+  background: image-url("jesse.jpg") no-repeat;
   padding-top: 20px;
-  min-width: 250px;
-  width: 36%;
+  min-width: 220px;
+  width: 30%;
   max-width: 350px;
-  margin-right: 50px;
+  margin-right: 6%;
+  background-size: contain;
+  min-height: 340px;
+  background-position: center top;
+
+  @media (max-width: $medium) {
+    width: 100%;
+    max-width: inherit;
+    margin-right: 0;
+    background-size: cover;
+    min-height: 350px;
+    margin-bottom: 30px;
+  }
 }
 
 .aboutJesse {
   flex: 1;
   max-width: 600px;
-  line-height: 2;
-  font-size: 18px;
+  line-height: 1.9;
+  font-size: 19px;
 
   @media (max-width: $medium) {
     width: 100%;
