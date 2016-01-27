@@ -111,6 +111,10 @@ h2.ribbon {
   font-family: 'GT Pressura';
   font-weight: bold;
 
+  @media (max-width: $small) {
+    font-size: 20px;
+  }
+
   span {
     position: relative;
     top: 2px;
@@ -141,8 +145,12 @@ h2.ribbon {
 }
 
 p {
-  margin-bottom: 25px;
+  margin-bottom: 30px;
   clear: left;
+
+  @media (max-width: $small) {
+    margin-bottom: 20px;
+  }
 }
 
 h3 {
@@ -197,5 +205,33 @@ a, .Link--faux {
     &:before {
       display: none;
     }
+  }
+}
+
+blockquote {
+  font-size: 24px;
+  font-family: 'GT Pressura';
+  font-weight: bold;
+  margin-bottom: 30px;
+  position: relative;
+  font-style: italic;
+
+  @media (max-width: $small) {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+
+    &:before {
+      display: none;
+    }
+  }
+
+  &:before {
+    position: absolute;
+    content: '"';
+    left: -40px;
+    top: -10px;    
+    font-size: 40px;
+    color: $neon-purple;
   }
 }

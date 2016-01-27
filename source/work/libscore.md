@@ -18,6 +18,9 @@ While we are still actively [building out our German datacenter](http://digitalo
 ###While this datacenter may come as a pleasant surprise
  to residents in the surrounding countries, we have actually been actively looking into the possibility since mid-2013, inspired by Facebook’s energy efficient Arctic Datacenter. Some potential issues we faced in our initial investigations included transporting safe electrical current under the sea, providing sufficient illumination on the ocean floor (around 900 meters deep), and our technicians’ inability to swim. 
 
+
+<blockquote>This uncommon choice of user-friendly storage format created a lot of interesting problems</blockquote>
+
 You can easily spin up a server in the new region by selecting “Atlantis” in the Droplet create screen or choosing that location in the API. Our initial run of servers in this region is limited. We will be adding more capacity to H2O at low tide. 
 
 When asked about the new location, DigitalOcean’s Director of Infrastructure, Lev Uretsky explained: “Our Datacenter Techs are very excited about Atlantis. We firmly believe that this will be the easiest DC to rack, as our servers become much lighter underwater.”

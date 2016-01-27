@@ -24,7 +24,7 @@ footer {
   clear: both;
 
   @media (max-width: $small) {
-    margin: 80px auto 40px auto;
+    margin: 60px auto 40px auto;
     padding: 0 $small-padding;
     font-size: 15px;
   }
@@ -240,11 +240,19 @@ footer {
     font-weight: bold;
     letter-spacing: 1px;
 
+    @media (max-width: $small) {
+      font-size: 15px;
+    }
+
     li {
       display: inline-block;
       list-style: none;
       margin: 0 38px;
       flex: 1;
+
+      @media (max-width: $small) {
+        margin: 0 20px;
+      }
 
       a {
         color: $light-purple;
@@ -256,10 +264,20 @@ footer {
 
       &.url {
         text-align: right;
+
+        @media (max-width: $small) {
+          margin-left: 0;
+          text-align: left;
+        }
       }
 
       &.article {
         text-align: left;
+
+        @media (max-width: $small) {
+          margin-right: 0;
+          text-align: right;
+        }
       }
     }
   }
@@ -295,6 +313,10 @@ section {
     font-family: 'GT Pressura';
     font-weight: bold;
     letter-spacing: 1px;
+
+    @media (max-width: $small) {
+      font-size: 15px;
+    }
   }
 }
 
