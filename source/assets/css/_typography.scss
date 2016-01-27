@@ -67,6 +67,22 @@
   background: $polar-green-light;
 }
 
+body {
+  line-height: 1.7;
+  font-family: 'Circular';
+  font-size: 18px;
+  color: #2F2F2F;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  list-style: disc;
+  list-style-position: inside;
+}
+
 h1, h2, h3, h4 {
   font-weight: normal;
   font-family: 'Circular';
@@ -83,6 +99,29 @@ h1 {
   @media (max-width: $small) {
     font-size: 21px;
   }
+}
+
+h2.ribbon {
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+  padding-left: 25px;
+  
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+    width: 102%;
+    z-index: -1;
+    height: .7em;
+    background: $polar-green-light;
+    transition: all .3s ease;
+  }
+}
+
+p {
+  margin-bottom: 30px;
 }
 
 h3 {

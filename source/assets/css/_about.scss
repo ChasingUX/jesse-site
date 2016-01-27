@@ -1,0 +1,31 @@
+// .about {
+//   .Wrapper {
+//     max-width: 750px;
+//   }
+// }
+
+.flex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.headshot {
+  padding-top: 20px;
+  min-width: 250px;
+  width: 36%;
+  max-width: 350px;
+  margin-right: 50px;
+}
+
+.aboutJesse {
+  flex: 1;
+  max-width: 600px;
+  line-height: 2;
+  font-size: 18px;
+
+  @media (max-width: $medium) {
+    width: 100%;
+    flex: inherit;
+  }
+}

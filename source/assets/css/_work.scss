@@ -6,12 +6,17 @@
 
   p {
     flex: 1;
+    margin-bottom: 0;
 
     @media (max-width: $small) {
       font-size: 14px;
     }
   }
 
+  li {
+    list-style: none;
+  }
+  
   & > li {
     padding: 15px;
     display: flex;

@@ -5,15 +5,6 @@
   -webkit-font-smoothing: antialiased;
 }
 
-body {
-  line-height: 1.7;
-  font-family: 'Circular';
-}
-
-ul {
-  list-style: none;
-}
-
 .Fade {
   opacity: 0;
   visibility: hidden;
@@ -30,6 +21,7 @@ footer {
   font-family: 'GT Pressura';
   font-weight: bold;
   text-align: center;
+  clear: both;
 
   @media (max-width: $small) {
     margin: 80px auto 40px auto;
@@ -109,6 +101,7 @@ footer {
   padding: 0 50px;
   margin-bottom: 110px;
   position: relative;
+  font-size: 16px;  
   
   @media (max-width: $large) {
     margin-bottom: 100px;
@@ -199,10 +192,10 @@ footer {
 }
 
 .Header-intro.Wrapper {
-  margin-bottom: 100px;
+  margin-bottom: 90px;
 
   @media (max-width: $large) {
-    margin-bottom: 80px;
+    margin-bottom: 75px;
   }
 
   @media (max-width: $small) {
@@ -279,4 +272,10 @@ section {
 .is-hidden {
   opacity: 0;
   visibility: hidden;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
 }
