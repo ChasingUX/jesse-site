@@ -157,13 +157,13 @@ footer {
 
         &:not(.active) {
           &:before {
-            display: none;
+            opacity: 0;
           }
         }
 
         &:hover {
           &:before {
-            display: block;
+            opacity: 1;
           }
         }
       }
@@ -171,21 +171,11 @@ footer {
   }
 }
 
-.work {
+.work, .labs {
   .Header-nav {
     li:first-child {
       a:before {
-        display: block;
-      }
-    }
-  }
-}
-
-.labs {
-  .Header-nav {
-    li:last-child {
-      a:before {
-        display: block;
+        opacity: 1;
       }
     }
   }
