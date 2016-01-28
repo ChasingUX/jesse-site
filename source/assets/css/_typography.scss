@@ -74,13 +74,15 @@ body {
   color: #2F2F2F;
 }
 
-ul {
-  list-style: none;
+
+ul.bullet {
+  padding-left: 20px;
+  list-style-position: outside;
+  list-style: disc;
 }
 
-li {
-  list-style: disc;
-  list-style-position: inside;
+ul {
+  list-style: none;
 }
 
 h1, h2, h3, h4 {
