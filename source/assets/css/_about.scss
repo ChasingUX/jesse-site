@@ -73,13 +73,37 @@
   width: 45%;
   margin: 0 30px;
   max-width: 500px;
-      flex: 1;
-    max-width: 600px;
+  flex: 1;
+  max-width: 600px;
 
   @media (max-width: $medium) {
     width: 100%;
     max-width: inherit;
     margin: 0;
+  }
+}
+
+.timeline, .facts {
+
+  ul {
+    line-height: 1.1;
+    padding: 7px 0 11px;
+  }
+
+  li {
+    margin-bottom: 2px;
+    padding: 10px 0;
+  }
+
+  h4 {
+    font-family: 'GT Pressura';
+    font-weight: bold;
+    margin: 0;
+  }
+
+  span {
+    font-size: 14px;
+    margin-top: 1px;
   }
 }
 
@@ -90,38 +114,82 @@
   padding-left: 15px;
 
   ul{
-    border-left: 1px solid $neon-purple;
-    line-height: 1.2;
-    padding: 10px 0;
+    border-left: 3px solid #D7F5ED;
+    position: relative;
+
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      left: -3px;
+      width: 3px;
+      height: 6px;
+      border-radius: 3px;
+      background: #D0F1E8;
+      opacity: .8;
+    }
+
+    &:before {
+      bottom: -22px;
+    }
+    &:after {
+      bottom: -12px;
+    }
   }
 
   li {
     position: relative;
-    padding-left: 30px;
+    margin-left: 30px;
     color: $neon-purple;
-    margin-bottom: 25px;
+    display: inline-block;
+    border: 1px solid $transparent;
 
     &:last-child {
       margin-bottom: 0;
     }
 
-    h4 {
-      font-family: 'GT Pressura';
-      font-weight: bold;
-      margin: 0;
+    span {
+      color: lighten($neon-purple, 20%);
     }
 
-    span {
-      text-tranform: uppercase;
-      font-size: 15px;
-      color: lighten($neon-purple, 20%);
+    &.active {
+      padding-right: 21px;
+      padding-left: 17px;
+      border-radius: 2px;
+      top: 10px;
+      border: 1px solid $neon-purple;
+      color: $neon-purple;
+
+      &:before, &:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        width: 0;
+        height: 0;
+        margin-top: -4px;
+        border-top: 6px solid $transparent;
+        border-bottom: 6px solid $transparent;
+      }
+
+      &:before {
+        left: -7px;
+        border-right: 6px solid $neon-purple;
+      }
+
+      &:after {
+        left: -6px;
+        border-right: 6px solid $polar-green;
+      }
+
+      .Register {
+        top: 17px;
+      }
     }
   }
 
   .Register {
     position: absolute;
-    left: -1px;
-    top: 9px;
+    left: -33px;
+    top: 15px;
     width: inherit;
     padding: 0;
     overflow: visible;
@@ -129,5 +197,23 @@
     .Registration .Circle {
       background: lighten($polar-green, 2%);
     }
+  }
+}
+
+.facts {
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  li {
+    width: 50%;
+    padding-right: 70px;
+    max-width: 300px;
+  }
+
+  span {
+    margin-top: 5px;
+    display: inline-block;
+    line-height: 1.3;
   }
 }
