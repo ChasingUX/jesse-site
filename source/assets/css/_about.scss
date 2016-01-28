@@ -4,7 +4,7 @@
     padding: 65px 0 250px 0;
     @include linear-gradient(180deg, $transparent 0%, $polar-green 50%);
     z-index: -1;
-    border-top: 1px solid #E8F3F0;
+    border-top: 1px solid #F5F5F5;
   }
 
   footer {
@@ -20,17 +20,6 @@
 
     .Cover--footer {
       background: $polar-green;
-    }
-  }
-
-  .bottom {
-    width: 65%;
-    max-width: 500px;
-
-    @media (max-width: $medium) {
-      width: 100%;
-      max-width: inherit;
-      margin: 0;
     }
   }
 }
@@ -77,5 +66,68 @@
   @media (max-width: $medium) {
     width: 100%;
     flex: inherit;
+  }
+}
+
+.bottom {
+  width: 45%;
+  margin: 0 30px;
+  max-width: 500px;
+      flex: 1;
+    max-width: 600px;
+
+  @media (max-width: $medium) {
+    width: 100%;
+    max-width: inherit;
+    margin: 0;
+  }
+}
+
+.timeline {
+  width: 240px;
+  flex: inherit;
+  margin-right: 50px;
+  padding-left: 15px;
+
+  ul{
+    border-left: 1px solid $neon-purple;
+    line-height: 1.2;
+    padding: 10px 0;
+  }
+
+  li {
+    position: relative;
+    padding-left: 30px;
+    color: $neon-purple;
+    margin-bottom: 25px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    h4 {
+      font-family: 'GT Pressura';
+      font-weight: bold;
+      margin: 0;
+    }
+
+    span {
+      text-tranform: uppercase;
+      font-size: 15px;
+      color: lighten($neon-purple, 20%);
+    }
+  }
+
+  .Register {
+    position: absolute;
+    left: -1px;
+    top: 9px;
+    width: inherit;
+    padding: 0;
+    overflow: visible;
+
+    .Registration .Circle {
+      background: lighten($polar-green, 2%);
+    }
   }
 }
