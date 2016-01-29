@@ -27,11 +27,6 @@
     </div>
 
     <article>
-      <% if current_page.data.has_key?('hero') %>
-        <% link_to current_page.url, class: 'hero-link' do %>
-          <%= image_tag current_page.data['hero'], class: 'hero' %>
-        <% end %>
-      <% end %>
       <%= yield %>
     </article>
   </section>

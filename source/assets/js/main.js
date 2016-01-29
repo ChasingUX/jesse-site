@@ -18,7 +18,7 @@ var tlB = new TimelineLite();
   $fade = $('.Fade'),
   $linkBox = $('.Link--box');
 
-  console.log(CSSRulePlugin.getRule("a:before"))
+  //console.log(CSSRulePlugin.getRule("a:before"))
 
 
   TweenLite.to($fade, .7,{autoAlpha: 0, delay: 0.2, ease: Linear.easeNone})
@@ -63,4 +63,22 @@ tl
     $(this).addClass('hover');  
   }, function(){
     $(this).removeClass('hover'); 
+  });
+
+  $(function () {
+
+    var heightToEnlarge = $(window).height() - 200;
+    $('.enlarge')
+      .fluidbox({maxHeight: heightToEnlarge})
+      .on('openend.fluidbox', function() {
+        var caption = $(this)[0].innerText;
+        if(caption.length) {
+          $('.Caption span').text(caption);
+          $('.Caption').addClass('show');
+        }
+      })
+      .on('closestart.fluidbox', function() {
+        $('.Caption').removeClass('show');
+        $('.Caption span').text('');
+      });
   });

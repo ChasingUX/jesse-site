@@ -444,3 +444,49 @@ $bracket-color: $light-purple;
     }
   }
 }
+
+.enlarge {
+  text-align: center;
+  color: #C3C3C3;
+  font-size: 16px;
+  font-family: 'GT Pressura';
+  font-weight: bold;
+  line-height: 1.5;
+
+  img {
+    padding-bottom: 6px;
+  }
+}
+
+.Caption {
+  position: fixed;
+  width: 100%;
+  bottom: -75px;
+  color: #5934f6;
+  padding: 0;
+  z-index: 100;
+  text-align: center;
+  font-family: 'GT Pressura';
+  font-weight: bold;
+  font-size: 17px;
+  transition: all .3s ease;
+  display: table;
+  height: 75px;
+  background: #F6F0FD;
+
+  p {
+    display: table-cell;
+    vertical-align: middle;
+    margin: 0;
+
+    span {
+      max-width: 650px;
+      display: inline-block;
+      margin: 0 auto;
+    }
+  }
+
+  &.show {
+    transform: translateY(-75px);
+  }
+}

@@ -1,4 +1,6 @@
-//= require vendor/jquery-1.8.3.min.js
+//= require vendor/jquery-1.11.1.min.js
+//= require vendor/jquery.ba-throttle-debounce.min.js
+//= require vendor/jquery.fluidbox.js
 //= require vendor/greensock/TweenMax.js
 //= require vendor/greensock/TimelineLite.js
 //= require vendor/greensock/TimelineLite.js
