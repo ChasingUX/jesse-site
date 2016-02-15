@@ -39,7 +39,7 @@
 activate :livereload
 
 activate :directory_indexes
-
+# set :relative_links, true
 
 # Methods defined in the helpers block are available in templates
 # helpers do
@@ -80,7 +80,7 @@ configure :build do
   activate :relative_assets
 
   # Or use a different image path
-  set :http_prefix, "/jesse/"
+  #set :http_prefix, "http://jessecha.se/jesse/"
 end
 
 activate :blog do |work|

@@ -14,16 +14,29 @@
 
     @media (max-width: $medium) {
       margin-top: 25px;
+      padding: 55px 0 250px 0;
+    }
+
+    @media (max-width: $small) {
       padding: 35px 0 250px 0;
+    }
+
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 30px;
+      width: 100%;
+
+      @media (max-width: $small) {
+        margin-bottom: 10px;
+      }
     }
 
     .Wrapper {
       display: flex;
       justify-content: center;
-
-      @media (max-width: $medium) {
-        flex-wrap: wrap;
-      }
+      flex-wrap: wrap;
     }
   }
 
@@ -73,6 +86,7 @@
 
   @media (max-width: $medium) {
     width: 100%;
+    max-width: inherit;
     flex: inherit;
     font-size: 18px;
   }
@@ -83,6 +97,12 @@
 }
 
 .timeline, .facts {
+
+  h2 {
+    text-align: center;
+    margin: 0;
+  }
+  
   @media (max-width: $medium) {
     width: 100%;
     max-width: inherit;
@@ -112,23 +132,34 @@
 }
 
 .timeline {
-  min-width: 220px;
-  width: 30%;
-  max-width: 350px;
-  margin-right: 6%;
-  padding-left: 4%;
+  margin-bottom: 100px;
 
   @media (max-width: $large) {
     padding-left: 0;
   }
 
   @media (max-width: $medium) {
-    margin-top: 60px;
-    order: 1;
+    margin-top: 0;
+    margin-bottom: 70px;
+    display: flex;
+    width: inherit;
+    align-items: center;
   }
 
   @media (max-width: $small) {
-    margin-top: 30px;
+    margin-top: 15px;
+  }
+
+  h4 {
+    font-size: 17px;
+
+    @media (max-width: 900px) {
+      font-size: 16px;
+    }
+
+    @media (max-width: $medium) {
+      font-size: 17px;
+    }
   }
 
   h2.ribbon:before {
@@ -138,27 +169,50 @@
   }
 
   ul{
-    border-left: 3px solid #D7F5ED;
+    border-bottom: 3px solid #D7F5ED;
     position: relative;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    clear: left;
+
+    @media (max-width: $medium) {
+      flex-direction: column;
+      border-left: 3px solid #D7F5ED;
+      border-bottom: 0;
+    }
 
     &:before, &:after {
       content: '';
       position: absolute;
-      left: -3px;
-      width: 3px;
-      height: 6px;
       border-radius: 3px;
       background: #D0F1E8;
       opacity: .8;
+      left: inherit;
+      width: 6px;
+      height: 3px;
+      bottom: -3px;
+
+      @media (max-width: $medium) {
+        left: -3px;
+        width: 3px;
+        height: 6px;
+        bottom: -22px;
+      }
     }
 
     &:before {
-      bottom: -22px;
+      right: -12px;
+      @media (max-width: $medium) {
+        left: -3px;
+        right: inherit;
+      }
     }
     &:after {
-      bottom: -12px;
+      right: -24px;
+      @media (max-width: $medium) {
+        left: -3px;
+        right: inherit;
+      }
     }
   }
 
@@ -169,6 +223,22 @@
     clear: left;
     display: inline-table;
     border: 1px solid $transparent;
+
+    @media (max-width: 900px) {
+      margin-left: 20px;
+    
+      &:first-child {
+        margin-left: 5px;
+      }
+    }
+
+    @media (max-width: $medium) {
+      margin-left: 30px;
+    
+      &:first-child {
+        margin-left: 30px;
+      }
+    }
 
     &:last-child {
       margin-bottom: 0;
@@ -182,44 +252,88 @@
       padding-right: 21px;
       padding-left: 17px;
       border-radius: 2px;
-      top: 10px;
       border: 1px solid $neon-purple;
       color: $neon-purple;
+      top: -2px;
+
+      @media (max-width: $medium) {
+        top: 10px;
+      }
 
       &:before, &:after {
         content: '';
         position: absolute;
-        top: 50%;
         width: 0;
         height: 0;
-        margin-top: -4px;
-        border-top: 6px solid $transparent;
-        border-bottom: 6px solid $transparent;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        left: 50%;
+        margin-left: -6px;
+
+        @media (max-width: $medium) {
+          top: 50%;
+          left: inherit;
+          margin-left: inherit;
+          margin-top: -4px;
+          border-left: 0;
+          border-right: 0;
+        } 
       }
 
       &:before {
-        left: -7px;
-        border-right: 6px solid $neon-purple;
+        border-top: 6px solid $neon-purple;
+        bottom: -7px;
+
+        @media (max-width: $medium) {
+          left: -7px;
+          bottom: inherit;
+          border-right: 6px solid $neon-purple;
+          left: -37px;
+          bottom: inherit;
+          border-top: 6px solid $transparent;
+          border-bottom: 6px solid $transparent;
+        }
       }
 
       &:after {
-        left: -6px;
-        border-right: 6px solid $polar-green;
+        border-top: 6px solid #F5FEFC;
+        bottom: -6px;
+
+        @media (max-width: $medium) {
+          left: -36px;
+          bottom: inherit;
+          border-top: 0;
+          border-right: 6px solid $polar-green;
+          border-top: 6px solid $transparent;
+          border-bottom: 6px solid $transparent;
+        }
       }
 
       .Register {
-        top: 17px;
+        bottom: -34px;
+
+        @media (max-width: $medium) {
+          bottom: inherit;
+          top: 17px;
+        }
       }
     }
   }
 
   .Register {
     position: absolute;
-    left: -34px;
-    top: 15px;
     width: inherit;
     padding: 0;
     overflow: visible;
+    left: 50%;
+    margin-left: -1px;
+    bottom: -32px;
+
+    @media (max-width: $medium) {
+      left: -34px;
+      top: 15px;
+      bottom: inherit;
+    }
 
     .Registration .Circle {
       background: lighten($polar-green, 2%);
@@ -229,11 +343,14 @@
 
 .facts {
   flex: 1;
-  max-width: 600px;
+  max-width: 630px;
+  left: 35px;
+  position: relative;
 
   @media (max-width: $medium) {
     flex: inherit;
     width: 100%;
+    left: inherit;
   }
 
   ul {
@@ -242,7 +359,7 @@
   }
   li {
     width: 50%;
-    max-width: 285px;
+    
     &:nth-child(2n+1) {
       padding-right: 20px;
       @media (max-width: $small) {
@@ -269,7 +386,7 @@
   h4 {
     color: black; 
 
-    @media (max-width: $small) {
+    @media (max-width: $medium) {
      font-size: 16px;
     }
   }
@@ -285,22 +402,22 @@
   }
 }
 
-@media (max-width: $large) {
-  .timeline {
-    margin-right: 3%;
-  }
+// @media (max-width: $large) {
+//   .timeline {
+//     margin-right: 3%;
+//   }
 
-  .facts {
-    margin-left: 3%;
-  }
-}
+//   .facts {
+//     margin-left: 3%;
+//   }
+// }
 
-@media (max-width: $medium) {
-  .timeline {
-    margin-right: 0;
-  }
+// @media (max-width: $medium) {
+//   .timeline {
+//     margin-right: 0;
+//   }
 
-  .facts {
-    margin-left: 0;
-  }
-}
+//   .facts {
+//     margin-left: 0;
+//   }
+// }
