@@ -7,6 +7,7 @@ url: http://libscore.com/
 article: https://medium.com/@Shapiro/introducing-libscore-com-be93165fa497
 tags: featured
 color: green
+protected: true
 ---
 
 ##This is some fun stuff

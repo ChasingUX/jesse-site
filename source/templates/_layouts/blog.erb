@@ -1,3 +1,11 @@
+<% if current_page.data.has_key?('protected') %>
+  <% content_for :head do %>
+    <noscript><meta http-equiv="Refresh" content="0; url=denied.html"></noscript>
+    <script type="text/javascript" src="/assets/js/vendor/password/keeper1.js"></script>
+    <script type="text/javascript" src="/assets/js/vendor/password/keeper2.js"></script>
+  <% end %>
+<% end %>
+
 <%= partial "back" %>
 
 <% wrap_layout :layout do %>

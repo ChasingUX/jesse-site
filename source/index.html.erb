@@ -18,7 +18,14 @@ blog: work
   <ul class="ProjectsWrap--featured">
     <% page_articles.select{|a| a.tags.include?("featured")}.each_with_index do |article, i| %>    
       <li class="Project--<%= article.data['color'] %>">
-        <% link_to article.url, class: "Link--box" do %>
+      
+      <% if article.data['protected'] == true %>
+        <% link = login_path %>
+      <% else %>
+        <% link = article.url %>
+      <% end %>
+        
+        <% link_to link, class: "Link--box" do %>
           <h3><%= article.title %></h3>
           <p><%= article.data['summary'] %></p>
           <ul class="meta">

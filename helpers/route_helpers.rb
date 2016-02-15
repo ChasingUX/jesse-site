@@ -3,6 +3,8 @@ module RouteHelpers
     work:                                               '/',
     about:                                              '/about/',
     labs:                                               '/labs/',
+    login:                                              '/login/',
+    denied:                                             '/denied/'
   }
 
   URL_REGEX = /https?:/
