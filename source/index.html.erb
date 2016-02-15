@@ -38,7 +38,9 @@ blog: work
 <%= partial "register", locals: { is_dark_grey: false, is_blue: true, is_green: false  } %>
 
 <section class="Wrapper">
-  <h4 class="Offset Offset--left">Selected Work</h4>
+  <div class="Offset Offset--left">
+    <h4>Selected Work</h4>
+  </div>
   <ul class="ProjectsWrap">
     <% page_articles.each_with_index do |article, i| %>
       <% unless article.data['tags'].include?('featured') %>
