@@ -169,7 +169,7 @@
   }
 
   ul{
-    border-bottom: 3px solid #D7F5ED;
+    border-bottom: 2px solid #D7F5ED;
     position: relative;
     display: flex;
     flex-direction: row;
@@ -188,9 +188,9 @@
       background: #D0F1E8;
       opacity: .8;
       left: inherit;
-      width: 6px;
-      height: 3px;
-      bottom: -3px;
+      width: 4px;
+      height: 2px;
+      bottom: -2px;
 
       @media (max-width: $medium) {
         left: -3px;
@@ -201,14 +201,15 @@
     }
 
     &:before {
-      right: -12px;
+      right: -9px;
       @media (max-width: $medium) {
         left: -3px;
+        bottom: -11px;
         right: inherit;
       }
     }
     &:after {
-      right: -24px;
+      right: -17px;
       @media (max-width: $medium) {
         left: -3px;
         right: inherit;
@@ -330,7 +331,7 @@
     bottom: -32px;
 
     @media (max-width: $medium) {
-      left: -34px;
+      left: -32px;
       top: 15px;
       bottom: inherit;
     }
