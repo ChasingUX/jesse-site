@@ -112,6 +112,7 @@ footer {
     height: 125px;
     border: 0;
     margin-bottom: 50px;
+    padding: 0 25px;
   }
 
   .Cover {
@@ -171,6 +172,13 @@ footer {
 
     &.back {
       float: left;
+
+      @media (max-width: $small) {
+        position: absolute;
+        top: -18px;
+        left: 18px;
+      }
+
       li {
         a {
           &:not(.active) {
@@ -180,7 +188,7 @@ footer {
           }
         }
       }
-      span{
+      span.arrow {
         color: $neon-purple;
         font-size: 22px;
         display: inline-block;
@@ -188,6 +196,23 @@ footer {
         position: relative;
         top: 1px;
         margin-left: -10px;
+
+        @media (max-width: $small) {
+          margin-left: 0;
+          margin-right: 0;
+        }
+      }
+
+      span.copy {
+        display: inline-block;
+
+        &:after {
+          content: 'Back Home';
+
+          @media (max-width: $small) {
+            content: '';
+          }
+        }
       }
     }
   }

@@ -1,14 +1,4 @@
-<% content_for :back do %>
-  <nav class="back">
-    <ul>
-      <li>
-        <% link_to work_path, class: 'red' do %>
-          <span>↤</span>Back Home
-        <% end %>
-      </li>
-    </ul>
-  </nav>
-<% end %>
+<%= partial "back" %>
 
 <% wrap_layout :layout do %>
   <% page_articles.each_with_index do |article, i| %>

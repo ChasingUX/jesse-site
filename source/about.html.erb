@@ -6,17 +6,7 @@ title: About Jesse Chase
   <h1>Who is Jesse Chase?</h1>
 </header> -->
 
-<% content_for :back do %>
-  <nav class="back">
-    <ul>
-      <li>
-        <% link_to work_path, class: 'red' do %>
-          <span>↤</span>Back Home
-        <% end %>
-      </li>
-    </ul>
-  </nav>
-<% end %>
+<%= partial "back" %>
 
 <section class="Wrapper top">
   <div class="headshot"></div>
