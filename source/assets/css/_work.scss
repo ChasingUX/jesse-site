@@ -393,6 +393,7 @@ $bracket-color: $light-purple;
           opacity: .15;
         }
         .Link--faux {
+          z-index: 1;
           &:before {
             background: darken($polar-purple-light, 1.3%);
           }
@@ -419,8 +420,6 @@ $bracket-color: $light-purple;
       }
 
       &:hover {
-        //background-position: -160px 0;
-
         &:after {
           background:$polar-green;
           transition: background 1s ease;
@@ -430,14 +429,16 @@ $bracket-color: $light-purple;
           opacity: .3;
         }
         .Link--faux {
+          z-index: 1;
           &:before {
-            background: darken($polar-green-light, 2%);
+            background: darken($polar-green-light, 2.3%);
           }
         }
       }
     }
     .Link--faux {
       color: $neon-green;
+
       &:before {
         background: $polar-green-light;
       }
