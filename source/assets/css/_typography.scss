@@ -126,7 +126,7 @@ h2.ribbon {
 
   &.red {
     &:before {
-      background: #FFE5E2;
+      background: $salmon;
     }
   }
 
@@ -176,6 +176,12 @@ a, .Link--faux {
 
     &:before {
       display: none;
+    }
+  }
+
+  &.red {
+    &:before {
+      background: $light-salmon;
     }
   }
 

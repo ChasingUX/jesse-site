@@ -1,3 +1,15 @@
+<% content_for :back do %>
+  <nav class="back">
+    <ul>
+      <li>
+        <% link_to work_path, class: 'red' do %>
+          <span>↤</span>Back Home
+        <% end %>
+      </li>
+    </ul>
+  </nav>
+<% end %>
+
 <% wrap_layout :layout do %>
   <header class="Header-intro Wrapper">
     <h1><%= current_page.title %></h1>

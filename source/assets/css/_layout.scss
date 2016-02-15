@@ -168,6 +168,28 @@ footer {
         }
       }
     }
+
+    &.back {
+      float: left;
+      li {
+        a {
+          &:not(.active) {
+            &:before {
+              opacity: 1;
+            }
+          }
+        }
+      }
+      span{
+        color: $neon-purple;
+        font-size: 22px;
+        display: inline-block;
+        margin-right: 13px;
+        position: relative;
+        top: 1px;
+        margin-left: -10px;
+      }
+    }
   }
 }
 

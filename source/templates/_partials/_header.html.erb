@@ -1,4 +1,9 @@
 <header class="Header-nav">
+
+  <% if content_for?(:back) %>
+    <%= yield_content :back %>
+  <% end %>
+
   <% if(is_animated) %>
     <div class="Cover"></div>
   <% end %>

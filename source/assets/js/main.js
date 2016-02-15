@@ -45,12 +45,20 @@ tl
   
   //.fromTo($activeNav, 1, {cssRule:{left: '-70%'}}, {cssRule:{left: '-20%'}, ease: Power3.easeOut},'-=1')
 
-  $('nav a').on('click', function(){
-    var href = $(this).attr('href');
-    TweenLite.to($fade, .7,{autoAlpha: 0, ease: Linear.easeNone})
-    TweenLite.to($header, .7,{autoAlpha: 0, ease: Linear.easeNone})
-    setTimeout(function() {window.location = href}, 700);
-    return false;
+
+  $('a').on('click', function(){
+    var href = $(this).attr('href'),
+    exceptions = ['#', 'tel:+6092384513', 'mailto:JBIRD1111@gmail.com'];
+
+    if($(this).attr('target') == '_blank') {}
+      
+    else if(jQuery.inArray(href, exceptions) === -1) {
+      TweenLite.to($fade, .7,{autoAlpha: 0, ease: Linear.easeNone})
+      TweenLite.to($header, .7,{autoAlpha: 0, ease: Linear.easeNone})
+      setTimeout(function() {window.location = href}, 700);
+
+      return false;
+    } 
   });
 
   // $linkBox.hover(function(){
