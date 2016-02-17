@@ -1,4 +1,4 @@
-<%= partial "back" %>
+<%= partial "back", locals: { is_labs: true  } %>
 
 <% wrap_layout :layout do %>
   <% page_articles.each_with_index do |article, i| %>

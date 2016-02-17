@@ -213,6 +213,12 @@ footer {
             content: '';
           }
         }
+
+        &.labs {
+          &:after {
+            content: 'Back to Labs';
+          }
+        }
       }
     }
   }

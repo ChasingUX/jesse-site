@@ -2,8 +2,14 @@
   <nav class="back">
     <ul>
       <li>
-        <% link_to work_path, class: 'red' do %>
-          <span class="arrow">↤</span><span class="copy"></span>
+        <% if(is_labs) %>
+          <% link_to labs_path, class: 'red' do %>
+            <span class="arrow">↤</span><span class="copy labs"></span>
+          <% end %>
+        <% else %>
+          <% link_to work_path, class: 'red' do %>
+            <span class="arrow">↤</span><span class="copy"></span>
+          <% end %>
         <% end %>
       </li>
     </ul>
