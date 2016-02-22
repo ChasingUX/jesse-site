@@ -34,24 +34,24 @@ This information is eye-opening and reports useful information to the developer.
 ## Libscore’s UI
 Before we dive into Libscore’s features, we must understand how it was built. Lib score is a single-page app, driven by queries to the API and
 
-## Libscore’s Features
+# Libscore’s Features
 
 Libscore was designed to be minimal and straightforward, but also extremely flexible in how a user chooses to interact with it. The interface is driven by a search field which accepts different types of inputs: libraries, scripts, and domains. There are also three quick links which display the top libraries, scripts, and fonts on the web today.
 
 ## Comprehensive Search
 The Libscore API holds the variables that a library exposes itself as e.g. jQuery, Modernizr, $.ui, or $.fn.fancybox. Because Libscore uses the lib variable versus the branded name, it is important that the search helps you find a particular library / variable. For this reason, we built a search API that very quickly returns a list of matched results, be it a script or a library. The dropdown of search results is available throughout the entire experience, and is driven by the arrow keys.
 
-<a class="enlarge" href="/assets/images/projects/libscore/dummy.png">
-  ![Alt text](/assets/images/projects/libscore/dummy.png)
-  insert screen of search results
+<a class="enlarge border" href="/assets/images/projects/libscore/search.jpg">
+  ![Alt text](/assets/images/projects/libscore/search.jpg)
+  Libscores Search Dropdown
 </a>
 
 ## Visualized Data
 Lets take a look at David DeSandro’s grid layout library, [Masonry](http://libscore.com/#Masonry). Masonry has been around for years and is used by about 39,000 sites (in the top million). Over the last 6 months, Masonry has climbed in popularity by a few percentage points, month over month. Last month, it increased by 2.05%. This steady growth shows Masonry as a reliable, rock of a library. It has a incredibly high rate of usage, and is seemingly impervious to the many new Masonry alternatives like Salvatorre. If this were a stock, it would be a low-risk, promising investment that I would sink my money into.
 
-<a class="enlarge" href="/assets/images/projects/libscore/dummy.png">
-  ![Alt text](/assets/images/projects/libscore/dummy.png)
-  insert screen of data viz
+<a class="enlarge border" href="/assets/images/projects/libscore/velocity-visual.jpg">
+  ![Alt text](/assets/images/projects/libscore/velocity-visual.jpg)
+  Velocity.js usage over time
 </a>
 
 ## Site Usage

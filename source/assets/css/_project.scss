@@ -82,6 +82,11 @@
     font-size: 16px;
   }
 
+  h1 {
+    font-size: 30px;
+    margin-top: 50px;
+  }
+
   h2 {
     @extend .ribbon;
     margin-bottom: 20px;
