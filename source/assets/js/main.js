@@ -66,6 +66,7 @@ tl
 
     var heightToEnlarge = $(window).height() - 200;
 
+
     $('.enlarge')
       .fluidbox({maxHeight: heightToEnlarge})
       .on('openend.fluidbox', function() {
@@ -99,7 +100,25 @@ tl
 
       for (var i = 0; i < imageCount; i++) {
         $newContent = '<li><a href="' + imageHolder[i].src + '" class="enlarge"><img src="' + imageHolder[i].src + '">' + imageHolder[i].caption +'</a></li>';
-        $items.append($newContent).find('a.enlarge').fluidbox({maxHeight: heightToEnlarge});
+        $items
+          .append($newContent)
+          .find('a.enlarge')
+          .fluidbox({maxHeight: heightToEnlarge})
+          .on('openstart.fluidbox', function() {
+            $('.Header-gallery').addClass('open');
+          })
+          .on('openend.fluidbox', function() {
+            var caption = $(this)[0].innerText;
+            if(caption.length) {
+              $('.Caption--gallery span').text(caption);
+              $('.Caption--gallery').addClass('show');
+            }
+          })
+          .on('closestart.fluidbox', function() {
+            $('.Caption--gallery').removeClass('show');
+            $('.Caption--gallery span').text('');
+            $('.Header-gallery').removeClass('open');
+          });
       }
     }
 
@@ -135,7 +154,7 @@ tl
       return false;
     });
 
-    $(".Header-gallery").on('click', function(){
+    $(".back").on('click', function(){
       hideGallery();
     });
 

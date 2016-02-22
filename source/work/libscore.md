@@ -9,10 +9,10 @@ tags: featured
 color: green
 ---
 
-As a JavaScript developer it is difficult to identify how your libraries are being used across the web. Lets say that you release an open source JavaScript library and months after its release you wish to assess its adoption and usage on the web. Hisotirically, you might look at the number of stars or downloads it has on GitHub. But we are missing some vital information - what sites is your library being used on today? Developers are building libraries in a vacuum, as they are not informed as to <em>who</em> is using their work.
+As a JavaScript developer it is difficult to identify how your libraries are being used across the web. Lets say that you release an open source JavaScript library and months after its release you wish to assess its adoption and usage on the web. Hisotirically, you might look at the number of stars or downloads it has on GitHub. But we are missing some vital information - what sites is your library being used on today? Developers are building libraries in a vacuum, as they have no visibility into who <em>who</em> is using their code.
 
 <blockquote>
-Developers are building libraries in a vacuum, as they are not informed as to who is using their work.
+  Developers are building libraries in a vacuum, as they have no visibility into who is using their code. 
 </blockquote>
 
 Libscore aims to solve this problem by identifying which sites are using these libraries. Every month, Libscore scans the top million sites on the web to determine which JavaScript libraries are being used on each page. At the end of each crawl, we are left with a heaping pile of valuable data which represents the current state of JavaScript library usage on the web today.

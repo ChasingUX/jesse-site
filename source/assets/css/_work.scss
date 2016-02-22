@@ -479,7 +479,7 @@ $bracket-color: $light-purple;
   }
 }
 
-.Caption {
+.Caption, .Caption--gallery {
   position: fixed;
   width: 100%;
   bottom: -75px;
@@ -538,24 +538,35 @@ $bracket-color: $light-purple;
 
   .Header-gallery {
     margin-bottom: 0;
-    .back {
-      position: relative;
-      z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+
+    &.open {
+      z-index: 0;
     }
+
+    .back {
+      // position: absolute;
+      // left: 50px;
+      // z-index: 1;
+    }
+
     h4 {
       text-align: center;
-      position: absolute;
-      left: 0;
-      width: 100%;
       color: $neon-purple;
       font-size: 21px;
       font-family: 'GT Pressura';
       font-weight: bold;
+      text-indent: -110px
     }
   }
 
   ul {
-    padding: 20px;
+    padding: 120px 20px 20px;
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -566,8 +577,10 @@ $bracket-color: $light-purple;
     max-width: 260px;
     margin-bottom: 5px;
     min-width: 20%;
+    margin: 18px;
     list-style: none;
     flex-direction: row;
+    outline: 1px solid $border-grey;
 
     &:hover {
       outline: 1px solid $dark-salmon;
@@ -575,10 +588,11 @@ $bracket-color: $light-purple;
 
     img {
       padding: 0;
+      margin-top: 0;
     }
 
     a {
-      padding: 13px;
+      padding: 18px;
       display: block;
       &:before {
         display: none;
