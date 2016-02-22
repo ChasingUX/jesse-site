@@ -9,58 +9,88 @@ tags: featured
 color: green
 ---
 
-##This is some fun stuff
+As a JavaScript developer it is difficult to identify how your libraries are being used across the web. Lets say that you release an open source JavaScript library and months after its release you wish to assess its adoption and usage on the web. Hisotirically, you might look at the number of stars or downloads it has on GitHub. But we are missing some vital information - what sites is your library being used on today? Developers are building libraries in a vacuum, as they are not informed as to <em>who</em> is using their library.
 
-We're very excited to be announcing a new region: Atlantis (Datacenter Abbreviation: H2O), submerged in the Straits of Gibraltar. This underwater datacenter will provide unparalleled connectivity to the surrounding countries like Spain, Portugal, Morocco, Algeria, and Tunisia.
-
-While we are still actively [building out our German datacenter](http://digitalocean.uservoice.com/forums/136585-digitalocean/suggestions/4296967-datacenter-in-germany), we wanted to investigate the money-saving possibilities of underwater datacenter cooling. Our investigation was a great success:  not only were we able to reduce our electricity costs by 35%, but we discovered our high-density SSD storage was even more dense at 87atm! 
+Libscore aims to solve this problem by identifying which sites are using these libraries. Every month, Libscore scans the top million sites on the web to determine which JavaScript libraries are being used on each page. At the end of each crawl, we are left with a heaping pile of valuable data which represents the current state of JavaScript library usage on the web today.
 
 <a class="enlarge" href="/assets/images/dummy.png">
   ![Alt text](/assets/images/dummy.png)
-  Hey my name is Jesse and Im a caption, I tend to be very long and this will be a test. And here is a bit more copy.
+  insert screen of homepage
 </a>
 
-Despite dramatically efficient cooling and more GB per cubic inch, these servers will still be offered at our standard pricing plan as any savings we found were, unfortunately, offset by the cost of diving equipment.
-
-###While this datacenter may come as a pleasant surprise
- to residents in the surrounding countries, we have actually been actively looking into the possibility since mid-2013, inspired by Facebook’s energy efficient Arctic Datacenter. Some potential issues we faced in our initial investigations included transporting safe electrical current under the sea, providing sufficient illumination on the ocean floor (around 900 meters deep), and our technicians’ inability to swim. 
-
-
-<blockquote>This uncommon choice of user-friendly storage format created a lot of interesting problems</blockquote>
-
-You can easily spin up a server in the new region by selecting “Atlantis” in the Droplet create screen or choosing that location in the API. Our initial run of servers in this region is limited. We will be adding more capacity to H2O at low tide. 
-
-When asked about the new location, DigitalOcean’s Director of Infrastructure, Lev Uretsky explained: “Our Datacenter Techs are very excited about Atlantis. We firmly believe that this will be the easiest DC to rack, as our servers become much lighter underwater.”
-
-If this sounds exciting to you, [DigitalOcean is actively hiring](https://www.digitalocean.com/company/careers/) for the new location. Scuba certified candidates are welcome to apply. Background in Marine Biology a plus. 
-
-We're very excited to be announcing a new region: Atlantis (Datacenter Abbreviation: H2O), submerged in the Straits of Gibraltar. This underwater datacenter will provide unparalleled connectivity to the surrounding countries like Spain, Portugal, Morocco, Algeria, and Tunisia.
-
-While we are still actively [building out our German datacenter](http://digitalocean.uservoice.com/forums/136585-digitalocean/suggestions/4296967-datacenter-in-germany), we wanted to investigate the money-saving possibilities of underwater datacenter cooling. Our investigation was a great success:  not only were we able to reduce our electricity costs by 35%, but we discovered our high-density SSD storage was even more dense at 87atm! Despite dramatically efficient cooling and more GB per cubic inch, these servers will still be offered at our standard pricing plan as any savings we found were, unfortunately, offset by the cost of diving equipment.
-
-While this datacenter may come as a pleasant surprise to residents in the surrounding countries, we have actually been actively looking into the possibility since mid-2013, inspired by Facebook’s energy efficient Arctic Datacenter. Some potential issues we faced in our initial investigations included transporting safe electrical current under the sea, providing sufficient illumination on the ocean floor (around 900 meters deep), and our technicians’ inability to swim. 
-
-You can easily spin up a server in the new region by selecting “Atlantis” in the Droplet create screen or choosing that location in the API. Our initial run of servers in this region is limited. We will be adding more capacity to H2O at low tide. 
-
-When asked about the new location, DigitalOcean’s Director of Infrastructure, Lev Uretsky explained: “Our Datacenter Techs are very excited about Atlantis. We firmly believe that this will be the easiest DC to rack, as our servers become much lighter underwater.”
+Lets take a look at an example of popular JavaScript animation library, Velocity, created by Julian Shapiro (who happens to be the other founder of LibScore). Prior to LibScore, Julian had NO idea that his library was being used on over 4000 of the top million sites, nor did he know that it is being used on Tumblr, Forbes, or Gap’s website. So Julian can say that his library is being used on one of the top fifty sites on the web (based on Alexa’s ranking). Julian can also look at how his library’s popularity is changing month over month.
 
 <a class="enlarge" href="/assets/images/dummy.png">
   ![Alt text](/assets/images/dummy.png)
-  This is a healthy caption
+  insert screen of velocity stuff
 </a>
 
+This information is eye-opening and reports useful information to the developer. As a JavaScript developer, I can now make informed decisions around what to do with my library. Should I continue maintaining it? Should I get in touch with the large companies and offer my support? Should I focus more of my time and energy on this project? Greater insight into library adoption and usage leads to a stronger open source community and a far more informed developer.
 
+## Libscore’s UI
+Before we dive into Libscore’s features, we must understand how it was built. Lib score is a single-page app, driven by queries to the API and
 
-If this sounds exciting to you, [DigitalOcean is actively hiring](https://www.digitalocean.com/company/careers/) for the new location. Scuba certified candidates are welcome to apply. Background in Marine Biology a plus. 
+## Libscore’s Features
 
-We're very excited to be announcing a new region: Atlantis (Datacenter Abbreviation: H2O), submerged in the Straits of Gibraltar. This underwater datacenter will provide unparalleled connectivity to the surrounding countries like Spain, Portugal, Morocco, Algeria, and Tunisia.</p>
+Libscore was designed to be minimal and straightforward, but also extremely flexible in how a user chooses to interact with it. The interface is driven by a search field which accepts different types of inputs: libraries, scripts, and domains. There are also three quick links which display the top libraries, scripts, and fonts on the web today.
 
-While we are still actively [building out our German datacenter](http://digitalocean.uservoice.com/forums/136585-digitalocean/suggestions/4296967-datacenter-in-germany), we wanted to investigate the money-saving possibilities of underwater datacenter cooling. Our investigation was a great success:  not only were we able to reduce our electricity costs by 35%, but we discovered our high-density SSD storage was even more dense at 87atm! Despite dramatically efficient cooling and more GB per cubic inch, these servers will still be offered at our standard pricing plan as any savings we found were, unfortunately, offset by the cost of diving equipment.
+## Comprehensive Search
+The Libscore API holds the variables that a library exposes itself as e.g. jQuery, Modernizr, $.ui, or $.fn.fancybox. Because Libscore uses the lib variable versus the branded name, it is important that the search helps you find a particular library / variable. For this reason, we built a search API that very quickly returns a list of matched results, be it a script or a library. The dropdown of search results is available throughout the entire experience, and is driven by the arrow keys.
 
-While this datacenter may come as a pleasant surprise to residents in the surrounding countries, we have actually been actively looking into the possibility since mid-2013, inspired by Facebook’s energy efficient Arctic Datacenter. Some potential issues we faced in our initial investigations included transporting safe electrical current under the sea, providing sufficient illumination on the ocean floor (around 900 meters deep), and our technicians’ inability to swim. 
+<a class="enlarge" href="/assets/images/dummy.png">
+  ![Alt text](/assets/images/dummy.png)
+  insert screen of search results
+</a>
 
-You can easily spin up a server in the new region by selecting “Atlantis” in the Droplet create screen or choosing that location in the API. Our initial run of servers in this region is limited. We will be adding more capacity to H2O at low tide. 
+## Visualized Data
+Lets take a look at David DeSandro’s grid layout library, [Masonry](http://libscore.com/#Masonry). Masonry has been around for years and is used by about 39,000 sites (in the top million). Over the last 6 months, Masonry has climbed in popularity by a few percentage points, month over month. Last month, it increased by 2.05%. This steady growth shows Masonry as a reliable, rock of a library. It has a incredibly high rate of usage, and is seemingly impervious to the many new Masonry alternatives like Salvatorre. If this were a stock, it would be a low-risk, promising investment that I would sink my money into.
 
-When asked about the new location, DigitalOcean’s Director of Infrastructure, Lev Uretsky explained: “Our Datacenter Techs are very excited about Atlantis. We firmly believe that this will be the easiest DC to rack, as our servers become much lighter underwater.”
+<a class="enlarge" href="/assets/images/dummy.png">
+  ![Alt text](/assets/images/dummy.png)
+  insert screen of data viz
+</a>
 
-If this sounds exciting to you, [DigitalOcean is actively hiring](https://www.digitalocean.com/company/careers/) for the new location. Scuba certified candidates are welcome to apply. Background in Marine Biology a plus. 
+## Site Usage
+While seeing the visual growth or decline of a library is an great indicator of general popularity trend, it is equally important to see the sites that are using a particular library. When we hear of a domain like cnn.com or eBay.com we have a relatively good idea of it’s popularity - obviously massive. But when we begin to domains we are not familiar with, we need a relative rank to understand its significance. Libscore displays the sites that use a library based on their relative rank.
+
+<a class="enlarge" href="/assets/images/dummy.png">
+  ![Alt text](/assets/images/dummy.png)
+  insert screen of masonry ranking
+</a>
+
+In the case of Masrony, it is used by many of the top 1000 sites.  David DeSandro might take a look at Masonry on Libscore and for the first time ever, see that it is being used by Target, Home Depot, All Recipes, Food Network, Urban Dictionary, etc. As a developer, this feels like a gift after so much effort put forth into building and maintaining a library. David might rest easy and know that his hard work is paying off.
+
+<blockquote>As a developer, this feels like a gift after so much effort put forth into building and maintaining a library.</blockquote>
+
+From this list of domains, I can click into one to see an exhaustive list of libraries that domain uses. As a developer, you can see if you are in good company. And yes, Masonry is in great company :)
+
+<a class="enlarge" href="/assets/images/dummy.png">
+  ![Alt text](/assets/images/dummy.png)
+  insert screen of target domain
+</a>
+
+## Comparison
+While data specific to a particular library is useful, the real power of Libcore lies in the comparison of one library to the next. As a developer, I might want to see how my library stacks up to a competitor or a new library that has entered market. In the case of Masrony, there are many libraries that claim to have similar functionality. David DeSandro might compare his library Masonry to other libraries like Isotope and Packery. While both of these libraries have been growing month over month, so has Masonry. We might conclude that the general trend of brick-layouts is growing on the web. But from David’s perspective, he now understands that while similar libraries are improving, they are not taking a share away from Masonry’s rate of usage.
+
+<a class="enlarge" href="/assets/images/dummy.png">
+  ![Alt text](/assets/images/dummy.png)
+  insert screen of masonry isotope packery
+</a>
+
+Libscore offers a UI to compare any library against any library using the same pattern which powers the initial search. After a user selects a library to compare to, the chart draws a new trend line on top of the previous libraries data visualization. It allows for an unlimited amount of comparisons which can be useful for understanding the state of any type of library.
+
+<a class="enlarge" href="/assets/images/dummy.png">
+  ![Alt text](/assets/images/dummy.png)
+  insert screen of dropdown
+</a>
+
+## Top Performers
+In addition to Libscore’s library-specific data visualization, it also showcases popularity lists for the top domains, scripts, and domains. While the utility of this functionality is limited, this provides us with useful information on the state of the web today. It is no surprise that jQuery takes home the trophy for top library, nor do we expect this list to be eye-opening. The top libraries and scripts should be expected, as they represent proven libraries that have stood the test of time.
+
+<a class="enlarge" href="/assets/images/dummy.png">
+  ![Alt text](/assets/images/dummy.png)
+  insert screen of top list
+</a>
+
+## Future of Libscore
+Libscore has a bright future. In early February, we open sourced the technology powering Libscore, in hopes that developers will create branches off of the codebase, and build on top of it. For me, I am excited about forming a much greater understanding of general trends on the web. For instance, creating an experience that showcases data around a particular trend, like content sliders. We see sliders all over the web, but rarely do we dive into the source to identify the particular library powering it. If we could see the top 50 slider libraries and how their usage has changed month over month, we would form a thorough understanding of how the web consumes JavaScript sliders. Creating ‘microsites’ for each one of these trends could be a highly useful source for any one segment of libraries. If I am developing a new site and have a slider need, I could use my go-to favorite, or I can go to the Libscore slider microsite to form a much greater understanding of trends within this space. This information might persuade me to try something new, or popular within my field. Exciting stuff.

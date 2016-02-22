@@ -16,8 +16,7 @@
   <body class="<%= page_classes %>">
     
     <% if page_classes.include? "work" %>
-        <div class="bg"></div>
-        <div class="Caption"><p><span></span></p></div>
+      <%= partial "work-panels" %>
     <% end %>
 
     <%= partial "header", locals: { is_animated: true } %>

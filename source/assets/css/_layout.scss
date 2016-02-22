@@ -94,7 +94,7 @@ footer {
   }
 }
 
-.Header-nav {
+.Header-nav, .Header-gallery {
   border-bottom: 1px solid $border-polar-purple;
   height: 100px;
   line-height: 92px; 
@@ -217,6 +217,12 @@ footer {
         &.labs {
           &:after {
             content: 'Back to Labs';
+          }
+        }
+
+        &.project {
+          &:after {
+            content: 'Back to Project';
           }
         }
       }

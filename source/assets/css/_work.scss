@@ -491,3 +491,78 @@ $bracket-color: $light-purple;
     transform: translateY(-75px);
   }
 }
+
+
+.showGallery {
+  .Gallery-wrap {
+    opacity: 1;
+    visibility: visible;
+    z-index: 100;
+  }
+}
+.Gallery-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .7s ease-out;
+  overflow: scroll;
+
+  .enlarge {
+    font-size: 14px;
+  }
+
+  .Header-gallery {
+    margin-bottom: 0;
+    .back {
+      position: relative;
+      z-index: 1;
+    }
+    h4 {
+      text-align: center;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      color: $neon-purple;
+      font-size: 21px;
+      font-family: 'GT Pressura';
+      font-weight: bold;
+    }
+  }
+
+  ul {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    opacity: 0;
+  }
+
+  li {
+    max-width: 260px;
+    margin-bottom: 5px;
+    min-width: 20%;
+    list-style: none;
+    flex-direction: row;
+
+    &:hover {
+      outline: 1px solid $dark-salmon;
+    }
+
+    img {
+      padding: 0;
+    }
+
+    a {
+      padding: 13px;
+      display: block;
+      &:before {
+        display: none;
+      }
+    }
+  }
+}
