@@ -103,26 +103,37 @@ tl
       }
     }
 
-    setTimeout(function(){
-      //allow captions to load, no need to run immediately.
-      dupeImages();
-    }, 1000);
-
-    $('.article a').on('click', function(){
+    function showGallery(){
       $('body').addClass('showGallery');
+      window.location.hash = 'gallery';
 
       setTimeout(function(){
         $DOMtitle.text('' + $projectTitle + ' Project Gallery (' + imageCount + ' images)');
-        TweenMax.to($items, 1.5, {autoAlpha:1, ease: Linear.easeNone});
-        TweenMax.fromTo($items, 1.5, {y: 13},{y: 0, ease: Power2.easeOut}, '-=1.5');
-      }, 800);
-    });
+        TweenMax.to($items, 1, {autoAlpha:1, ease: Power1.easeIn});
+        TweenMax.fromTo($items, 1.5, {y: 13},{y: 0, ease: Power2.easeOut}, '-=1');
+      }, 500);
+    }
 
     function hideGallery() {
       $('body').removeClass('showGallery');
       TweenMax.to($items, .7, {autoAlpha:0, ease: Linear.easeNone});
       TweenMax.fromTo($items, .7, {y: 0},{y: 13, ease: Power2.easeOut}, '-=.8');
     }
+
+    setTimeout(function(){
+      dupeImages();
+    }, 1000);
+
+    if(window.location.hash == '#gallery') {
+      setTimeout(function(){
+        showGallery();
+      }, 1000);
+    }
+
+    $('.article a').on('click', function(){
+      showGallery();
+      return false;
+    });
 
     $(".Header-gallery").on('click', function(){
       hideGallery();
