@@ -15,7 +15,8 @@ $fluidbox__animation-bg-color: $fluidbox__overlay-bg-color !default;
 	outline: none;
 }
 .fluidbox__overlay {
-	background-color: rgba(245, 238, 253, 0.85);
+	//background-color: rgba(245, 238, 253, 0.85);
+  background-color: rgba(226, 226, 226, 0.85);
 	cursor: pointer;
 	cursor: zoom-out;
 	opacity: 0;

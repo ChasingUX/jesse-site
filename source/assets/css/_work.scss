@@ -455,7 +455,27 @@ $bracket-color: $light-purple;
   line-height: 1.5;
 
   img {
-    padding-bottom: 6px;
+    margin: 13px 0;
+  }
+
+  &:before {
+    display: none;
+  }
+
+  &.border {
+    img {
+      border: 1px solid $border-grey;
+      transition: border .3s ease-in-out;
+    }
+  }
+
+  &:hover {
+    color: $neon-purple;
+    &.border {
+      img {
+        border: 1px solid darken($border-grey, 5%);
+      }
+    }
   }
 }
 
@@ -473,7 +493,7 @@ $bracket-color: $light-purple;
   transition: all .3s ease;
   display: table;
   height: 75px;
-  background: #F6F0FD;
+  background: white;
 
   p {
     display: table-cell;

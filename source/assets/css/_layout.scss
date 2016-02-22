@@ -314,7 +314,7 @@ footer {
       }
 
       a {
-        color: $light-purple;
+        color: lighten($neon-purple, 20%);
 
         &:hover {
           color: $neon-purple;
