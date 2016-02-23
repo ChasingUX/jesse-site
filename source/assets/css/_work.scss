@@ -479,6 +479,21 @@ $bracket-color: $light-purple;
   }
 }
 
+.half {
+ width: 47%;
+display: inline-block;
+margin: 1.5%;
+left: -3%;
+
+    &:nth-child(2n+2) {
+      left: 0%;
+    }
+
+  img {
+    margin: 13px;
+  }
+}
+
 .Caption, .Caption--gallery {
   position: fixed;
   width: 100%;
