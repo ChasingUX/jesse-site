@@ -8,7 +8,7 @@
     <ul>
       <% if current_page.data.has_key?('url')  %>
         <%= partial "register", locals: { is_dark_grey: false, is_blue: true, is_green: false  } %>
-        <li class="url"><a href="<%= current_page.data.url %>"><%= current_page.data.link_copy %></a></li>
+        <li class="url"><a href="<%= current_page.data.url %>" target="_blank"><%= current_page.data.link_copy %></a></li>
         <li class="article"><a href="#">View Gallery</a></li>
       <% else %>
         <li><a href="#">View Gallery</a></li>
