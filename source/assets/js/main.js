@@ -111,13 +111,13 @@ tl
               $('.Caption--gallery span').text(caption);
               $('.Caption--gallery').addClass('show');
             }
-            $('.next').addClass('show');
+            $('.arrow').addClass('show');
           })
           .on('closestart.fluidbox', function() {
             $('.Caption--gallery').removeClass('show');
             $('.Caption--gallery span').text('');
             $('.Header-gallery').removeClass('open');
-            $('.next').removeClass('show');
+            $('.arrow').removeClass('show');
           });
       }
     }
@@ -158,16 +158,29 @@ tl
       hideGallery();
     });
 
-    $(".next").on('click', function(){
+    $(".arrow").on('click', function(){
       var open = $('.fluidbox--opened');
+      var $this = $(this);
+
       open.trigger('close.fluidbox');
       setTimeout(function(){
-        var next = open.parent('li').next().find('.enlarge');
-        if (next.length > 0) {
-          next.click();
+
+        if($this.is('.next')) {
+          var next = open.parent('li').next().find('.enlarge');
+          if (next.length > 0) {
+            next.click();
+          } else {
+            $('.Gallery-wrap li:first-of-type').find('.enlarge').click();
+          }
         } else {
-          $('.Gallery-wrap li:first-of-type').find('.enlarge').click();
+          var prev = open.parent('li').prev().find('.enlarge');
+          if (prev.length > 0) {
+            prev.click();
+          } else {
+            $('.Gallery-wrap li:last-of-type').find('.enlarge').click();
+          }
         }
+        
       }, 700);
       return false;
     });

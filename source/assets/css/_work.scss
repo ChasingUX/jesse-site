@@ -530,7 +530,7 @@ $bracket-color: $light-purple;
   }
 }
 
-.next {
+.next, .prev {
   position: absolute;
   right: 30px;
   bottom: 19px;
@@ -543,6 +543,11 @@ $bracket-color: $light-purple;
   border-radius: 30px;
   font-size: 14px;
   transition: all .5s ease-in;
+
+  &.prev {
+    right: inherit;
+    left: 30px;
+  }
 
   &:before {
     display: none;
