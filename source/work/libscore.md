@@ -1,7 +1,7 @@
 ---
 title: "Libscore"
 date: 2016-2-22
-summary: "FontReach crawls the top million websites and surfaces data about font usage across the web."
+summary: "Libscore scans the the top million sites on the web to determine which third-party JavaScript libraries are installed on each site"
 link_copy: "Visit Libscore"
 url: http://libscore.com/
 article: https://medium.com/@Shapiro/introducing-libscore-com-be93165fa497
