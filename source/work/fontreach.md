@@ -9,9 +9,12 @@ tags: featured
 color: blue
 ---
 
-FontReach was born from a problem of not having enough information about font usage. In trying to choose a font for a project, a factor I consider is how 'trendy' it is, or how often it is seen on the web. Until the release of FontReaech, we could not assess the uniqueness of a particular font on the web.
+FontReach was born from a problem of not having enough information about font usage. In trying to choose a font for a project, a factor I consider is how 'trendy' it is, or how often it is seen on the web. Until the release of FontReach, we could not assess the uniqueness of a particular font on the web.
 
-[Img of ???]
+<a class="enlarge border" href="/assets/images/projects/fontreach/loader.gif">
+  ![Alt text](/assets/images/projects/fontreach/loader.gif)
+  FontReach CSS Isometric loader
+</a>
 
 FontReach crawls the top million websites (based on Alexa), and surfaces data about font usage across the web. It allows us to answer questions like, How many sites use Proxima Nova? What is it’s rank? I can now say that Proxima is ranked as the 26th most utilized webfont; over 22,000 sites in the top million, most notably Instagram, Buzzfeed, and Flickr use it.
 
@@ -22,38 +25,61 @@ Feb 23 - FontReach API was updated in February, 2016. In the three months since 
 
 Having this type of data helps designers make more informed font decisions, but also allows us to follow font usage trends on the web. If Hoefler & Co were to release a new typeface, we can accurately track the adoption of it over the course of time.
 
+<a class="enlarge border" href="/assets/images/projects/fontreach/home.jpg">
+  ![Alt text](/assets/images/projects/fontreach/home.jpg)
+  FontReach Homepage
+</a>
+
 ##FontReach’s Design
 
 **FontReach is simple.** Users are presented with a simple UI composed of input, directions, and one-click access to top fonts — only the bare minimum that allows for a user to start consuming data in seconds. Copy is concise and without distraction. The simple nature invites continued browsing.
 
-[img of homepage]
+<a class="enlarge border" href="/assets/images/projects/fontreach/search.jpg">
+  ![Alt text](/assets/images/projects/fontreach/search.jpg)
+  Search results for 'tre'
+</a>
 
 **Searching can be fun.** When a user types in a query, we assume that they are ready to submit their request after an 800ms period of inactivity (throttled query). In other words, if a user types in ‘Pro’ and stops for a split second, the query is submitted, and continuous, ongoing modification of the search query is allowed. The user can complete their query at their own pace, while results are updated on pause. It is surprisingly fun and rewarding.
 
-[gif of searching]
+<a class="enlarge border" href="/assets/images/projects/fontreach/fontreach-search.gif">
+  ![Alt text](/assets/images/projects/fontreach/fontreach-search.gif)
+  Searching for 'Proxima Nova'
+</a>
 
 **Fontreach is colorful.** Part of FontReach’s appeal is its use of gradients. Every time a font is viewed, two panels with different gradients crossfade into one another. The gradients are randomly generated based on an array of colors I curate.
 
-[two rows of gradient swatches]
+<ul class="swatches">
+  <li class="gradientA"><span></span></li>
+  <li class="gradientB"><span></span></li>
+  <li class="gradientC"><span></span></li>
+  <li class="gradientD"><span></span></li>
+  <li class="gradientE"><span></span></li>
+</ul>
 
-**Keyboard Controls throughout.** While not a requirement, FontReach is best explored using your keys.
+<span class="Caption--faux">FontReach Gradient Swatches</span>
 
-[gif of search results] (can we super impose keys?)
+**FontReach is an infinite experience.** If a user has nowhere to go, they generally leave. While FontReach is a simple search tool, it invites exploration through continuous querying. For example, let’s say a user comes to FontReach with the goal of identifying usage for the font ‘Helvetica.’ After seeing the list of domains that use it, the user clicks on a domain to see the complete stack of fonts it uses, which leads to additional insights. Keyboard contorls throughout also invite continued browsing. Creating experiences that encourage continued browsing leads to a highly enjoyable, almost addictive experience. 
 
-**FontReach is an infinite experience.** If a user has nowhere to go, they generally leave. While FontReach is a simple search tool, it invites exploration through continuous querying. For example, let’s say a user comes to FontReach with the goal of identifying usage for the font ‘Helvetica.’ After seeing the list of domains that use it, the user clicks on a domain to see the complete stack of fonts it uses, which leads to additional insights. Creating experiences that encourage continued browsing leads to a highly enjoyable, almost addictive experience.
+<a class="enlarge" href="/assets/images/projects/fontreach/helvetica.jpg">
+  ![Alt text](/assets/images/projects/fontreach/helvetica.jpg)
+  Each search query is run through the myfonts.com API in an effort to pull an actual font specimen.
+</a>
 
-[img of dual panel] Search -> Font View -> Domain View -> New Font View -> etc.
+##FontReach is a Domain Explorer
+Outside of exploring font usage, it becomes quite interesting to see what other fonts different brands are using. In some cases, it is shocking to see the quantity of fonts loaded on certain sites. The FontReach domain interface allows for quick toggling of domains to explore brand usage. 
 
-##The little big details.
-In designing FontReach, I wanted to focus on the small details and microinteractions to make the experience memorable. Here are a few:
+<a class="enlarge" href="/assets/images/projects/fontreach/domain-switch.gif">
+  ![Alt text](/assets/images/projects/fontreach/domain-switch.gif)
+  Quick switching of domains. (gradient removed for gif sake)
+</a>
 
-FontReach uses a css-driven 3d transformed isometric cube that rotates during the loading experience.
-
-[gif of loader]
-
-Each search query is run through the myfonts.com API in an effort to pull an actual font specimen.
-
-[img of font specimen, comic sans]
+<a class="enlarge half" href="/assets/images/projects/fontreach/circular-results.jpg">
+  ![Alt text](/assets/images/projects/fontreach/circular-results.jpg)
+  Circular being used on spotify.com
+</a><a class="enlarge half" href="/assets/images/projects/fontreach/circular-resultsB.jpg">
+  ![Alt text](/assets/images/projects/fontreach/circular-resultsB.jpg)
+  Circular being used on mint.com
+</a>
 
 ##Getting Technical
 
