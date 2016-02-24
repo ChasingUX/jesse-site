@@ -530,6 +530,29 @@ $bracket-color: $light-purple;
   }
 }
 
+.next {
+  position: absolute;
+  right: 30px;
+  bottom: 19px;
+  background: $neon-purple;
+  color: white;
+  padding: 6px 15px;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 100;
+  border-radius: 30px;
+  font-size: 14px;
+  transition: all .5s ease-in;
+
+  &:before {
+    display: none;
+  }
+
+  &.show {
+    opacity: 1;
+    visibility: visible; 
+  }
+}
 
 .showGallery {
   .Gallery-wrap {
