@@ -73,13 +73,15 @@ Outside of exploring font usage, it becomes quite interesting to see what other 
   Quick switching of domains. (gradient removed for gif sake)
 </a>
 
-<a class="enlarge half" href="/assets/images/projects/fontreach/circular-results.jpg">
-  ![Alt text](/assets/images/projects/fontreach/circular-results.jpg)
-  Circular being used on spotify.com
-</a><a class="enlarge half" href="/assets/images/projects/fontreach/circular-resultsB.jpg">
-  ![Alt text](/assets/images/projects/fontreach/circular-resultsB.jpg)
-  Circular being used on mint.com
-</a>
+<div class="halfWrap">
+  <a class="enlarge half" href="/assets/images/projects/fontreach/circular-results.jpg">
+    <img src="/assets/images/projects/fontreach/circular-results.jpg">
+    Circular being used on spotify.com
+  </a><a class="enlarge half" href="/assets/images/projects/fontreach/circular-resultsB.jpg">
+    <img src="/assets/images/projects/fontreach/circular-resultsB.jpg">
+    Circular being used on mint.com
+  </a>
+</div>
 
 ##Getting Technical
 

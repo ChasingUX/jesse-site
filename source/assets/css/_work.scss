@@ -479,18 +479,21 @@ $bracket-color: $light-purple;
   }
 }
 
-.half {
- width: 47%;
-display: inline-block;
-margin: 1.5%;
-left: -3%;
+.halfWrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  @extend p;
 
-    &:nth-child(2n+2) {
-      left: 0%;
+  .half {
+    max-width: 47%;
+    flex-grow: 1;
+
+    @media (max-width: $small) {
+      max-width: 100%;
+      margin-bottom: 20px;
     }
-
-  img {
-    margin: 13px;
   }
 }
 
@@ -654,11 +657,6 @@ left: -3%;
       @include linear-gradient(-90deg, #97437E 0%, #DC245B 100%);
     }
   }
-  // .gradientF {
-  //   span {
-  //     @include linear-gradient(-90deg, #6441A5 0%, #2a0845 100%);
-  //   }
-  // }
 }
 
 .Caption--faux {

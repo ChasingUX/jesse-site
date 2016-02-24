@@ -29,13 +29,15 @@ Lets take a look at an example of popular JavaScript animation library, Velocity
   Search results for $.Velocity animation library
 </a>
 
-<a class="enlarge border half" href="/assets/images/projects/libscore/velocity-visual.jpg">
-  ![Alt text](/assets/images/projects/libscore/velocity-visual.jpg)
-  Velocity.js usage over time
-</a><a class="enlarge border half" href="/assets/images/projects/libscore/velocity-tooltip.jpg">
-  ![Alt text](/assets/images/projects/libscore/velocity-tooltip.jpg)
-  Velocity.js monthly penetration
-</a>
+<div class="halfWrap">
+  <a class="enlarge border half" href="/assets/images/projects/libscore/velocity-visual.jpg">
+    <img src="/assets/images/projects/libscore/velocity-visual.jpg">
+    Velocity.js usage over time
+  </a><a class="enlarge border half" href="/assets/images/projects/libscore/velocity-tooltip.jpg">
+    <img src="/assets/images/projects/libscore/velocity-tooltip.jpg">
+    Velocity.js monthly penetration
+  </a>
+</div>
 
 This information is eye-opening and reports useful information for someone who has spent months sweating over a library they have been developing. As a JavaScript developer, I can now make informed decisions around what to do with my library. Should I continue maintaining it? Should I get in touch with larger adopters and offer my support? Should I focus more of my time and energy on this project? Greater insight into library adoption and usage leads to a stronger open source community and a far more informed developer.
 
@@ -94,22 +96,17 @@ While data specific to a particular library is useful, the real power of Libcore
   Comparing Isotope to Masonry
 </a>
 
-<a class="enlarge border half" href="/assets/images/projects/libscore/masonry-compareA.jpg">
-  ![Alt text](/assets/images/projects/libscore/masonry-compareA.jpg)
-  Masonry vs. Isotope
-</a><a class="enlarge border half" href="/assets/images/projects/libscore/masonry-compareB.jpg">
-  ![Alt text](/assets/images/projects/libscore/masonry-compareB.jpg)
-  Masonry vs. Isotope vs. Packery
-</a>
-
-
+<div class="halfWrap">
+  <a class="enlarge border half" href="/assets/images/projects/libscore/masonry-compareA.jpg">
+    <img src="/assets/images/projects/libscore/masonry-compareA.jpg">
+    Masonry vs. Isotope
+  </a><a class="enlarge border half" href="/assets/images/projects/libscore/masonry-compareB.jpg">
+    <img src="/assets/images/projects/libscore/masonry-compareB.jpg">
+    Masonry vs. Isotope vs. Packery
+  </a>
+</div>
 
 Libscore offers a UI to compare any library against any library using the same pattern which powers the initial search. After a user selects a library to compare to, the chart draws a new trend line on top of the previous libraries data visualization. It allows for an unlimited amount of comparisons which can be useful for understanding the state of any type of library.
-
-<!-- <a class="enlarge border" href="/assets/images/projects/libscore/compare.jpg">
-  ![Alt text](/assets/images/projects/libscore/compare.jpg)
-  insert screen of dropdown
-</a> -->
 
 ## Top Performers
 In addition to Libscore’s library-specific data visualization, it also showcases popularity lists for the top domains, scripts, and domains. While the utility of this functionality is limited, this provides us with useful information on the state of the web today. It is no surprise that jQuery takes home the trophy for top library, nor do we expect this list to be eye-opening. The top libraries and scripts should be expected, as they represent proven libraries that have stood the test of time.
