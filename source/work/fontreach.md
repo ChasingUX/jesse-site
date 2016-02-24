@@ -58,10 +58,10 @@ Having this type of data helps designers make more informed font decisions, but 
 
 <span class="Caption--faux">FontReach Gradient Swatches</span>
 
-**FontReach is an infinite experience.** If a user has nowhere to go, they generally leave. While FontReach is a simple search tool, it invites exploration through continuous querying. For example, let’s say a user comes to FontReach with the goal of identifying usage for the font ‘Helvetica.’ After seeing the list of domains that use it, the user clicks on a domain to see the complete stack of fonts it uses, which leads to additional insights. Keyboard contorls throughout also invite continued browsing. Creating experiences that encourage continued browsing leads to a highly enjoyable, almost addictive experience. 
+**FontReach is an infinite experience.** If a user has nowhere to go, they generally leave. While FontReach is a simple search tool, it invites exploration through continuous querying. For example, let’s say a user comes to FontReach with the goal of identifying usage for the font ‘Helvetica Neue.’ After seeing the list of domains that use it, the user clicks on a domain to see the complete stack of fonts it uses, which leads to additional insights. Keyboard contorls throughout also invite continued browsing. Creating experiences that encourage continued browsing leads to a highly enjoyable, almost addictive experience. 
 
-<a class="enlarge" href="/assets/images/projects/fontreach/helvetica.jpg">
-  ![Alt text](/assets/images/projects/fontreach/helvetica.jpg)
+<a class="enlarge" href="/assets/images/projects/fontreach/helvetica-neue.jpg">
+  ![Alt text](/assets/images/projects/fontreach/helvetica-neue.jpg)
   Each search query is run through the myfonts.com API in an effort to pull an actual font specimen.
 </a>
 
