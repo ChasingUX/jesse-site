@@ -551,6 +551,11 @@ $bracket-color: $light-purple;
   &.show {
     opacity: 1;
     visibility: visible; 
+
+    @media (max-width: $medium) {
+      opacity: 0;
+      visibility: hidden;
+    }
   }
 }
 
