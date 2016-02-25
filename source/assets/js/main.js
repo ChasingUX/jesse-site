@@ -135,6 +135,8 @@ tl
 
     function hideGallery() {
       $('body').removeClass('showGallery');
+      window.location.hash = '';
+
       TweenMax.to($items, .7, {autoAlpha:0, ease: Linear.easeNone});
       TweenMax.fromTo($items, .7, {y: 0},{y: 13, ease: Power2.easeOut}, '-=.8');
     }
