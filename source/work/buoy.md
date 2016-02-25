@@ -116,11 +116,15 @@ At this point, I knew exactly what problem Buoy solves, I know how Buoy was goin
 
 Its not just about ease-of-use; Buoy represents a major overhaul in the look and feel of our product. The structural and visual changes alone represented a major facelift in the appearance of the product. But what excited me most was the improvement in the user experience. Through the addition of Buoy, using the DigitalOcean product became exponentially easier to use. The patterns are intuitive, the visual language is consistent, and the copy was fun, informative, and playful.
 
-[tweets about the UI]
+<div class="Tweets"></div>
+<span class="Caption--faux">Tweets after we launched Buoy on cloud</span>
 
 # Implementing Buoy
 So how does one implement a style guide on an extremely messy codebase? How do we remove tens of thousands of lines of Sass and Haml and replace it with a shared style guide in small, calculated steps? I will not go into great detail, but its important to understand that these changes needed to be released in incremental steps over the course of a few weeks. Introducing a brand new css codebase on top of another can result in some messy conflicts. When you have a heavily scoped v1 css codebase, and an unstopped v2 css codebase, v1 will win the war due to its high level of specificity. Due to this, we converted each page on cloud to Buoy, one by one, using a system of flags, `uses_v2: true`. Based on this flag, each page would pull from v1 or v2 codebase, but never both.
 
 While we ran into some conflicts, the transition was fairly seamless, and before we knew it, we had a shiny new cloud to show off. And on that last day, the feeling of merging this new branch onto cloud was victorious. Mainly because it represented a mass exodus of tens of thousands of lines of ugly css and markup. 
 
-[super fast gif of building a page]
+<a class="enlarge border" href="/assets/images/projects/buoy/buoy-build.gif">
+  ![Alt text](/assets/images/projects/buoy/buoy-build.gif)
+  A quick and dirty build of a form UI with no extra css.
+</a>

@@ -217,7 +217,7 @@ a, .Link--faux {
   }
 }
 
-blockquote {
+blockquote:not(.twitter-tweet) {
   font-size: 24px;
   font-family: 'GT Pressura';
   font-weight: bold;

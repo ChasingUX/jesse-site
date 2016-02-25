@@ -194,4 +194,26 @@ tl
         }
       }
     });
+
+    if($('.Tweets').length){
+      returnTweets();
+    }
+
+    function returnTweets(){
+
+      var tweets = ['690495916822904832', '688844171935789056', '685987064362496000', '684439509111472128', '682566424221585410', '682428554009690112', '679656274615754752', '692503794110849024'],
+         numTweets = tweets.length;
+      
+      for (var i = 0; i < numTweets; i++) {
+        $.ajax({
+           type: 'GET',
+           url: 'https://api.twitter.com/1/statuses/oembed.json?id='+ tweets[i] +'&maxwidth=340&hide_media=true&hide_thread=true&omit_script=false',
+           dataType: 'jsonp',
+           success: function(data) {
+             var markup = data.html;
+             $('.Tweets').append(markup);
+           }
+        });
+      }
+    }
   });
