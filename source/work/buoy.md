@@ -46,10 +46,10 @@ As a consumer of Buoy, you should never have to battle style specificity or crea
 ##Highly Maintainable
 Buoy should not be difficult to maintain. Buoy consolidates all reusable components in a single place and promotes DRY (don’t repeat yourself) which makes updating components a much simpler and safer task.
 
-<a class="enlarge" href="/assets/images/projects/buoy/whitespace.png">
+<!-- <a class="enlarge" href="/assets/images/projects/buoy/whitespace.png">
   ![Alt text](/assets/images/projects/buoy/whitespace.png)
   Modular css files - sass whitespace mapping
-</a>
+</a> -->
 
 ##Utilizes BEM Markup
 Buoy is written in an object oriented CSS methodology called BEM, which stands for Block, Element, Modifier. We have adopted Nicolas Gallagher's naming scheme, called SUIT. To people unfamiliar with BEM, this may seem superfluous and strange. As far as maintainability is concerned, it is extremely easy to identify what a selector represents by it's class name. For instance, a modal's class is `.Modal`. The header of a modal (a modal’s child) is `.Modal-header`. And lastly, if we wanted a smaller version of a modal (a modifier) we would name it `.Modal—-small.` This type of naming convention feels very natural and is indicative of a selector’s purpose.
@@ -77,14 +77,18 @@ While buoy provides styles and components to use, it is much more than just a st
   </a>
 </div>
 
-
-##Buttons
+##Buttons & Colors
 The DigitalOcean UI is button-heavy in areas. In an effort not to confuse the user, we have strict button rules: there must never be more than one primary (blue) button. The secondary (grey) buttons can be used in multiples. Destructive actions (red outline) must include a secondary confirmation dialog. Create (green) buttons are reserved for the creation of objects.
 
-<a class="enlarge border" href="/assets/images/projects/buoy/buttons.jpg">
-  ![Alt text](/assets/images/projects/buoy/buttons.jpg)
-  Buoy buttons
-</a>
+<div class="halfWrap">
+  <a class="enlarge border half" href="/assets/images/projects/buoy/buttons.jpg">
+    <img src="/assets/images/projects/buoy/buttons.jpg">
+    Buoy buttons
+  </a><a class="enlarge border half" href="/assets/images/projects/buoy/colors.jpg">
+    <img src="/assets/images/projects/buoy/colors.jpg">
+    Buoy Colors
+  </a>
+</div>
 
 ## Objects
 Anything related to infrastructure is an object. An object is a ‘thing’ that has a series of visually consistent metadata relating to the parent object. As the product grows and we have many objects, it is highly important that we use the same visual language across these products.
