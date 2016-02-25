@@ -12,13 +12,19 @@ Maintaining a messy codebase <strike>can be</strike> is an absolute nightmare. T
 Maintaining a messy front end <strike>can be</strike> is an absolute nightmare.
 </blockquote>
 
-At the time, we were planning on shipping some major additions to our product, but I was uncomfortable proceeding without a strong handle on the front end. We were in dire need for a set of standards and methodologies to guide us in the design and build of our product. So with the help of my team, I set out to build a style guide that abides by a rational set of beliefs and patterns.
+At the time, we were planning on shipping some major additions to our product, but I was uncomfortable proceeding without a strong handle on the front end. We were in dire need for a set of standards and methodologies to guide us in the design and build of our product. So with the help of my team, I set out to build a style guide that abide by a logical set of beliefs and patterns.
 
-[img of ???]
+<a class="enlarge border" href="/assets/images/projects/buoy/buoy.jpg">
+  ![Alt text](/assets/images/projects/buoy/buoy.jpg)
+  The Buoy Logo
+</a>
 
 After research and benchmarking, I had a strong idea of how to architect Buoy. It should be comprised of layout modules, elements, components, and utilities. Through these collections, a designer has an understanding of the pattern library and a developer can very quickly and easily code  the designer's work. Layout would house the page structure like grids and whitespace, Elements would house individual elements like buttons or inputs, components would house the interactive elements like modals or tabs, and utilities would house utility helpers like a clearfix and text align utility.
 
-[img of buoy homepage]
+<a class="enlarge border" href="/assets/images/projects/buoy/grid.jpg">
+  ![Alt text](/assets/images/projects/buoy/grid.jpg)
+  Buoy grid layout page
+</a>
 
 These four collections were created after conducting a thorough audit of our cloud - what patterns do we currently use, where are there inconsistencies, and how can we bring everything together into a series of UX patterns that improve the overall experience? Before building out the UI patterns, **we had to agree on a set of goals for the project:**
 
