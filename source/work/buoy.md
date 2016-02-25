@@ -101,7 +101,10 @@ Anything related to infrastructure is an object. An object is a ‘thing’ that
 ##Structural Elements
 The DigitalOcean UI is very white and airy which creates the need for structure amongst elements and components. Buoy takes advantage of the box to create structure across the interface. Because boxes are visually similar to form inputs, non interactive boxes are 2px and form inputs are 1px.
 
-[img of boxes]
+<a class="enlarge border" href="/assets/images/projects/buoy/boxes.jpg">
+  ![Alt text](/assets/images/projects/buoy/boxes.jpg)
+  Buoy Boxes
+</a>
 
 ## Component Rules
 Components are a series of elements with some sort of behavioral interaction based on user action. Lets say we are building a new product and we have a need to tuck information away until the user interacts with it. We could take advantage of a tooltip, a revealer, a modal, an alert, or a dropdown. Rules are applied to each component so they are used for a particular reason that lends itself to consistency and the most usable pattern for a need. In many cases, if a component feels forced for a particular addition, we may go to the drawing board to create a new component pattern.
