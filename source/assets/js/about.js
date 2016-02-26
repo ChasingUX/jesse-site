@@ -1,21 +1,25 @@
 $(function () {
 
-  $location = $(".timeline li"),
+  var $location = $(".timeline li"),
   $maps = $('.Maps'),
   $defaultActive = $('.active');
 
   $location.hover(function(){
-    $notHovers = $location.not($(this));
+    var city = $(this).find('h4').text(), 
+      longitude = $(this).data('longitude'),
+      latitude = $(this).data('latitude');
 
+      console.log(city + ": latitude: " + latitude + " longitude:" + longitude);
+
+    $notHovers = $location.not($(this));
     $(this).addClass('hover');
+    $(this).parent().addClass('hovered');
     $defaultActive.removeClass('active');
-    TweenLite.to($notHovers, .5,{autoAlpha: .2, ease: Linear.easeNone});
     TweenLite.to($maps, .5,{autoAlpha: 1, ease: Linear.easeNone});
-    
   }, function(){
     $(this).removeClass('hover');
+    $(this).parent().removeClass('hovered');
     $defaultActive.addClass('active');
-    TweenLite.to($notHovers, .5,{autoAlpha: 1, ease: Linear.easeNone});
     TweenLite.to($maps, .5,{autoAlpha: 0, ease: Linear.easeNone});
   });
 });

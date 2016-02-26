@@ -216,6 +216,12 @@
         right: inherit;
       }
     }
+
+    &.hovered {
+      li:not(.hover) {
+        opacity: .2;
+      }
+    }
   }
 
   li {
@@ -225,7 +231,8 @@
     clear: left;
     display: inline-table;
     border: 1px solid $transparent;
-    transition: all .3s ease;
+    transition: opacity .5s, padding .3s ease, border .3s ease;
+    will-change: opacity, padding, border;
 
     @media (max-width: 900px) {
       margin-left: 20px;
@@ -243,6 +250,30 @@
       }
     }
 
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      left: 50%;
+      margin-left: -6px;
+      opacity: 0;
+    }
+
+    &:before {
+      border-top: 6px solid $neon-purple;
+      bottom: -7px;
+      transition: none;
+      will-change: opacity;
+    }
+
+    &:after {
+      border-top: 6px solid #F5FEFC;
+      bottom: -6px;
+    }
+
     &:last-child {
       margin-bottom: 0;
     }
@@ -254,24 +285,15 @@
     &.active, &.hover {
       padding-right: 21px;
       padding-left: 17px;
-      border-radius: 2px;
       border: 1px solid $neon-purple;
       color: $neon-purple;
-      top: -2px;
 
       @media (max-width: $medium) {
         top: 10px;
       }
 
       &:before, &:after {
-        content: '';
-        position: absolute;
-        width: 0;
-        height: 0;
-        border-left: 6px solid transparent;
-        border-right: 6px solid transparent;
-        left: 50%;
-        margin-left: -6px;
+        opacity: 1;
 
         @media (max-width: $medium) {
           top: 50%;
@@ -284,9 +306,7 @@
       }
 
       &:before {
-        border-top: 6px solid $neon-purple;
-        bottom: -7px;
-
+        transition: opacity .3s ease;
         @media (max-width: $medium) {
           left: -7px;
           bottom: inherit;
@@ -299,9 +319,6 @@
       }
 
       &:after {
-        border-top: 6px solid #F5FEFC;
-        bottom: -6px;
-
         @media (max-width: $medium) {
           left: -36px;
           bottom: inherit;
@@ -313,8 +330,6 @@
       }
 
       .Register {
-        bottom: -34px;
-
         @media (max-width: $medium) {
           bottom: inherit;
           top: 17px;
