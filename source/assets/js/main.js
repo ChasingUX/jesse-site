@@ -181,7 +181,7 @@ tl
       }
     });
 
-    $(".enlarge img").unveil(20, function() {
+    $(".enlarge img").unveil(300, function() {
       $(this).load(function() {
         
         $(this).closest('.enlarge').fluidbox({maxHeight: heightToEnlarge})
