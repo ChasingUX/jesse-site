@@ -288,9 +288,9 @@
       border: 1px solid $neon-purple;
       color: $neon-purple;
 
-      @media (max-width: $medium) {
-        top: 10px;
-      }
+      // @media (max-width: $medium) {
+      //   top: 10px;
+      // }
 
       &:before, &:after {
         opacity: 1;
@@ -332,7 +332,7 @@
       .Register {
         @media (max-width: $medium) {
           bottom: inherit;
-          top: 17px;
+          //top: 17px;
         }
       }
     }
@@ -349,7 +349,7 @@
 
     @media (max-width: $medium) {
       left: -32px;
-      top: 15px;
+      top: 18px;
       bottom: inherit;
     }
 
@@ -429,4 +429,8 @@
   background: #FFFFE2;
   opacity: 0;
   visibility: hidden;
+
+  @media (max-width: $medium) {
+    height: 500px;   
+  }
 }
