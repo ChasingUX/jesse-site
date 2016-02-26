@@ -109,7 +109,10 @@ The DigitalOcean UI is very white and airy which creates the need for structure 
 ## Component Rules
 Components are a series of elements with some sort of behavioral interaction based on user action. Lets say we are building a new product and we have a need to tuck information away until the user interacts with it. We could take advantage of a tooltip, a revealer, a modal, an alert, or a dropdown. Rules are applied to each component so they are used for a particular reason that lends itself to consistency and the most usable pattern for a need. In many cases, if a component feels forced for a particular addition, we may go to the drawing board to create a new component pattern.
 
-[gif of component(s) in action]
+<a class="enlarge border" href="/assets/images/projects/buoy/demo.gif">
+  ![Alt text](/assets/images/projects/buoy/demo.gif)
+  A series of components working together
+</a>
 
 #So I built a thing
 At this point, I knew exactly what problem Buoy solves, I know how Buoy was going to work in our product, and what types of patterns Buoy tackles. Using Middleman, I built an app that allowed us to quickly and reliably generate pixel perfect interfaces in a fraction of the time it used to. 
