@@ -12,3 +12,4 @@
 //= require vendor/greensock/plugins/CSSRulePlugin.js
 //= require vendor/greensock/plugins/AttrPlugin.js
 //= require main
+//= require projects
