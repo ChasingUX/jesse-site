@@ -4,7 +4,6 @@
 //= require vendor/jquery.unveil.js
 //= require vendor/greensock/TweenMax.js
 //= require vendor/greensock/TimelineLite.js
-//= require vendor/greensock/TimelineLite.js
 //= require vendor/greensock/easing/EasePack.js
 //= require vendor/greensock/plugins/CSSPlugin.js
 //= require vendor/greensock/plugins/ScrollToPlugin.js
@@ -13,3 +12,4 @@
 //= require vendor/greensock/plugins/AttrPlugin.js
 //= require main
 //= require projects
+//= require about

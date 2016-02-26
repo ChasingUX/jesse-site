@@ -191,6 +191,7 @@
       width: 4px;
       height: 2px;
       bottom: -2px;
+      z-index: -1;
 
       @media (max-width: $medium) {
         left: -3px;
@@ -224,6 +225,7 @@
     clear: left;
     display: inline-table;
     border: 1px solid $transparent;
+    transition: all .3s ease;
 
     @media (max-width: 900px) {
       margin-left: 20px;
@@ -249,7 +251,7 @@
       color: lighten($neon-purple, 20%);
     }
 
-    &.active {
+    &.active, &.hover {
       padding-right: 21px;
       padding-left: 17px;
       border-radius: 2px;
@@ -403,22 +405,13 @@
   }
 }
 
-// @media (max-width: $large) {
-//   .timeline {
-//     margin-right: 3%;
-//   }
-
-//   .facts {
-//     margin-left: 3%;
-//   }
-// }
-
-// @media (max-width: $medium) {
-//   .timeline {
-//     margin-right: 0;
-//   }
-
-//   .facts {
-//     margin-left: 0;
-//   }
-// }
+.Maps {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 290px;
+  background: #FFFFE2;
+  opacity: 0;
+  visibility: hidden;
+}
