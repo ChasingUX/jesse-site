@@ -453,9 +453,16 @@ $bracket-color: $light-purple;
   font-family: 'GT Pressura';
   font-weight: bold;
   line-height: 1.5;
+  
 
   img {
     margin: 13px 0;
+    opacity: 0;
+    transition: opacity .6s ease!important;
+    
+    &.show {
+      opacity: 1;
+    }
   }
 
   &:before {
@@ -465,7 +472,7 @@ $bracket-color: $light-purple;
   &.border {
     img {
       border: 1px solid $border-grey;
-      transition: border .3s ease-in-out;
+      transition: border .3s ease-in-out, opacity .6s ease!important;
     }
   }
 

@@ -12,7 +12,7 @@ color: blue
 FontReach was born from a problem of not having enough information about font usage. In trying to choose a font for a project, a factor I consider is how 'trendy' it is, or how often it is seen on the web. Until the release of FontReach, we could not assess the uniqueness of a particular font on the web.
 
 <a class="enlarge border" href="/assets/images/projects/fontreach/loader.gif">
-  ![Alt text](/assets/images/projects/fontreach/loader.gif)
+  <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/fontreach/loader.gif">
   FontReach CSS Isometric loader
 </a>
 
@@ -26,7 +26,7 @@ Feb 23 - FontReach API was updated in February, 2016. In the three months since 
 Having this type of data helps designers make more informed font decisions, but also allows us to follow font usage trends on the web. If Hoefler & Co were to release a new typeface, we can accurately track the adoption of it over the course of time.
 
 <a class="enlarge border" href="/assets/images/projects/fontreach/home.jpg">
-  ![Alt text](/assets/images/projects/fontreach/home.jpg)
+  <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/fontreach/home.jpg">
   FontReach Homepage
 </a>
 
@@ -35,14 +35,14 @@ Having this type of data helps designers make more informed font decisions, but 
 **FontReach is simple.** Users are presented with a simple UI composed of input, directions, and one-click access to top fonts — only the bare minimum that allows for a user to start consuming data in seconds. Copy is concise and without distraction. The simple nature invites continued browsing.
 
 <a class="enlarge border" href="/assets/images/projects/fontreach/search.jpg">
-  ![Alt text](/assets/images/projects/fontreach/search.jpg)
+  <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/fontreach/search.jpg">
   Search results for 'tre'
 </a>
 
 **Searching can be fun.** When a user types in a query, we assume that they are ready to submit their request after an 800ms period of inactivity (throttled query). In other words, if a user types in ‘Pro’ and stops for a split second, the query is submitted, and continuous, ongoing modification of the search query is allowed. The user can complete their query at their own pace, while results are updated on pause. It is surprisingly fun and rewarding.
 
 <a class="enlarge border" href="/assets/images/projects/fontreach/fontreach-search.gif">
-  ![Alt text](/assets/images/projects/fontreach/fontreach-search.gif)
+  <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/fontreach/fontreach-search.gif">
   Searching for 'Proxima Nova'
 </a>
 
@@ -61,7 +61,7 @@ Having this type of data helps designers make more informed font decisions, but 
 **FontReach is an infinite experience.** If a user has nowhere to go, they generally leave. While FontReach is a simple search tool, it invites exploration through continuous querying. For example, let’s say a user comes to FontReach with the goal of identifying usage for the font ‘Helvetica Neue.’ After seeing the list of domains that use it, the user clicks on a domain to see the complete stack of fonts it uses, which leads to additional insights. Keyboard contorls throughout also invite continued browsing. Creating experiences that encourage continued browsing leads to a highly enjoyable, almost addictive experience. 
 
 <a class="enlarge" href="/assets/images/projects/fontreach/helvetica-neue.jpg">
-  ![Alt text](/assets/images/projects/fontreach/helvetica-neue.jpg)
+  <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/fontreach/helvetica-neue.jpg">
   Each search query is run through the myfonts.com API in an effort to pull an actual font specimen.
 </a>
 
@@ -69,16 +69,16 @@ Having this type of data helps designers make more informed font decisions, but 
 Outside of exploring font usage, it becomes quite interesting to see what other fonts different brands are using. In some cases, it is shocking to see the quantity of fonts loaded on certain sites. The FontReach domain interface allows for quick toggling of domains to explore brand usage. 
 
 <a class="enlarge" href="/assets/images/projects/fontreach/domain-switch.gif">
-  ![Alt text](/assets/images/projects/fontreach/domain-switch.gif)
+  <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/fontreach/domain-switch.gif">
   Quick switching of domains. (gradient removed for gif sake)
 </a>
 
 <div class="halfWrap">
   <a class="enlarge half" href="/assets/images/projects/fontreach/circular-results.jpg">
-    <img src="/assets/images/projects/fontreach/circular-results.jpg">
+    <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/fontreach/circular-results.jpg">
     Circular being used on spotify.com
   </a><a class="enlarge half" href="/assets/images/projects/fontreach/circular-resultsB.jpg">
-    <img src="/assets/images/projects/fontreach/circular-resultsB.jpg">
+    <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/fontreach/circular-resultsB.jpg">
     Circular being used on mint.com
   </a>
 </div>

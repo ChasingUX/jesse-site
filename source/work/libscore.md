@@ -18,23 +18,23 @@ As a JavaScript developer it is difficult to identify how your libraries are bei
 Libscore aims to solve this problem by identifying which sites are using the most popular JavaScript libraries. Every month, Libscore scans the top million sites on the web to determine which JavaScript libraries are being used on each page. At the end of each crawl, we are left with a heaping pile of valuable data which represents the current state of JavaScript library usage on the web today. Libscore allows us to interact with this data.
 
 <a class="enlarge border" href="/assets/images/projects/libscore/home.jpg">
-  ![Alt text](/assets/images/projects/libscore/home.jpg)
+  <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/libscore/home.jpg">
   Libscore Homepage & Search UI
 </a>
 
 Lets take a look at an example of popular JavaScript animation library, Velocity,js, created by Julian Shapiro (who happens to be a cofounder of Libscore). Prior to Libscore, Julian had not the slightest idea that his library was being used on over 4000 of the top million sites, let alone bohemoth sites such as Tumblr, Forbes, and Gap. If Julian were to look at the Velocity.js libscore page, he would see that his library is being used on one of the top fifty sites on the web (based on Alexa’s ranking) and it has incresed in popularity month over month over the last 6 months!
 
 <a class="enlarge border" href="/assets/images/projects/libscore/velocity.jpg">
-  ![Alt text](/assets/images/projects/libscore/velocity.jpg)
+  <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/libscore/velocity.jpg">
   Search results for $.Velocity animation library
 </a>
 
 <div class="halfWrap">
   <a class="enlarge border half" href="/assets/images/projects/libscore/velocity-visual.jpg">
-    <img src="/assets/images/projects/libscore/velocity-visual.jpg">
+    <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/libscore/velocity-visual.jpg">
     Velocity.js usage over time
   </a><a class="enlarge border half" href="/assets/images/projects/libscore/velocity-tooltip.jpg">
-    <img src="/assets/images/projects/libscore/velocity-tooltip.jpg">
+    <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/libscore/velocity-tooltip.jpg">
     Velocity.js monthly penetration
   </a>
 </div>
@@ -56,7 +56,7 @@ Libscore was designed to be minimal and straightforward, but also extremely flex
 The Libscore API holds the variables that a library exposes itself as e.g. jQuery, Modernizr, $.ui, or $.fn.fancybox. Because Libscore uses the lib variable versus the branded name, it is important that the search helps you find a particular library / variable. For this reason, we built a search API that very quickly returns a list of matched results, be it a script or a library. The dropdown of search results is available throughout the entire experience, and is driven by the arrow keys.
 
 <a class="enlarge border" href="/assets/images/projects/libscore/search.jpg">
-  ![Alt text](/assets/images/projects/libscore/search.jpg)
+  <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/libscore/search.jpg">
   Libscores Search Dropdown
 </a>
 
@@ -64,7 +64,7 @@ The Libscore API holds the variables that a library exposes itself as e.g. jQuer
 Lets take a look at David DeSandro’s grid layout library, [Masonry](http://libscore.com/#Masonry). Masonry has been around for years and is used by about 39,000 sites (in the top million). Over the last 6 months, Masonry has climbed in popularity by a few percentage points, month over month. Last month, it increased by 2.05%. This steady growth shows Masonry as a reliable, rock of a library. It has a incredibly high rate of usage, and is seemingly impervious to the many new Masonry alternatives like Salvatorre. If this were a stock, it would be a low-risk, promising investment that I would sink my money into!
 
 <a class="enlarge border" href="/assets/images/projects/libscore/masonry-visual.jpg">
-  ![Alt text](/assets/images/projects/libscore/masonry-visual.jpg)
+  <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/libscore/masonry-visual.jpg">
   Masonry.js usage over time
 </a>
 
@@ -72,7 +72,7 @@ Lets take a look at David DeSandro’s grid layout library, [Masonry](http://lib
 While seeing the visual growth or decline of a library is an great indicator of general popularity (or lack thereof), it is equally important to see which sites consume a particular library. When we hear of a domain like cnn.com or eBay.com we have a relatively good idea of it’s popularity - obviously massive. Because libscore scans the top million sites and you most definitely have not heard of the top million sites, we display the relative rank. Seing library usage relative to a domain's rank starts to paint a nice picture of how a library is used.
 
 <a class="enlarge border" href="/assets/images/projects/libscore/masonry.jpg">
-  ![Alt text](/assets/images/projects/libscore/masonry.jpg)
+  <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/libscore/masonry.jpg">
   Masonry usage trends vs domain usage
 </a>
 
@@ -83,7 +83,7 @@ In the case of Masrony, it is used by many of the top 1000 sites.  David DeSandr
 From this list of domains, I can click into one to see an exhaustive list of libraries that domain uses. As a developer, you can see if you are in good company. And yes, Masonry is in great company :)
 
 <a class="enlarge border" href="/assets/images/projects/libscore/domain.jpg">
-  ![Alt text](/assets/images/projects/libscore/domain.jpg)
+  <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/libscore/domain.jpg">
   Domain explore: target.com
 </a>
 
@@ -92,16 +92,16 @@ While data specific to a particular library is useful, the real power of Libcore
 
 
 <a class="enlarge border" href="/assets/images/projects/libscore/compare.gif">
-  ![Alt text](/assets/images/projects/libscore/compare.gif)
+  <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/libscore/compare.gif">
   Comparing Isotope to Masonry
 </a>
 
 <div class="halfWrap">
   <a class="enlarge border half" href="/assets/images/projects/libscore/masonry-compareA.jpg">
-    <img src="/assets/images/projects/libscore/masonry-compareA.jpg">
+    <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/libscore/masonry-compareA.jpg">
     Masonry vs. Isotope
   </a><a class="enlarge border half" href="/assets/images/projects/libscore/masonry-compareB.jpg">
-    <img src="/assets/images/projects/libscore/masonry-compareB.jpg">
+    <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/libscore/masonry-compareB.jpg">
     Masonry vs. Isotope vs. Packery
   </a>
 </div>
@@ -112,7 +112,7 @@ Libscore offers a UI to compare any library against any library using the same p
 In addition to Libscore’s library-specific data visualization, it also showcases popularity lists for the top domains, scripts, and domains. While the utility of this functionality is limited, this provides us with useful information on the state of the web today. It is no surprise that jQuery takes home the trophy for top library, nor do we expect this list to be eye-opening. The top libraries and scripts should be expected, as they represent proven libraries that have stood the test of time.
 
 <a class="enlarge border" href="/assets/images/projects/libscore/top-libs.jpg">
-  ![Alt text](/assets/images/projects/libscore/top-libs.jpg)
+  <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/libscore/top-libs.jpg">
   Top JavaScript libraries on the web
 </a>
 

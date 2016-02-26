@@ -65,20 +65,6 @@ tl
   $(function () {
     var heightToEnlarge = $(window).height() - 200;
 
-    $('.enlarge')
-      .fluidbox({maxHeight: heightToEnlarge})
-      .on('openend.fluidbox', function() {
-        var caption = $(this)[0].innerText;
-        if(caption.length) {
-          $('.Caption span').text(caption);
-          $('.Caption').addClass('show');
-        }
-      })
-      .on('closestart.fluidbox', function() {
-        $('.Caption').removeClass('show');
-        $('.Caption span').text('');
-      });
-
     var imageHolder = [],
         $items = $('.Gallery-wrap ul'),
         imageCount = '',
@@ -193,6 +179,25 @@ tl
           hideGallery();
         }
       }
+    });
+
+    $(".enlarge img").unveil(20, function() {
+      $(this).load(function() {
+        
+        $(this).closest('.enlarge').fluidbox({maxHeight: heightToEnlarge})
+        .on('openend.fluidbox', function() {
+          var caption = $(this)[0].innerText;
+          if(caption.length) {
+            $('.Caption span').text(caption);
+            $('.Caption').addClass('show');
+          }
+        })
+        .on('closestart.fluidbox', function() {
+          $('.Caption').removeClass('show');
+          $('.Caption span').text('');
+        });
+        $(this).addClass('show');
+      });
     });
 
     if($('body').hasClass('work_buoy')) {

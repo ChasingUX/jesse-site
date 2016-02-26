@@ -15,14 +15,14 @@ Maintaining a messy front end <strike>can be</strike> is an absolute nightmare.
 At the time, we were planning on shipping some major additions to our product, but I was uncomfortable proceeding without a strong handle on the front end. We were in dire need for a set of standards and methodologies to guide us in the design and build of our product. So with the help of my team, I set out to build a style guide that abide by a logical set of beliefs and patterns.
 
 <a class="enlarge border" href="/assets/images/projects/buoy/buoy.jpg">
-  ![Alt text](/assets/images/projects/buoy/buoy.jpg)
+  <img data-src="/assets/images/projects/buoy/buoy.jpg" src="/assets/images/blank.jpg">
   The Buoy Logo
 </a>
 
 After research and benchmarking, I had a strong idea of how to architect Buoy. It should be comprised of layout modules, elements, components, and utilities. Through these collections, a designer has an understanding of the pattern library and a developer can very quickly and easily code  the designer's work. Layout would house the page structure like grids and whitespace, Elements would house individual elements like buttons or inputs, components would house the interactive elements like modals or tabs, and utilities would house utility helpers like a clearfix and text align utility.
 
 <a class="enlarge border" href="/assets/images/projects/buoy/grid.jpg">
-  ![Alt text](/assets/images/projects/buoy/grid.jpg)
+  <img data-src="/assets/images/projects/buoy/grid.jpg" src="/assets/images/blank.jpg">
   Buoy grid layout page
 </a>
 
@@ -35,7 +35,7 @@ Buoy should have the ability to be shared across many projects. This means that 
 While scoping (nesting) css is important on the component level, Buoy believes that all elements and components should be available and shareable anywhere within a project. As a consumer of Buoy, you should never have to battle style specificity or create overrides. All Buoy components and elements are left relatively un-scoped so they are easy to use and maintain.
 
 <a class="enlarge" href="/assets/images/projects/buoy/badges.png">
-  ![Alt text](/assets/images/projects/buoy/badges.png)
+  <img data-src="/assets/images/projects/buoy/badges.png" src="/assets/images/blank.jpg">
   Unscoped css in badge element
 </a>
 
@@ -55,7 +55,7 @@ Buoy should not be difficult to maintain. Buoy consolidates all reusable compone
 Buoy is written in an object oriented CSS methodology called BEM, which stands for Block, Element, Modifier. We have adopted Nicolas Gallagher's naming scheme, called SUIT. To people unfamiliar with BEM, this may seem superfluous and strange. As far as maintainability is concerned, it is extremely easy to identify what a selector represents by it's class name. For instance, a modal's class is `.Modal`. The header of a modal (a modal’s child) is `.Modal-header`. And lastly, if we wanted a smaller version of a modal (a modifier) we would name it `.Modal—-small.` This type of naming convention feels very natural and is indicative of a selector’s purpose.
 
 <a class="enlarge border" href="/assets/images/projects/buoy/markup.jpg">
-  ![Alt text](/assets/images/projects/buoy/markup.jpg)
+  <img data-src="/assets/images/projects/buoy/markup.jpg" src="/assets/images/blank.jpg">
   Modal markup
 </a>
 
@@ -63,16 +63,16 @@ Buoy is written in an object oriented CSS methodology called BEM, which stands f
 While buoy provides styles and components to use, it is much more than just a style guide. Buoy has certain baked in ‘beliefs’ that guide us in building product through a design system. The difference between a style guide and a design system, is that the latter provides us with architectural or experiential rules that drive how a style guide is used. 
 
 <a class="enlarge border" href="/assets/images/projects/buoy/select.jpg">
-  ![Alt text](/assets/images/projects/buoy/select.jpg)
+  <img data-src="/assets/images/projects/buoy/select.jpg" src="/assets/images/blank.jpg">
   Searchable select element
 </a>
 
 <div class="halfWrap">
   <a class="enlarge border half" href="/assets/images/projects/buoy/tabs.jpg">
-    <img src="/assets/images/projects/buoy/tabs.jpg">
+    <img data-src="/assets/images/projects/buoy/tabs.jpg" src="/assets/images/blank.jpg">
     Buoy
   </a><a class="enlarge border half" href="/assets/images/projects/buoy/empty.jpg">
-    <img src="/assets/images/projects/buoy/empty.jpg">
+    <img data-src="/assets/images/projects/buoy/empty.jpg" src="/assets/images/blank.jpg">
     Buoy
   </a>
 </div>
@@ -82,10 +82,10 @@ The DigitalOcean UI is button-heavy in areas. In an effort not to confuse the us
 
 <div class="halfWrap">
   <a class="enlarge border half" href="/assets/images/projects/buoy/buttons.jpg">
-    <img src="/assets/images/projects/buoy/buttons.jpg">
+    <img data-src="/assets/images/projects/buoy/buttons.jpg" src="/assets/images/blank.jpg">
     Buoy buttons
   </a><a class="enlarge border half" href="/assets/images/projects/buoy/colors.jpg">
-    <img src="/assets/images/projects/buoy/colors.jpg">
+    <img data-src="/assets/images/projects/buoy/colors.jpg" src="/assets/images/blank.jpg">
     Buoy Colors
   </a>
 </div>
@@ -94,7 +94,7 @@ The DigitalOcean UI is button-heavy in areas. In an effort not to confuse the us
 Anything related to infrastructure is an object. An object is a ‘thing’ that has a series of visually consistent metadata relating to the parent object. As the product grows and we have many objects, it is highly important that we use the same visual language across these products.
 
 <a class="enlarge border" href="/assets/images/projects/buoy/objects.jpg">
-  ![Alt text](/assets/images/projects/buoy/objects.jpg)
+  <img data-src="/assets/images/projects/buoy/objects.jpg" src="/assets/images/blank.jpg">
   Buoy Objects - NOTE: these are not actual objects used in DigitalOcean UI
 </a>
 
@@ -102,7 +102,7 @@ Anything related to infrastructure is an object. An object is a ‘thing’ that
 The DigitalOcean UI is very white and airy which creates the need for structure amongst elements and components. Buoy takes advantage of the box to create structure across the interface. Because boxes are visually similar to form inputs, non interactive boxes are 2px and form inputs are 1px.
 
 <a class="enlarge border" href="/assets/images/projects/buoy/boxes.jpg">
-  ![Alt text](/assets/images/projects/buoy/boxes.jpg)
+  <img data-src="/assets/images/projects/buoy/boxes.jpg" src="/assets/images/blank.jpg">
   Buoy Boxes
 </a>
 
@@ -110,7 +110,7 @@ The DigitalOcean UI is very white and airy which creates the need for structure 
 Components are a series of elements with some sort of behavioral interaction based on user action. Lets say we are building a new product and we have a need to tuck information away until the user interacts with it. We could take advantage of a tooltip, a revealer, a modal, an alert, or a dropdown. Rules are applied to each component so they are used for a particular reason that lends itself to consistency and the most usable pattern for a need. In many cases, if a component feels forced for a particular addition, we may go to the drawing board to create a new component pattern.
 
 <a class="enlarge border" href="/assets/images/projects/buoy/demo.gif">
-  ![Alt text](/assets/images/projects/buoy/demo.gif)
+  <img data-src="/assets/images/projects/buoy/demo.gif" src="/assets/images/blank.jpg">
   A series of components working together
 </a>
 
@@ -128,6 +128,6 @@ So how does one implement a style guide on an extremely messy codebase? How do w
 While we ran into some conflicts, the transition was fairly seamless, and before we knew it, we had a shiny new cloud to show off. And on that last day, the feeling of merging this new branch onto cloud was victorious. Mainly because it represented a mass exodus of tens of thousands of lines of ugly css and markup. 
 
 <a class="enlarge border" href="/assets/images/projects/buoy/buoy-build.gif">
-  ![Alt text](/assets/images/projects/buoy/buoy-build.gif)
+  <img data-src="/assets/images/projects/buoy/buoy-build.gif" src="/assets/images/blank.jpg">
   A quick and dirty build of a form UI with no extra css.
 </a>

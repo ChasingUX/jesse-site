@@ -127,7 +127,7 @@
 				.wrapInner($fb_innerWrap)
 				.find('img')
 					.first()
-					.css({ opacity: 1})
+					// .css({ opacity: 1})
 					.addClass('fluidbox__thumb')
 					.after('<div class="fluidbox__ghost" />');
 
