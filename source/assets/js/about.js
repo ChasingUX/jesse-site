@@ -44,7 +44,10 @@ $(function () {
       container: 'map',
       style: 'mapbox://styles/jbird1111/cil48x6cd000x9jm1ajh9yjw5',
       center: start,
-      zoom:14
+      zoom:14,
+      // dragPan: false,
+      scrollZoom: false,
+      attributionControl: false
   });
 
   function fly(longitude,latitude, zoom) {
