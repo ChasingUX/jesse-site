@@ -3,6 +3,7 @@
 //= require vendor/jquery.fluidbox.js
 //= require vendor/jquery.unveil.js
 //= require vendor/mapbox.js
+//= require vendor/jquery.hoverIntent.js
 //= require vendor/greensock/TweenMax.js
 //= require vendor/greensock/TimelineLite.js
 //= require vendor/greensock/easing/EasePack.js

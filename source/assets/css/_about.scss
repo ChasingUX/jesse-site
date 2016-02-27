@@ -184,15 +184,21 @@
       border-top: 0;
     }
 
+    li:not(.active) {
+      opacity: .4;
+    }
+
     &.hovered {
       li:not(.hover) {
         opacity: .4;
       }
+
+      li.hover {
+        opacity: 1;
+      }
     }
 
-    li:not(.active) {
-      opacity: .4;
-    }
+    
   }
 
   li {

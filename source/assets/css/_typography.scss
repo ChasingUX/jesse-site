@@ -130,6 +130,12 @@ h2.ribbon {
     }
   }
 
+  &.purple {
+    &:before {
+      background: darken($polar-purple, 1%);
+    }
+  }
+
   &:before {
     content: '';
     position: absolute;
