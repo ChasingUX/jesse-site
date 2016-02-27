@@ -47,18 +47,16 @@ $(function () {
       zoom:14
   });
 
-  // var isAtStart = true;
-
   function fly(longitude,latitude, zoom) {
 
     var end = [longitude, latitude];
-    map.easeTo({
+    map.jumpTo({
       center: end,
       zoom: zoom,
       bearing: 0,
-      // screenSpeed: 2,
-      // minZoom: 8, 
-      // these options are for flyTo
+      load: function(){
+        alert('poo')
+      }
     });
   }
 });
