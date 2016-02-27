@@ -21,7 +21,7 @@ $(function () {
     if ($this[0].className == 'hover' || $this[0].className == 'active' ) {} 
 
     else {
-      console.log("Map moving to: " + city);
+      // console.log("Map moving to: " + city);
 
       $notHovers = $location.not($(this));
       $notHovers.removeClass('hover');

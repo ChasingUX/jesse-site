@@ -10,7 +10,7 @@ $(function () {
   function dupeImages(){
     $('.project').find('img').each(function(){
       
-      var src = $(this).attr('src'),
+      var src = $(this).data('src'),
           caption = $(this).parent()[0].innerText;
       
       imageHolder.push({src: src, caption: caption})
@@ -19,7 +19,7 @@ $(function () {
     imageCount = imageHolder.length;
 
     for (var i = 0; i < imageCount; i++) {
-      $newContent = '<li><a href="' + imageHolder[i].src + '" class="enlarge"><img src="' + imageHolder[i].src + '">' + imageHolder[i].caption +'</a></li>';
+      $newContent = '<li><a href="' + imageHolder[i].src + '" class="enlarge"><img style="opacity:1" src="' + imageHolder[i].src + '">' + imageHolder[i].caption +'</a></li>';
       $items
         .append($newContent)
         .find('a.enlarge')

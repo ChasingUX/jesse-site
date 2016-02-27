@@ -635,7 +635,11 @@ $bracket-color: $light-purple;
     outline: 1px solid $border-grey;
 
     &:hover {
-      outline: 1px solid $dark-salmon;
+      outline: 1px solid $neon-purple;
+    }
+
+    .fluidbox__wrap {
+      transition: none;
     }
 
     img {
@@ -646,6 +650,7 @@ $bracket-color: $light-purple;
     a {
       padding: 18px;
       display: block;
+      transition: none;
       &:before {
         display: none;
       }
