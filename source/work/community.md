@@ -8,9 +8,9 @@ tags: regular
 ---
 
 ##What is the community
-There are over 1 billion websites on the internet, and far less System Administrators to configure servers for these sites that have complex and varying needs. The DigitalOcean community platform aims to make SysAdmins live's much easier as they begin or continue their journey in learning system administration subjects.
+There are over 1 billion websites on the internet, and far less System Administrators to configure servers for these sites that have complex and varying needs. The DigitalOcean community platform aims to make SysAdmins live's easier as they begin or continue their journey in learning system administration subjects.
 
-When I started working on the Community, it already existed in a rudimentary form — a blog with hundreds of tutorials complimented by a fairly traditional forum. Due to quality, timliness, and technical accuracy of the tutorials, content was indexed extremely well by Google. For instance, if I were to search a very common beginner SysAdmin subject in google `set up password authentication apache`, a DigitalOcean tutorial would be in the top three results. This created a reliable influx of traffic to the tune of about 5 million unique visits per month, representing about 90% of all community traffic! The community was less of a destination, and more of a collection of amazing tutorials that google deemed a top resource.
+When I started working on the Community, it already existed in a rudimentary state — a blog with hundreds of tutorials complimented by a fairly traditional forum. Due to quality, timliness, and technical accuracy of the tutorials, content was indexed extremely well by Google. For instance, if I were to search a very common beginner SysAdmin subject in google `set up password authentication apache`, a DigitalOcean tutorial would be in the top three results. This created a reliable influx of traffic to the tune of about 5 million unique visits per month, representing about 90% of all community traffic! The community was less of a destination, and more of a collection of amazing tutorials that google deemed a top resource.
 
 <div class="halfWrap">
   <a class="enlarge half border" href="/assets/images/projects/community/google.jpg">
@@ -22,7 +22,7 @@ When I started working on the Community, it already existed in a rudimentary for
   </a>
 </div>
 
-The challenge became clear - we must continue writing quality content, and shift our product into a destination for developers to help and learn from one another.
+The challenge became clear - we must continue writing quality content, and shift our product into a destination for developers to help and learn from one another. **We must build, a community.**
 
 <blockquote>
   we must...shift our product into a destination for developers to help and learn from one another.
@@ -54,11 +54,17 @@ The app's IA is built around these three core buckets of content, as well as the
 </a>
 
 ##Browsing the plethora of content
-Building towards the goal of a destination, the thousands of resources the community provides must be easily accessible. So wwhen we have so much content, each covering vastly different subjects, what is the best way to locate this content? First, we must understand the user. The majority of users who arrive on the community have a particular topic in mind. They arent here to explore a wide array of content types, but rather one particular subject. Based on this assumption, we wanted to build a powerful search that delivers instant and relevant results from the first keystroke.
+Building towards the goal of a destination, the thousands of resources the community provides must be easily accessible. So when we have so much content, each covering vastly different subjects, what is the best way to locate this content? First, we must understand the user. The majority of users who arrive an the community already have a particular topic in mind. They aren't here to explore a wide array of subjects, but rather one particular area of focus. Based on this assumption, we wanted to build a powerful search that delivers instant and relevant results from the first keystroke.
 
 <a class="enlarge border" href="/assets/images/projects/community/search_closeup.gif">
   <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/community/search_closeup.gif">
 </a>
+
+
+Using [Algolia](https://www.algolia.com/), we built a super powerful search tool, and tested a few different combinations of filtering options, algorithm changes, and metadata integrations. There were some interesting learnings, particulary around tags.
+
+As tags play a vital role in classifying resources, we tested their usefulness as a part of the search UI. We found that users were not using tags as a search tool and prefered to search using free-form writing based on their needs. While tags are still a very important part of the search algorithm and tutorial metadata, users prefer to surface content via search bar versus traversing a heierchy tree of many tags. If a user searchers `nginx` on `centos 7`, it immediately returns the exact content they need. If a user is looking for the newest or trending content, filtering options are available.
+
 
 <div class="halfWrap">
   <a class="enlarge half border" href="/assets/images/projects/community/questions-tablet.jpg">
@@ -70,13 +76,9 @@ Building towards the goal of a destination, the thousands of resources the commu
   </a>
 </div>
 
-Using Algolia, we built a super powerful search tool, and tested a few different combinations of filtering options, algorithm changes, and tag integration. There were some interesting learnings, particulary around tags.
+{NOTE switch these UIs out for ones with autocomplete on}
 
-As tags are a vital part classifying resources, we tested their usefulness as a part of the search UI. We found that users were not using tags as a search tool and prefered to search using free-form writing based on their own particular need. While tags are still a very important part of the search alrithm and tutorial classification, it does not need to be used as a primary tool for locating content. If a user wants to search for `nginx` on `centos 7` then we will deliver them the exact content they need. If a user is looking for the newest or trending content, filtering options are available.
-
-
-
-<div class="halfWrap">
+<!-- <div class="halfWrap">
   <a class="enlarge half border" href="/assets/images/projects/community/tags.jpg">
     <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/community/tags.jpg">
     All Tags Page
@@ -84,14 +86,14 @@ As tags are a vital part classifying resources, we tested their usefulness as a 
     <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/community/tag_single.jpg">
     Apache Tutorials, Questions, Projects
   </a>
-</div>
+</div> -->
 
 ##Consuming Tutorial Content
-The core of the DigitalOcean community lies with the tutorial content and the reading experience. As the majority of content-consumers come from a Google search result, the reading experience must be optimized for quick and easy consumption of content. Users are presented with a distraction free, easy to follow tutorial with tools such as tables of contents, and multi-lingual translations.
+The core of the DigitalOcean community lies with the tutorial content and the reading experience. As the majority of content-consumers come from Google search results, the reading experience must be optimized for quick and easy consumption of content. Users are presented with a distraction free, easy to follow tutorial with tools such as tables of contents, and multi-lingual translations.
 
 {Image of tutorial header and first paragraph}
 
-The tutorial UI is optimized for reading and building. Because the nature of the content is so technical, common behavior is for readers to toggle back and forth between the tutorial and a programming environment, so much focus needed to be placed on the display of code. Code examples need to be informative in how they are displayed, therefore editorial control must be extremely flexible (More of that later).
+The tutorial UI is optimized for reading and building. Because the nature of the content is so technical, common behavior is for readers to toggle back and forth between the tutorial and a programming environment, so much focus needed to be placed on the display of code. Code examples need to be informative in how they are displayed, therefore editorial control must be extremely flexible (more on that later).
 
 {Image of code samples}
 
@@ -121,13 +123,15 @@ Throughout the community lives a very special icon - the heart. The heart action
 </a>
 
 ##Commenting
-Unlike the DigitalOcean blog, which uses the Disqus commenting platform, we wanted to roll out our own commenting system that provided a much richer suite of functionality. As commenting is the core form of user interaction within the community, we wanted to adopt UX patterns that were fairly known as a base, and extend it with useful features for the technical publisher.
+Unlike the DigitalOcean blog, which uses the Disqus commenting platform, we wanted to roll out our own commenting system that provided a much richer suite of functionality. As commenting is the core form of user interaction within the community, we wanted to adopt UX patterns that were fairly known as a foundation, and extend it with useful features for the technical publisher.
 
 We required unlimited threading for conversations at any thread depth, the presence of social profiles accessible through user avatars, very concise actions (heart, reply, report), and a clear design, with enough whitespace to meet the DO aesthetic, but not enough that renders a 100+ comment thread unreadable. Comments also needed to be optimized for code display, so rich wysiwyg editorial control was essential. 
 
 {image of good looking comment thread}
 
 The real magic lies in the wysiwyg. A well-made rich text editor (also known as wysiwyg) is absolutely critical in effective content publishing. After reviewing all of the open source tools out there, we decided to roll out our own, in what I condiser to be the single most useful component in the app. 
+
+{image of wsiwyg next to comments}
 
 We are not creating a tool for publishers, rather developers. It needs to display code just as well as it does long-form content, and must meet the following requirements:
 
@@ -150,14 +154,14 @@ While the DigitalOcean community offers curated tutorial content, we wanted to b
 {pic of questions homepage}
 
 ###Ask a question
-As a user, you may have read a tutorial and are left with certain questions, or have a questions related to system administration. The ask a question flow is extremely simple - a user types in their question using the same wsiwig that powers comments, with more advanced controls like h1-h3 headers. After submission it is run through our spam filter to protect against bots. If it passes, it publishes immediately for the ret of the community to engage with.
+As a user, you may have read a tutorial and are left with certain questions, or have a question related to system administration. The ask a question flow is extremely simple - a user types in their question using the same wsiwig that powers comments, with more advanced controls like h1-h3 headers. After submission it is run through our spam filter to protect against bots. If it passes, it publishes immediately for the rest of the community to engage with.
 
 {image of ask question page with content filled out}
 
 ###The Question
 Questions are formatted with the question on top and a series of answers below. There are three objects that form a Q&A discussion - the question, the answer(s), and comment(s). A user can comment on a question or an answer, or they can simply provide a direct answer to the question. This is similar to that of Stack Overflow, but unlike Stack Overflow, the asker of the question is not able to mark a single answer as 'correct'.  
 
-Our belief is simple: There are often multiple correct answers with different paths. Instead of allowing only one 'correct' answer, we want to allow the entire community to 'heart' answers to form a appreciation-based ordering of quality answers. 
+Our belief is simple: There are often multiple correct answers, each with vastly different solutions. Instead of allowing only one 'correct' answer, we want to allow the entire community to 'heart' answers to form a appreciation-based ordering of quality answers. 
 
 {image of new image I worked on, sent to jordana of questions page}
 {two images of answers and comments on them}
@@ -186,7 +190,7 @@ A user's profile houses information and content relating to the user. Profiles a
 As a user, if I were to comment, I want to be notified if anyone replies. This is how most commenting platforms function, but our perspective is slightly different. We send notifications to a user if they are 'subscribed' to particular form of content. There are two ways a user can be 'subscribed' to an entity: 
 
 1. If a user creates content (comment, question, answer, project) they are automatically subscribed to all replies (be it a answer or comment).
-2. A user manually subscribes to content by clickign the subscribe button.
+2. A user manually subscribes to content by clicking the subscribe button.
 
 {image of subscribe box checked on a tutorial or question}
 

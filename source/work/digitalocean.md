@@ -1,5 +1,5 @@
 ---
-title: "DigitalOcean"
+title: "DigitalOcean Cloud"
 date: 2015-10-03
 summary: "DigitalOcean crawls the top million websites and surfaces data about font usage across the web."
 link_copy: "Visit Project"
