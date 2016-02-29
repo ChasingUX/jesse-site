@@ -1,51 +1,63 @@
 ---
 title: "DigitalOcean Community"
 date: 2015-10-03
-summary: "A robust Q&A and content platform for SysAdmins and developers."
-link_copy: "Visit Project"
+summary: "A robust Q&A and content platform for SysAdmins and Developers."
+link_copy: "Visit Community"
 url: https://www.digitalocean.com/community
 tags: regular
 ---
 
 ##What is the community
+There are over 1 billion websites on the internet, and far less System Administrators to configure servers for these sites that have complex and varying needs. The DigitalOcean community platform aims to make SysAdmins live's much easier as they begin or continue their journey in learning system administration subjects.
 
-content for devs, comprised of sysadmin and dev tutorials, a robust q&a platform, and DO-projects. Talk a bit about each one.
-
-At the start of the project the community existing in a very basic form, closer to a blog.
-
-Mission: We want to leverage the brand and readership to create something that is not only a developers resource, but a community for devs.
+When I started working on the Community, it already existed in a rudimentary form — a blog with hundreds of tutorials complimented by a fairly traditional forum. Due to quality, timliness, and technical accuracy of the tutorials, content was indexed extremely well by Google. For instance, if I were to search a very common beginner SysAdmin subject in google `set up password authentication apache`, a DigitalOcean tutorial would be in the top three results. This created a reliable influx of traffic to the tune of about 5 million unique visits per month, representing about 90% of all community traffic! The community was less of a destination, and more of a collection of amazing tutorials that google deemed a top resource.
 
 <div class="halfWrap">
-  <a class="enlarge half" href="/assets/images/projects/community/home_before.jpg">
-    <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/community/home_before.jpg">
-    Community homepage before
-  </a><a class="enlarge half border" href="/assets/images/projects/community/home_afterB.jpg">
-    <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/community/home_afterB.jpg">
-    Community homepage after
+  <a class="enlarge half border" href="/assets/images/projects/community/google.jpg">
+    <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/community/google.jpg">
+    Google likes community content :)
+  </a><a class="enlarge half border" href="/assets/images/projects/community/analytics.jpg">
+    <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/community/analytics.jpg">
+    Page views at 5M/mnth
   </a>
 </div>
 
-##What we already know about the site usage
-- gets lots of traffic
-- quality of writing is revered
-- 90% traffic flows through google from amaze SEO
-- homepage is almost irrelevant, not yet a destination
-- mobile usage is higher than other product, so experience just be optimized for mobile
+The challenge became clear - we must continue writing quality content, and shift our product into a destination for developers to help and learn from one another.
 
-##Where we want to go (GOALS)
-- Create a community (a user-base of involved users to sharing their questions, projects, comments, and tutorials
-- same quality tutorials, vastly improved consumption and editorial control.
-- Introduction of profiles/accounts,  rich notifications / preferences
-- Q&A Platform
+<blockquote>
+  we must...shift our product into a destination for developers to help and learn from one another.
+</blockquote>
+
+By leveraging the communities existing content and readership, we were able to create more than just a resource for SysAdmins, but a rich platform for them to learn and better themselves in their field.
 
 
-##Browsing via Search
-- The community holds a TON of content, classified by tags. Best way to find a particular thing is to search for it.
-- We built a powerfully tuned search tool that surfaces content accurately and quickly.
-- Talk about how the search works / Algolia
 
-<a class="enlarge border" href="/assets/images/projects/community/searchCloseup.gif">
-  <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/community/searchCloseup.gif">
+<a class="enlarge half border" href="/assets/images/projects/community/explore.jpg">
+  <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/community/explore.jpg">
+  Go on, explore!
+</a>
+
+#The New Community
+Community 2.0 is a brand new app, rebuilt to meet our goals. The content is comprised of three main sections:
+
+<ol>
+  <li><strong>Tutorials</strong><br>1300+ tutorials written with love by DigitalOcean writers. </li>
+  <li><strong>Q&A</strong><br>Community-generated questions and answers on SysAdmin subjects. </li>
+  <li><strong>Projects</strong><br>Apps, Wrappers, and other integrations built on top of the DigitalOcean API. </li>  
+</ol>
+
+The app's IA is built around these three core buckets of content, as well as the user and tag objects. 
+
+<a class="enlarge border" href="/assets/images/projects/community/ia.jpg">
+  <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/community/ia.jpg">
+  Community Sitemap
+</a>
+
+##Browsing the plethora of content
+Building towards the goal of a destination, the thousands of resources the community provides must be easily accessible. So wwhen we have so much content, each covering vastly different subjects, what is the best way to locate this content? First, we must understand the user. The majority of users who arrive on the community have a particular topic in mind. They arent here to explore a wide array of content types, but rather one particular subject. Based on this assumption, we wanted to build a powerful search that delivers instant and relevant results from the first keystroke.
+
+<a class="enlarge border" href="/assets/images/projects/community/search_closeup.gif">
+  <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/community/search_closeup.gif">
 </a>
 
 <div class="halfWrap">
@@ -58,37 +70,36 @@ Mission: We want to leverage the brand and readership to create something that i
   </a>
 </div>
 
-{two smaller images of questions and  projects search, perhaps mobile closeups}
+Using Algolia, we built a super powerful search tool, and tested a few different combinations of filtering options, algorithm changes, and tag integration. There were some interesting learnings, particulary around tags.
 
-###Filtering
-Easily find content that is popular, trending or a part of a series.
+As tags are a vital part classifying resources, we tested their usefulness as a part of the search UI. We found that users were not using tags as a search tool and prefered to search using free-form writing based on their own particular need. While tags are still a very important part of the search alrithm and tutorial classification, it does not need to be used as a primary tool for locating content. If a user wants to search for `nginx` on `centos 7` then we will deliver them the exact content they need. If a user is looking for the newest or trending content, filtering options are available.
 
-{gif of filtering}
 
-###Search Results
-Show the results, the metadata
 
-###Tags
-During a previous iteration of the community, the tags were available via the search interface, but we found that users had a very particular need and were not using tags. While tags are still a very important part of the search alrithm and tutorial classification, it does not need to be used in locating content. If a user wants to search for `nginx` on `centos 7` then we will deliver them the exact content they need.
-
-<a class="enlarge border" href="/assets/images/projects/community/tags.jpg">
-  <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/community/tags.jpg">
-</a>
+<div class="halfWrap">
+  <a class="enlarge half border" href="/assets/images/projects/community/tags.jpg">
+    <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/community/tags.jpg">
+    All Tags Page
+  </a><a class="enlarge half border" href="/assets/images/projects/community/tag_single.jpg">
+    <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/community/tag_single.jpg">
+    Apache Tutorials, Questions, Projects
+  </a>
+</div>
 
 ##Consuming Tutorial Content
-- distraction-free, easy-to-follow content.
-- the nature of the content involves going back and forth from a terminal to the content
-- code and examples must look good. This requires a super rich and flexible editorial control (link to that section, 'more on that later’).
+The core of the DigitalOcean community lies with the tutorial content and the reading experience. As the majority of content-consumers come from a Google search result, the reading experience must be optimized for quick and easy consumption of content. Users are presented with a distraction free, easy to follow tutorial with tools such as tables of contents, and multi-lingual translations.
 
 {Image of tutorial header and first paragraph}
 
-###Table of Contents
+The tutorial UI is optimized for reading and building. Because the nature of the content is so technical, common behavior is for readers to toggle back and forth between the tutorial and a programming environment, so much focus needed to be placed on the display of code. Code examples need to be informative in how they are displayed, therefore editorial control must be extremely flexible (More of that later).
+
+{Image of code samples}
+
+<!-- Tutorials tend to be long. As a user is jumping back and forth
 - Tutorials are often very long so a table of contents functionality exists for jumping to relevant sections
 {gif of toggling TOC and sliding to section}
 
-
 ###Translate
-
 
 <div class="halfWrap">
   <a class="enlarge half border" href="/assets/images/projects/community/toc.gif">
@@ -98,13 +109,11 @@ During a previous iteration of the community, the tags were available via the se
   <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/community/translate.gif">
    Translate
   </a>
-</div>
+</div> -->
 
 
-
-
-###The Heart
-Is it a bookmark? Is it appreciation? Both! Because they are typically correlated, we wanted a simple heart to show your love.
+## Show some love - the 'Heart'
+Throughout the community lives a very special icon - the heart. The heart action is used to show appreciation to other community users for their contributions. While hearts do not have a 1:1 correlation with popularity or caliber, they are a fairly accurate indicator of quality content. 
 
 <a class="enlarge border" href="/assets/images/projects/community/heart.jpg">
   <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/community/heart.jpg">
@@ -112,47 +121,50 @@ Is it a bookmark? Is it appreciation? Both! Because they are typically correlate
 </a>
 
 ##Commenting
-- Built a commenting system from scratch.
-- wysiwyg Goals
-     - markdown supported
-     - oriented towards code
-     - syntax highlighting, with language support
-     - instant previewing
-     - inline notification of subscribe
+Unlike the DigitalOcean blog, which uses the Disqus commenting platform, we wanted to roll out our own commenting system that provided a much richer suite of functionality. As commenting is the core form of user interaction within the community, we wanted to adopt UX patterns that were fairly known as a base, and extend it with useful features for the technical publisher.
 
-{gif of complex wysiwyg markdown translation into preview and publish}
-
-- Commenting Goals
-     - Unlimited Threading
-     - driven by social identity (profile)
-     - Simple Actions: Heart, Reply, Report
-     - Clear simple design, high readership for 1 or 1000 comments
+We required unlimited threading for conversations at any thread depth, the presence of social profiles accessible through user avatars, very concise actions (heart, reply, report), and a clear design, with enough whitespace to meet the DO aesthetic, but not enough that renders a 100+ comment thread unreadable. Comments also needed to be optimized for code display, so rich wysiwyg editorial control was essential. 
 
 {image of good looking comment thread}
 
-##Q&A Platform
--While consuming tutorial content may lead to questions, the q&a section provides functionality that allows users to ask a question for the community of devs and sysadmins to answer. The rate of answer is {get stat from etel}.
+The real magic lies in the wysiwyg. A well-made rich text editor (also known as wysiwyg) is absolutely critical in effective content publishing. After reviewing all of the open source tools out there, we decided to roll out our own, in what I condiser to be the single most useful component in the app. 
 
--The Questions homepage surfaces the news questions, and the search allows for immediate filtering of relevant questions.
+We are not creating a tool for publishers, rather developers. It needs to display code just as well as it does long-form content, and must meet the following requirements:
+
+   - Fully supports markdown as well as custom markdown commands
+   - Offers rich fomatting for non-code content
+   - Features syntax highlighting, with custom language support
+   - Offers instant previewing on the client side
+
+{gif of complex wysiwyg markdown translation into preview and publish}
+
+<!-- - code block
+- line numbers (```line_numbers)
+- header with $ -->
+
+##Q&A Platform
+As a front-end dev and designer, I am often developing my own work. When I am stuck on say a JavaScript problem, I might use Stack Overflow in hopes that more knowledgable devs can assist — it is an invaluable Q&A app because of it's engaged community of developers. 
+
+While the DigitalOcean community offers curated tutorial content, we wanted to build a feature that allows users to ask free-form questions to the rest of the community, similar to that of Stack Overflow (or specifically, ServerVault). Since the release of this feature, over 12,000 questions have been asked, of which the vast majority have answers. 
 
 {pic of questions homepage}
 
 ###Ask a question
-- process is really simple. A user can fully preview using the same wsiwig that powers comments, but with more advanced controls like h1-h3 headers. After submission it is run through akismet spam filter. If it passes, it publishes immediately. If fails, it is held for moderation (more on moderation experience later)
+As a user, you may have read a tutorial and are left with certain questions, or have a questions related to system administration. The ask a question flow is extremely simple - a user types in their question using the same wsiwig that powers comments, with more advanced controls like h1-h3 headers. After submission it is run through our spam filter to protect against bots. If it passes, it publishes immediately for the ret of the community to engage with.
 
 {image of ask question page with content filled out}
 
-###Question Format
-- Format is very similar to stack overflow in that there is the question, and a series of answers. A user can comment on the question, answer the question, comment on an answer, or comment on a comment.
- - Unlike SO there is no selected answer, but hearts are given to show appreciation. We are not trying to game it, but rather invite devs to share their perspective and let the community decide on valuable content based on hearting
+###The Question
+Questions are formatted with the question on top and a series of answers below. There are three objects that form a Q&A discussion - the question, the answer(s), and comment(s). A user can comment on a question or an answer, or they can simply provide a direct answer to the question. This is similar to that of Stack Overflow, but unlike Stack Overflow, the asker of the question is not able to mark a single answer as 'correct'.  
+
+Our belief is simple: There are often multiple correct answers with different paths. Instead of allowing only one 'correct' answer, we want to allow the entire community to 'heart' answers to form a appreciation-based ordering of quality answers. 
 
 {image of new image I worked on, sent to jordana of questions page}
-
 {two images of answers and comments on them}
 
+
 ##Projects
-- Projects showcase tools that devs build to integrate with the DO platform.
-- Split between services, API wrappers, Apps, and other integrations
+Tutorials, questions and answers all provide knowledge and inspiration to build. The projects section showcases tools that users have built on top of the DigitalOcean API. Split between services, API wrappers, apps, and other integrations, all of the projects reflect the strength of the community in that our users are learning from the informative content and building rich integrations. 
 
 {image of projects screen}
 
@@ -161,39 +173,37 @@ On the projects page, users can interact with one another using comments, simila
 {img of project show page}
 
 ## User Management
-- As a user, it must be easy to manage your tutorials, questions, comments, and preferences.
+So what does it mean to be a registered user of the community? Being a registered user not only allows you to interact with and create content, but also allows you to manage your content, profile, and preferences, subscribe to topics of interest, and control your flow of notifications.
 
 {image of header with account dropdown or gif of animation opening}
 
 ###Profile
-- user information
-- keeps track of all your content
+A user's profile houses information and content relating to the user. Profiles are open and public, and serve as a user's social identity within the community. If I were to visit a user's profile, I could learn about their interests, view external social accounts or projects, and see their contributions to the DigitalOcean Community. As the owner of a profile, I can use it to manage my questions, answers, comments, projects, etc.
 
 {image of profile screen}
 
 ### Notifications & Subscriptions
-- Notifications are sent to a user if they are subscribed to content and another user has commented or answered it. A user subscribes to content by manually subscribing (via toggle) or by creating content. IE- if a user comments, they are subscribed to all replies. If a user asks a question, they are subscribed to all answers and comments.
+As a user, if I were to comment, I want to be notified if anyone replies. This is how most commenting platforms function, but our perspective is slightly different. We send notifications to a user if they are 'subscribed' to particular form of content. There are two ways a user can be 'subscribed' to an entity: 
+
+1. If a user creates content (comment, question, answer, project) they are automatically subscribed to all replies (be it a answer or comment).
+2. A user manually subscribes to content by clickign the subscribe button.
 
 {image of subscribe box checked on a tutorial or question}
 
-- Users can update their notification settings in the settings area.
+As a very active user, recieving notifications on subscribed content can sometimes be a nuisance. Users need utlimate control over their flow of notifications or they will leave in an overwelmed and helpless state. The Community offers a fairly robust set of controls to change the frequency and type of notifications.
 
 {gif of notifications settings screen, changing frequency}
 
-Interacting with notifications is held within the dropdown. The notifications are considered ‘acknowledged’ if they are viewed by the user. So in a long scrolling list, the background color would fade to white as it scrolls into viewport, affording the acknowledgement.
-
-{image of notifications dropdown}
-
-Subscriptions can always be managed in one place on the subscriptions screen
+Outside of notification settings, users can manage all of the content they are subscribed to in one easy place for quick changes to subscriptions. 
 
 {image of subscriptions screen}
 
-<!-- ##Moderator Experience
-While this is built for the community, it also includes a custom CMS for our community team to manage its content
-- Spam management
-- User Management
-- Content management
-- Leaderboards
-- Report Generation
+After settings ans subscriptions are set, a user manages the notifications through the alerts dropdown. Notifications are considered ‘acknowledged’ if they are viewed by the user. If a user has many notifications in the dropdown, they are ‘acknowledged’ as soon as they are visible in the dropdown viewport. The background color fades from blue to white, affording the acknowledgement.
 
-{image of moderator dashboard reports tool} -->
+{image of notifications dropdown}
+
+##Moving Forward
+While the above features serve as a fantastid foundation for future development, we have aready seen major increases in traffic, signups, engagement, conversion to cloud, and most importantly, love from the community:
+
+<div class="Tweets"></div>
+<span class="Caption--faux">Tweets from community users</span>

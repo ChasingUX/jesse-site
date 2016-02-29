@@ -103,6 +103,44 @@
     }
   }
 
+  ul, ol {
+    @extend p;
+    list-style-position: inside;
+
+    li {
+      list-style-position: inside;
+      margin-bottom: 13px;
+    }
+  }
+  
+  ul {
+    li {
+      list-style-type: disc;
+    }
+  }
+
+  ol {
+    counter-reset: my-counter;
+
+    li {
+      list-style-type: none;
+      padding-left: 30px;
+      position: relative;
+
+      &:before {
+        content: counter(my-counter);
+        counter-increment: my-counter;
+        position: absolute;
+        top: 1px;
+        left: 0;
+        color: $neon-purple;
+        font-family: 'GT Pressura';
+        font-weight: bold;
+        font-size: 18px;
+      }
+    }
+  }
+
   article {
     @media (max-width: 1125px) {
       padding-top: 50px;
