@@ -162,6 +162,53 @@
     font-size: 14px;
     line-height: 1.3;
   }
+
+  .swatches {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 50px 0 20px;
+    clear: left;
+
+    li {
+      max-width: 17%;
+      flex-grow: 1;
+      list-style-type: none;
+      
+      span {
+        display: block;
+        border-radius: 50%;
+        @include aspect-ratio(10, 10);
+      }
+    }
+
+    .gradientA {
+      span {
+        @include linear-gradient(-90deg, #00d2ff 0%, #3a7bd5 100%);
+      }
+    }
+    .gradientB {
+      span {
+        @include linear-gradient(-90deg, #27C4B9 0%, #27C495 100%);
+      }
+    }
+    .gradientC {
+      span {
+        @include linear-gradient(-90deg, #DE6262 0%, #F7AC7E 100%);
+      }
+    }
+    .gradientD {
+      span {
+        @include linear-gradient(-90deg, #FDF26C 0%, #FDBC46 100%);
+      }
+    }
+    .gradientE {
+      span {
+        @include linear-gradient(-90deg, #97437E 0%, #DC245B 100%);
+      }
+    }
+  }
 }
 
 .Tweets {
