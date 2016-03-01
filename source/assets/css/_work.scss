@@ -453,7 +453,7 @@ $bracket-color: $light-purple;
   font-family: 'GT Pressura';
   font-weight: bold;
   line-height: 1.5;
-  
+  cursor: pointer;
 
   img {
     margin: 13px 0;
@@ -480,19 +480,25 @@ $bracket-color: $light-purple;
     color: $neon-purple;
     &.border {
       img {
-        border: 1px solid darken($border-grey, 5%);
+        border: 1px solid darken($border-grey, 8%);
       }
     }
   }
 }
 
-.halfWrap {
+.halfWrap, .tripletWrap {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  @extend p;
 
+  &.constrain {
+    justify-content: center;
+  }
+}
+
+.halfWrap {
+  @extend p;
   .half {
     max-width: 47%;
     flex-grow: 1;
@@ -500,6 +506,34 @@ $bracket-color: $light-purple;
     @media (max-width: $small) {
       max-width: 100%;
       margin-bottom: 20px;
+    }
+  }
+
+  .three-quarter {
+    max-width: 78%;
+    flex-grow: 1;
+
+    @media (max-width: $small) {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.tripletWrap {
+  margin-bottom: 13px;
+
+  .triplet {
+    max-width: 31%;
+    flex-grow: 1;
+
+    @media (max-width: $small) {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+
+    img {
+      margin-bottom: 0;
     }
   }
 }

@@ -159,40 +159,83 @@ As a front-end dev and designer, I am often developing my own work. When I am st
 
 While the DigitalOcean community offers curated tutorial content, we wanted to build a feature that allows users to ask free-form questions to the rest of the community, similar to that of Stack Overflow (or specifically, ServerVault). Since the release of this feature, over 12,000 questions have been asked, of which the vast majority have answers. 
 
-{pic of questions homepage}
+<a class="enlarge border" href="/assets/images/projects/community/questions-home.jpg">
+  <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/community/questions-home.jpg">
+  The questions portal
+</a>
 
 ###Ask a question
 As a user, you may have read a tutorial and are left with certain questions, or have a question related to system administration. The ask a question flow is extremely simple - a user types in their question using the same wsiwig that powers comments, with more advanced controls like h1-h3 headers. After submission it is run through our spam filter to protect against bots. If it passes, it publishes immediately for the rest of the community to engage with.
 
-{image of ask question page with content filled out}
+<a class="enlarge border" href="/assets/images/projects/community/ask-question.jpg">
+  <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/community/ask-question.jpg">
+  Asking a question
+</a>
 
 ###The Question
 Questions are formatted with the question on top and a series of answers below. There are three objects that form a Q&A discussion - the question, the answer(s), and comment(s). A user can comment on a question or an answer, or they can simply provide a direct answer to the question. This is similar to that of Stack Overflow, but unlike Stack Overflow, the asker of the question is not able to mark a single answer as 'correct'.  
 
 Our belief is simple: There are often multiple correct answers, each with vastly different solutions. Instead of allowing only one 'correct' answer, we want to allow the entire community to 'heart' answers to form a appreciation-based ordering of quality answers. 
 
-{image of new image I worked on, sent to jordana of questions page}
-{two images of answers and comments on them}
-
+<a class="enlarge border" href="/assets/images/projects/community/question-show.jpg">
+  <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/community/question-show.jpg">
+  Question after asking
+</a>
 
 ##Projects
 Tutorials, questions and answers all provide knowledge and inspiration to build. The projects section showcases tools that users have built on top of the DigitalOcean API. Split between services, API wrappers, apps, and other integrations, all of the projects reflect the strength of the community in that our users are learning from the informative content and building rich integrations. 
 
-{image of projects screen}
+<a class="enlarge border" href="/assets/images/projects/community/projects.jpg">
+  <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/community/projects.jpg">
+  The projects portal
+</a>
 
-On the projects page, users can interact with one another using comments, similar to a github project page.
+On the projects page, users can learn more about the project and hold a discussion with one another about project usage or ask technical questions.
 
-{img of project show page}
+<!-- <a class="enlarge border" href="/assets/images/projects/community/projects-show-simple.jpg">
+  <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/community/projects-show-simple.jpg">
+  The projects portal
+</a> -->
+
+<div class="tripletWrap">
+  <a class="enlarge triplet border" href="/assets/images/projects/community/projectA.jpg">
+    <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/community/projectA.jpg">
+  </a><a class="enlarge triplet border" href="/assets/images/projects/community/projectB.jpg">
+  <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/community/projectB.jpg">
+  </a><a class="enlarge triplet border" href="/assets/images/projects/community/projectC.jpg">
+  <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/community/projectC.jpg">
+  </a>
+</div> 
+<span class="Caption--faux">Mobile views of product pages</span>
+
 
 ## User Management
 So what does it mean to be a registered user of the community? Being a registered user not only allows you to interact with and create content, but also allows you to manage your content, profile, and preferences, subscribe to topics of interest, and control your flow of notifications.
 
-{image of header with account dropdown or gif of animation opening}
+<div class="halfWrap constrain">
+  <a class="enlarge half border" href="/assets/images/projects/community/user-menu.gif">
+  <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/community/user-menu.gif">
+  User contextual menu
+  </a>
+</div>
+<!-- 
+<div class="halfWrap">
+  <a class="enlarge half border" href="/assets/images/projects/community/user-menu.gif">
+    <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/community/user-menu.gif">
+    User contextual menu on desktop
+  </a><a class="enlarge half border" href="/assets/images/projects/community/mobile-menu.gif">
+  <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/community/mobile-menu.gif">
+   Mobile Menu with Exposed User Object
+  </a>
+</div>  -->
 
 ###Profile
 A user's profile houses information and content relating to the user. Profiles are open and public, and serve as a user's social identity within the community. If I were to visit a user's profile, I could learn about their interests, view external social accounts or projects, and see their contributions to the DigitalOcean Community. As the owner of a profile, I can use it to manage my questions, answers, comments, projects, etc.
 
-{image of profile screen}
+<a class="enlarge border" href="/assets/images/projects/community/profile.jpg">
+  <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/community/profile.jpg">
+  My profile screen
+</a>
 
 ### Notifications & Subscriptions
 As a user, if I were to comment, I want to be notified if anyone replies. This is how most commenting platforms function, but our perspective is slightly different. We send notifications to a user if they are 'subscribed' to particular form of content. There are two ways a user can be 'subscribed' to an entity: 
@@ -200,19 +243,44 @@ As a user, if I were to comment, I want to be notified if anyone replies. This i
 1. If a user creates content (comment, question, answer, project) they are automatically subscribed to all replies (be it a answer or comment).
 2. A user manually subscribes to content by clicking the subscribe button.
 
-{image of subscribe box checked on a tutorial or question}
+<div class="halfWrap constrain">
+  <a class="enlarge border three-quarter" href="/assets/images/projects/community/subscribed.jpg">
+  <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/community/subscribed.jpg">
+  User is subscribed to content
+  </a>
+</div>
 
 As a very active user, recieving notifications on subscribed content can sometimes be a nuisance. Users need utlimate control over their flow of notifications or they will leave in an overwelmed and helpless state. The Community offers a fairly robust set of controls to change the frequency and type of notifications.
 
-{gif of notifications settings screen, changing frequency}
+<!-- <div class="halfWrap constrain">
+  <a class="enlarge border three-quarter" href="/assets/images/projects/community/notification-frequency.gif">
+  <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/community/notification-frequency.gif">
+  Changing frequency of notifications
+  </a>
+</div> -->
+
+<a class="enlarge border" href="/assets/images/projects/community/notifications.gif">
+  <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/community/notifications.gif">
+  Changing frequency and types of notifications
+</a>
 
 Outside of notification settings, users can manage all of the content they are subscribed to in one easy place for quick changes to subscriptions. 
 
-{image of subscriptions screen}
+<a class="enlarge border" href="/assets/images/projects/community/subscriptions.jpg">
+  <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/community/subscriptions.jpg">
+  Subscriptions are managed via quick toggle
+</a>
 
 After settings ans subscriptions are set, a user manages the notifications through the alerts dropdown. Notifications are considered ‘acknowledged’ if they are viewed by the user. If a user has many notifications in the dropdown, they are ‘acknowledged’ as soon as they are visible in the dropdown viewport. The background color fades from blue to white, affording the acknowledgement.
 
 {image of notifications dropdown}
+
+<div class="halfWrap constrain">
+  <a class="enlarge border three-quarter" href="/assets/images/projects/community/notifications-dropdown.jpg">
+  <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/community/notifications-dropdown.jpg">
+  Notifications are managed via dropdown
+  </a>
+</div>
 
 ##Moving Forward
 While the above features serve as a fantastid foundation for future development, we have aready seen major increases in traffic, signups, engagement, conversion to cloud, and most importantly, love from the community:
