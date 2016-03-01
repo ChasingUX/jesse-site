@@ -6,16 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title><%= current_page.data.title || "The Portolio of Jesse Chase" %></title>
     
+    <%= stylesheet_link_tag "all" %>
+
     <% if content_for?(:head) %>
       <%= yield_content :head %>
     <% end %>
-
-    <%= stylesheet_link_tag "all" %>
-    
   </head>
 
   <body class="<%= page_classes %>">
-    
     <% if page_classes.include? "work" %>
       <%= partial "work-panels" %>
     <% end %>

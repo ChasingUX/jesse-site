@@ -1,5 +1,13 @@
 <%= partial "back", locals: { is_labs: false } %>
 
+<% if current_page.title == 'FontReach' %>
+  <% content_for :head do %>
+    <%= stylesheet_link_tag "fontreach" %>
+    <script src="https://use.typekit.net/mky4ctq.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  <% end %>
+<% end %>
+
 <% wrap_layout :layout do %>
   <header class="Header-intro Wrapper">
     <h1><%= current_page.title %></h1>

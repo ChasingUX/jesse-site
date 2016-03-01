@@ -20,6 +20,8 @@ var tlB = new TimelineLite();
 
   TweenLite.to($fade, .7,{autoAlpha: 0, delay: 0.2, ease: Linear.easeNone})
 
+  // {TODO : SWITCH CONTENT FROM FADING IN TO A OVERLAY FADING OUT}
+
 tlB
   .to($cover, 1.5, {width:"0", ease:Power4.easeOut})
   .fromTo($nav, 1, {y: 6}, {y: 0, autoAlpha: 1, ease: Linear.easeNone}, '-=1')
