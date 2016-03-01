@@ -26,7 +26,7 @@ FontReach was born from a problem of not having enough information about font us
     <div class='cube-face cube-face-top'>#</div>
   </div>
 </div>
-<span class="Caption--faux">FontReach CSS Isometric loader</span>
+<span class="Caption--faux">FontReach's css Isometric loader (using this site's colors)</span>
 
 FontReach crawls the top million websites (based on Alexa), and surfaces data about font usage across the web. It allows us to answer questions like, How many sites use Proxima Nova? What is it’s rank? I can now say that Proxima is ranked as the 26th most utilized webfont; over 22,000 sites in the top million, most notably Instagram, Buzzfeed, and Flickr use it.
 
