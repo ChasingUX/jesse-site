@@ -60,7 +60,6 @@ Building towards the goal of a destination, the thousands of resources the commu
   <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/community/search_closeup.gif">
 </a>
 
-
 Using [Algolia](https://www.algolia.com/), we built a super powerful search tool, and tested a few different combinations of filtering options, algorithm changes, and metadata integrations. There were some interesting learnings, particulary around tags.
 
 As tags play a vital role in classifying resources, we tested their usefulness as a part of the search UI. We found that users were not using tags as a search tool and prefered to search using free-form writing based on their needs. While tags are still a very important part of the search algorithm and tutorial metadata, users prefer to surface content via search bar versus traversing a heierchy tree of many tags. If a user searchers `nginx` on `centos 7`, it immediately returns the exact content they need. If a user is looking for the newest or trending content, filtering options are available.
@@ -76,8 +75,6 @@ As tags play a vital role in classifying resources, we tested their usefulness a
   </a>
 </div>
 
-{NOTE switch these UIs out for ones with autocomplete on}
-
 <!-- <div class="halfWrap">
   <a class="enlarge half border" href="/assets/images/projects/community/tags.jpg">
     <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/community/tags.jpg">
@@ -91,11 +88,17 @@ As tags play a vital role in classifying resources, we tested their usefulness a
 ##Consuming Tutorial Content
 The core of the DigitalOcean community lies with the tutorial content and the reading experience. As the majority of content-consumers come from Google search results, the reading experience must be optimized for quick and easy consumption of content. Users are presented with a distraction free, easy to follow tutorial with tools such as tables of contents, and multi-lingual translations.
 
-{Image of tutorial header and first paragraph}
+<a class="enlarge border" href="/assets/images/projects/community/tutorial-single.jpg">
+  <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/community/tutorial-single.jpg">
+</a>
 
 The tutorial UI is optimized for reading and building. Because the nature of the content is so technical, common behavior is for readers to toggle back and forth between the tutorial and a programming environment, so much focus needed to be placed on the display of code. Code examples need to be informative in how they are displayed, therefore editorial control must be extremely flexible (more on that later).
 
-{Image of code samples}
+
+<a class="enlarge border" href="/assets/images/projects/community/code-blocks.jpg">
+  <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/community/code-blocks.jpg">
+  An array of different code block types
+</a>
 
 <!-- Tutorials tend to be long. As a user is jumping back and forth
 - Tutorials are often very long so a table of contents functionality exists for jumping to relevant sections
@@ -127,11 +130,17 @@ Unlike the DigitalOcean blog, which uses the Disqus commenting platform, we want
 
 We required unlimited threading for conversations at any thread depth, the presence of social profiles accessible through user avatars, very concise actions (heart, reply, report), and a clear design, with enough whitespace to meet the DO aesthetic, but not enough that renders a 100+ comment thread unreadable. Comments also needed to be optimized for code display, so rich wysiwyg editorial control was essential. 
 
-{image of good looking comment thread}
+<a class="enlarge" href="/assets/images/projects/community/commentsA.jpg">
+  <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/community/commentsA.jpg">
+  A threaded comment
+</a>
 
 The real magic lies in the wysiwyg. A well-made rich text editor (also known as wysiwyg) is absolutely critical in effective content publishing. After reviewing all of the open source tools out there, we decided to roll out our own, in what I condiser to be the single most useful component in the app. 
 
-{image of wsiwyg next to comments}
+<a class="enlarge" href="/assets/images/projects/community/wysiwyg.jpg">
+  <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/community/wysiwyg.jpg">
+  The comments wysiwyg editor
+</a>
 
 We are not creating a tool for publishers, rather developers. It needs to display code just as well as it does long-form content, and must meet the following requirements:
 
@@ -140,11 +149,10 @@ We are not creating a tool for publishers, rather developers. It needs to displa
    - Features syntax highlighting, with custom language support
    - Offers instant previewing on the client side
 
-{gif of complex wysiwyg markdown translation into preview and publish}
-
-<!-- - code block
-- line numbers (```line_numbers)
-- header with $ -->
+<a class="enlarge border" href="/assets/images/projects/community/wysiwyg.gif">
+  <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/community/wysiwyg.gif">
+  The wysiwyg editor in action
+</a>
 
 ##Q&A Platform
 As a front-end dev and designer, I am often developing my own work. When I am stuck on say a JavaScript problem, I might use Stack Overflow in hopes that more knowledgable devs can assist — it is an invaluable Q&A app because of it's engaged community of developers. 
