@@ -18,15 +18,13 @@ var tlB = new TimelineLite();
   $fade = $('.Fade'),
   $linkBox = $('.Link--box');
 
-  TweenLite.to($fade, .7,{autoAlpha: 0, delay: 0.2, ease: Linear.easeNone})
-
-  // {TODO : SWITCH CONTENT FROM FADING IN TO A OVERLAY FADING OUT}
+  setTimeout(function(){
+    $fade.addClass('hide'); 
+  }, 200)
 
 tlB
   .to($cover, 1.5, {width:"0", ease:Power4.easeOut})
   .fromTo($nav, 1, {y: 6}, {y: 0, autoAlpha: 1, ease: Linear.easeNone}, '-=1')
-  .to($fade, 1.5, {autoAlpha: 1, ease: Linear.easeNone}, '-=1')
-  .fromTo($fade, 1, {y: 10}, {y: 0, ease: Power2.easeOut}, '-=1.5')
 
 tl
   .to($registration, 1.5, {autoAlpha: 1, rotation: "+=540", ease:Power1.easeOut})
@@ -50,7 +48,8 @@ $(function () {
     if($(this).attr('target') == '_blank') {}
       
     else if(jQuery.inArray(href, exceptions) === -1) {
-      TweenLite.to($fade, .7,{autoAlpha: 0, ease: Linear.easeNone})
+
+      $fade.removeClass('hide'); 
       TweenLite.to($header, .7,{autoAlpha: 0, ease: Linear.easeNone})
       setTimeout(function() {window.location = href}, 700);
 
