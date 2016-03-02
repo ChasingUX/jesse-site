@@ -1,7 +1,7 @@
 ---
 title: "Buoy"
 date: 2015-10-03
-summary: "A collection of CSS classes and components to promote code reusability, rapid development and mantainability."
+summary: "A CSS styleguide which promotes code reusability, rapid development and mantainability."
 link_copy: "Visit Project"
 url: http://jessecha.se/buoy/
 tags: regular

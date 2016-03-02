@@ -1,6 +1,6 @@
 ---
-title: "DigitalOcean Public Site"
+title: "DigitalOcean Website"
 date: 2014-10-03
-summary: "The future of DigitalOcean is here. New marketing site."
+summary: "Next generation DigitalOcean marketing site."
 tags: protected
 ---
