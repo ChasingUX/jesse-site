@@ -8,6 +8,16 @@
     height: 1400px;
   }
 
+  &.work_rebrand {
+    .bg {
+      max-height: 900px;
+    }
+
+    .Header-intro.Wrapper ul {
+      display: none;
+    }
+  }
+
   .Header-intro.Wrapper {
     margin-bottom: 50px;
 
