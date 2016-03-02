@@ -17,13 +17,13 @@ $(function () {
     });
 
     imageCount = imageHolder.length;
-
     for (var i = 0; i < imageCount; i++) {
       $newContent = '<li><a href="' + imageHolder[i].src + '" class="enlarge"><img style="opacity:1" src="' + imageHolder[i].src + '">' + imageHolder[i].caption +'</a></li>';
+    
       $items
         .append($newContent)
         .find('a.enlarge')
-        .fluidbox({maxHeight: heightToEnlarge})
+        .fluidbox({})
         .on('openstart.fluidbox', function() {
           $('.Header-gallery').addClass('open');
         })
@@ -118,9 +118,12 @@ $(function () {
   });
 
   $(".enlarge img").unveil(300, function() {
-    $(this).load(function() {
-      
-      $(this).closest('.enlarge').fluidbox({maxHeight: heightToEnlarge})
+    var $thisImage = $(this);
+
+    $thisImage.load(function() {
+      var naturalWidth = $thisImage[0].naturalWidth;
+
+      $(this).closest('.enlarge').fluidbox({ maxwidth: naturalWidth})
       .on('openend.fluidbox', function() {
         var caption = $(this)[0].innerText;
         if(caption.length) {
