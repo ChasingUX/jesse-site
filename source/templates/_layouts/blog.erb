@@ -34,6 +34,10 @@
 
     <article>
       <%= yield %>
+
+      <% if current_page.data['tags'].include?('protected') %>  
+        <%= partial "protected" %>
+      <% end %>
     </article>
   </section>
 <% end %>
