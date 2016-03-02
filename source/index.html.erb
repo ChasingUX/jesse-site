@@ -44,6 +44,7 @@ blog: work
   <ul class="ProjectsWrap">
     <% page_articles.each_with_index do |article, i| %>
       <% unless article.data['tags'].include?('featured') %>
+
         <li class="Project">
           <% link_to article.url, class: "Link--box" do %>
             <div class="bracket topLeft"></div>
@@ -54,14 +55,20 @@ blog: work
             <h3><%= article.title %></h3>
             <p><%= article.data['summary'] %></p>
             <ul class="meta">
-              <li class="date">
-                <span><%= article.date.strftime("%b %Y") %></span>
-              </li>
-              <li class="view">
-                <span class="Link--faux">
-                  <%= article.data['link_copy'] %>
-                </span>
-              </li>
+              <% if article.data['tags'].include?('protected') %>  
+                <li class="protected">
+                  <span>[Protected until released]</span>
+                </li>
+              <% else %>
+                <li class="date">
+                  <span><%= article.date.strftime("%b %Y") %></span>
+                </li>
+                <li class="view">
+                  <span class="Link--faux">
+                    <%= article.data['link_copy'] %>
+                  </span>
+                </li>
+              <% end %>
             </ul>
           <% end %>
         </li>

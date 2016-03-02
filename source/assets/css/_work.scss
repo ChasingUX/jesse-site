@@ -293,6 +293,11 @@ $bracket-color: $light-purple;
         opacity: .15;
       }
 
+      .protected {
+        color: $neon-purple;
+        transition: all .3s ease;
+      }
+
       ul {
         color: #8F7CB2;
 
@@ -307,7 +312,6 @@ $bracket-color: $light-purple;
     opacity: .4;
     padding-bottom: 55px;
     display: flex;
-    //align-items: center;
 
     @media (max-width: $medium) {
       padding-bottom: 30px;
