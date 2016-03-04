@@ -223,6 +223,13 @@ a, .Link--faux {
   }
 }
 
+cite {
+  font-size: 19px;
+  color: $neon-purple;
+  display: block;
+  margin: 10px 0 0 0;
+}
+
 blockquote:not(.twitter-tweet) {
   font-size: 24px;
   font-family: 'GT Pressura';
