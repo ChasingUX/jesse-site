@@ -199,8 +199,8 @@ a, .Link--faux {
     content: '';
     position: absolute;
     bottom: -3px;
-    left: -.5em;
-    width: calc(100% + .65em);
+    left: -.2em;
+    width: calc(100% + .6em);
     z-index: -1;
     height: .7em;
     background: $polar-green-light;
@@ -267,6 +267,22 @@ blockquote:not(.twitter-tweet) {
   border: 1px solid $featured-purple;
   color: $light-purple;
   background-repeat: no-repeat;
+
+  &.noTop {
+    margin-top: 0;
+  }
+
+  p {
+    margin-bottom: 15px;
+  
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  a:before {
+    background: lighten($light-purple, 5%)
+  }
 
   h4 {
     font-size: 17px;

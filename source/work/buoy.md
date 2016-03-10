@@ -1,8 +1,8 @@
 ---
 title: "Buoy"
-date: 2015-10-03
-summary: "A CSS styleguide which promotes code reusability, rapid development and mantainability."
-link_copy: "Visit Project"
+date: 2016-1-03
+summary: "CSS styleguide which promotes code reusability, rapid development and mantainability."
+link_copy: "View Buoy"
 url: http://jessecha.se/buoy/
 tags: regular
 ---

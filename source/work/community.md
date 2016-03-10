@@ -2,7 +2,7 @@
 title: "DigitalOcean Community"
 date: 2015-10-03
 summary: "A robust Q&A and content platform for SysAdmins and Developers."
-link_copy: "Visit Community"
+link_copy: "Go Explore"
 url: https://www.digitalocean.com/community
 tags: regular
 ---
@@ -206,7 +206,7 @@ On the projects page, users can learn more about the project and hold a discussi
   <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/community/projectC.jpg">
   </a>
 </div> 
-<span class="Caption--faux">Mobile views of product pages</span>
+<span class="Caption--faux">Mobile views of project pages</span>
 
 
 ## User Management

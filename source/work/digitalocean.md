@@ -1,19 +1,51 @@
 ---
 title: "DigitalOcean Cloud"
-date: 2015-10-03
-summary: "DigitalOcean crawls the top million websites and surfaces data about font usage across the web."
-link_copy: "Visit Project"
-url: http://libscore.com/
+date: 2015-1-30
+summary: "A simple cloud hosting platform built for developers by developers."
+link_copy: "Visit DO"
+url: http://cloud.digitalocean.com/
 tags: regular
 ---
-We're very excited to be announcing a new region: Atlantis (Datacenter Abbreviation: H2O), submerged in the Straits of Gibraltar. This underwater datacenter will provide unparalleled connectivity to the surrounding countries like Spain, Portugal, Morocco, Algeria, and Tunisia.</p>
 
-While we are still actively [building out our German datacenter](http://digitalocean.uservoice.com/forums/136585-digitalocean/suggestions/4296967-datacenter-in-germany), we wanted to investigate the money-saving possibilities of underwater datacenter cooling. Our investigation was a great success:  not only were we able to reduce our electricity costs by 35%, but we discovered our high-density SSD storage was even more dense at 87atm! Despite dramatically efficient cooling and more GB per cubic inch, these servers will still be offered at our standard pricing plan as any savings we found were, unfortunately, offset by the cost of diving equipment.
+##Prologue
+The DigitalOcean cloud is a highly complex product, which warrants a series of case studies with singular focus. In the coming months, I will be releasing detailed case studies covering the following aspects of cloud: user onboarding, team accounts, abuse flow, objects and networks, rails to ember conversion, DNS, floating IPs, and the Droplet experience.
 
-While this datacenter may come as a pleasant surprise to residents in the surrounding countries, we have actually been actively looking into the possibility since mid-2013, inspired by Facebook’s energy efficient Arctic Datacenter. Some potential issues we faced in our initial investigations included transporting safe electrical current under the sea, providing sufficient illumination on the ocean floor (around 900 meters deep), and our technicians’ inability to swim. 
+Below is a deliberate oversimplification of the product by highlighting the information architecture on a per-page basis. Research, prototyping, flow work, and learnings will be released in future cloud case studies, as outlined above. 
 
-You can easily spin up a server in the new region by selecting “Atlantis” in the Droplet create screen or choosing that location in the API. Our initial run of servers in this region is limited. We will be adding more capacity to H2O at low tide. 
+##The early days
+When I started working at DigitalOcean in September of 2013, our cloud had a reputation for being an extremely simple hosting platform known for it's ease-of-use, SSD drives, and quick spin-up time. We had fierce competition comprised of major tech jaugernauts like Amazon, Google, Microsoft, and Rackspace. 
 
-When asked about the new location, DigitalOcean’s Director of Infrastructure, Lev Uretsky explained: “Our Datacenter Techs are very excited about Atlantis. We firmly believe that this will be the easiest DC to rack, as our servers become much lighter underwater.”
+These companies provided a much richer feature set, which was believed to be neccesary to compete in this space. But the competition did not place much of a focus on the user expereince and design of the interface. As these products became more and more complex, so did the experience. Perhaps there <em>is</em> room in this space for a simple, user-first approach to hosting.
 
-If this sounds exciting to you, [DigitalOcean is actively hiring](https://www.digitalocean.com/company/careers/) for the new location. Scuba certified candidates are welcome to apply. Background in Marine Biology a plus. 
+{show images of old control panel}
+<!-- <a class="enlarge border" href="/assets/images/projects/digitalocean/home.jpg">
+  <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/digitalocean/home.jpg">
+  DigitalOcean control panel home before I joined
+</a> -->
+
+##The power of simplicity
+DigitalOcean had <em>and still has</em> a pretty outragious opportunity. We can disrupt this space by providing an extremely simple and straightforward experience designed to make developers lives easier. While we were already revered for our simple approach, there was and <em>still is</em> much room for streamlining the overall experience and making infrastucture architecture a much easier pill to swallow. Now, we have climbed the ranks to the second largest hosting company in the world, based on NetCraft's data. Simplicity can go a long way.
+
+<blockquote>
+Now, we have climbed the ranks to the second largest hosting company in the world...Simplicity can go a long way.
+</blockquote>
+
+<div class="Note">
+  <h4>Cloud Hosting 101</h4>
+  <p>Without going into the highly technical details of cloud hosting, we can think of a cloud as a combination of compute, networking, and storage through virtualized servers. Servers are provisioned for heavy computation, communication, and storage of assets and databases.</p>
+
+  <p>While DigitalOcean is diligently working to build out storage and networking features, our current product offering is based on the droplet - a compute instance. This case study will focus primarily on the Droplet with little focus on networking and storage.</p>
+</div>
+
+##Cloud Information Architecture
+We will only focus on a few of these areas, most notably, droplet, images, and networking.
+
+{picture of cloud flow}
+
+##Droplet Create
+
+##Droplet Management
+
+##Images
+
+##Networking

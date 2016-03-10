@@ -1,6 +1,6 @@
 ---
 title: "Libscore"
-date: 2016-2-22
+date: 2015-2-22
 summary: "Libscore reveals data on JavaScript library usage from the top millions sites."
 link_copy: "Visit Libscore"
 url: http://libscore.com/

@@ -160,4 +160,11 @@ $(function () {
       });
     }
   }
+
+  $('.revealTrigger').on('click', function(){
+    $('.revealMe').toggleClass('hidden');
+    return false;
+  });
 });
+
+

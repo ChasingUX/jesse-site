@@ -1,6 +1,6 @@
 ---
 title: "FontReach"
-date: 2015-10-03
+date: 2015-8-03
 summary: "FontReach crawls the top million websites and surfaces data about font usage across the web."
 link_copy: "Search FontReach"
 url: http://libscore.com/

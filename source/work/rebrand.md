@@ -1,6 +1,6 @@
 ---
 title: "DigitalOcean Rebrand"
-date: 2014-10-03
-summary: "The future of the DigitalOcean brand is here. New identity and logo system."
+date: 2010-1-01
+summary: "DigitalOcean rebranding efforts The future of the DigitalOcean brand is here. New identity and logo system."
 tags: protected
 ---
