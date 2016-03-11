@@ -204,6 +204,43 @@ $bracket-color: $light-purple;
           visibility: visible;
         }
       }
+
+      &.protected {
+        .Link--box {
+          cursor: not-allowed;
+          background: lighten($border-grey, 7%);
+
+          .protected {
+            color: $navy;
+            opacity: .4;
+          }
+
+          &:hover {
+            border-color: $border-grey;
+
+            .topLeft, .Register {
+              opacity: 0;
+            }
+
+            h3 {
+              color: inherit;
+            }
+
+            p {
+              opacity: .4;
+              color: inherit;
+            }
+
+            ul {
+              color: $lavender;
+
+              a, .Link--faux {
+                color: $neon-purple;
+              }
+            }
+          }
+        }
+      }
     }
 
     @media (max-width: $large) {
@@ -286,7 +323,7 @@ $bracket-color: $light-purple;
 
       p {
         opacity: .2;
-        color: #8F7CB2;
+        color: $lavender;
       }
 
       .date {
@@ -299,7 +336,7 @@ $bracket-color: $light-purple;
       }
 
       ul {
-        color: #8F7CB2;
+        color: $lavender;
 
         a, .Link--faux {
           color: $neon-purple;

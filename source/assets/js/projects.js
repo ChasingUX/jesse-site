@@ -29,7 +29,7 @@ $(function () {
         })
         .on('openend.fluidbox', function() {
           var caption = $(this)[0].innerText;
-          if(caption.length) {
+          if(caption.trim()) {
             $('.Caption--gallery span').text(caption);
             $('.Caption--gallery').addClass('show');
           }
@@ -126,7 +126,8 @@ $(function () {
       $(this).closest('.enlarge').fluidbox({ maxwidth: naturalWidth})
       .on('openend.fluidbox', function() {
         var caption = $(this)[0].innerText;
-        if(caption.length) {
+
+        if(caption.trim()) {
           $('.Caption span').text(caption);
           $('.Caption').addClass('show');
         }

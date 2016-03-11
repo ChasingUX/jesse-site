@@ -1,6 +1,6 @@
 ---
 title: "Blue Apron Sign Up Flow"
-date: 2015-1-03
+date: 2015-2-03
 summary: "Desktop and mobile sign up flow for online food subscriptions."
 link_copy: "View Blue Apron"
 url: http://blueapron.com/
