@@ -43,7 +43,14 @@ Now, we have climbed the ranks to the second largest hosting company in the worl
 </div>
 
 ##Cloud Information Architecture
-We will only focus on a few of these areas, most notably, droplet, images, and networking.
+The cloud's information architecture is designed to be supportive of our primary product – the Droplet. As we build out storage and networking products, the architecture will likely change. Let's break down each section of the control panel in a nutshell:
+
+1. **Droplets:** Create a new Droplet, or manage & monitor existing Droplets. Each Droplet has its own management page where actions can be performed, servers can be reprovisioned and resized, and users can monitor server performance. This is the core of our product.
+2. **Images:** An image is simply a backup of a Droplet at a point in time that can be restored or easily transitioned into a new Droplet. 
+3. **Networking:** The networking section allows users to set up Floating IPs, which are IP addresses that can be instantly moved from one Droplet to another. This is generally used for highly available setups. In addition, the networking page allows users to add domains & configure DNS records.
+4. **API:** Many large customers configure their app to size up or size down their infrastructure depending on server load using the DigitalOcean API. The API section allows users to create new apps and tokens, and manage their access & permissions.
+5. **Support:** The support section attempts to help answer user's questions by surfacing documentation and community tutorials. If the problem persists, a user can open a ticket and await a response from our support staff.
+6. **Settings:** User and team settings, billing, referrals, security, and notifications are found here. These settings do not relate to infrastructure, but are user and team-specific settings.
 
 <a class="enlarge border" href="/assets/images/projects/digitalocean/ia.jpg">
   <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/digitalocean/ia.jpg">
@@ -51,11 +58,26 @@ We will only focus on a few of these areas, most notably, droplet, images, and n
 </a>
 
 ##Droplet Create
+The early DigitalOcean marketing language read, "Spin up a Droplet in 55 seconds or less." While this sounded like a salesy hook, it was very much true. The Droplet create process is quick, intuitive, and in my biased opinion, enjoyable! 
 
 <a class="enlarge border" href="/assets/images/projects/digitalocean/droplet_create.jpg">
   <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/digitalocean/droplet_create.jpg">
-  Droplet Create Page
+  Droplet Create page in its entirely
 </a>
+
+####Choose an Image
+The create process starts by askng the developer what they would like to build. A user can select a raw linux distro (and a pertaining version), a one-click app like Wordpress or Drone, or a pre-existing backup or snapshot. After this process, a user selects the size of server, where it lives, and final options such as naming and SSH keys.
+
+<div class="halfWrap">
+  <a class="enlarge border half" href="/assets/images/projects/digitalocean/choose_image.jpg">
+    <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/digitalocean/choose_image.jpg" >
+    Linux Distribution images
+  </a><a class="enlarge border half" href="/assets/images/projects/digitalocean/choose_imageB.jpg">
+    <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/digitalocean/choose_imageB.jpg">
+    Pre-made stacks of popular applications
+  </a>
+</div>
+
 
 <!-- <a class="enlarge border" href="/assets/images/projects/digitalocean/createB.gif">
   <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/digitalocean/createB.gif">
@@ -63,19 +85,28 @@ We will only focus on a few of these areas, most notably, droplet, images, and n
 </a> -->
 
 ##Droplet Management
+Droplets are managed from a central interface that serves as a linear index of your entire infrastructure setup. While it does not show relationships, networks, and tagging, that will be shipping soon! For example, if I have an app that uses 2 database servers, 10 load balanced compute servers, and a Floating IP, I want to see a visual interpretation of these relationships.
+
+The index is searchable and filterable, and is primarily used as a dashboard to dive into particular Droplet pages.
 
 <a class="enlarge border" href="/assets/images/projects/digitalocean/droplet_index.jpg">
   <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/digitalocean/droplet_index.jpg">
   The cloud home today – a searchable & sortable list of the user's Droplets
 </a>
 
+####Individual Droplet
+The individual Droplet page allows a user to monitor or take action on their Droplet. The graphs tab is shown by default so system administrators can quickly and easily monitor the performance and load of their servers. 
+
+Users can also resize, rebuild, backup, access the console, or destroy their Droplet (amongst other things). The centralized Droplet interface makes it relatively easy and quick to take action on a Droplet.
+
 <a class="enlarge border" href="/assets/images/projects/digitalocean/manage_droplet_snapshot.jpg">
   <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/digitalocean/manage_droplet_snapshot.jpg">
   Droplet Management Screen - new Snapshot panel
 </a>
 
-
 ##Images
+During Droplet creation, we can enable backups which automatically create an image of that Droplet on a routine schedule. On the Images page we can track all of our backups or create new, on-the-fly snapshots of the Droplet.
+
 
 <a class="enlarge border" href="/assets/images/projects/digitalocean/images.jpg">
   <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/digitalocean/images.jpg">
@@ -95,7 +126,11 @@ We will only focus on a few of these areas, most notably, droplet, images, and n
 </div> 
 <span class="Caption--faux noHover">Create a Snapshot from the Images page</span>
 
-##Contextual Menus
+The process is simple – we choose a preexisting powered-down Droplet, give it a name, and a copy is asynchronously made and automatially powered back on.
+
+####Contextual Menus
+
+After an image is created, we keep the interface simple by tucking away the actions into a contextual menu. Here we can transfer an image to another region or user. 
 
 <div class="tripletWrap">
   <a class="enlarge triplet border" href="/assets/images/projects/digitalocean/contextual1.jpg">
@@ -108,6 +143,15 @@ We will only focus on a few of these areas, most notably, droplet, images, and n
 </div> 
 <span class="Caption--faux">Contextual sliding menus for more actions</span>
 
+
+We chose to use a interaction pattern that converts the menu into a panel. This pattern created a sense of continuation by animating the container height and width to that of it's new contents, and simultaniously sliding in the new panel.
+
+<div class="halfWrap constrain">
+  <a class="enlarge half border" href="/assets/images/projects/digitalocean/contextual.gif">
+  <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/digitalocean/contextual.gif">
+  Image contextual menu interaction
+  </a>
+</div>
 
 
 ##Networking

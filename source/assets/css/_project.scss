@@ -114,6 +114,28 @@
     }
   }
 
+  h4 {
+    margin-bottom: 13px;
+    font-size: 20px;
+    margin-top: 35px;
+    position: relative;
+    display: table;
+    padding-left: 20px;
+    font-family: 'GT Pressura';
+    font-weight: bold;
+
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: 2px;
+      left: 0;
+      width: 101%;
+      z-index: -1;
+      height: .6em;
+      background: lighten($salmon, 3%);
+    }
+  }
+
   ul, ol {
     @extend p;
     list-style-position: inside;
@@ -183,6 +205,52 @@
     display: inline-block;
     font-size: 14px;
     line-height: 1.3;
+  }
+
+  .Note {
+    margin: 45px 0 35px 0;
+    padding: 25px;
+    font-size: 16px;
+    @extend p;
+    @include linear-gradient(35deg, $polar-purple 0%, $transparent 65%);
+    border: 1px solid $featured-purple;
+    color: $light-purple;
+    background-repeat: no-repeat;
+
+    &.noTop {
+      margin-top: 0;
+    }
+
+    p {
+      margin-bottom: 15px;
+    
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    a:before {
+      background: lighten($light-purple, 5%)
+    }
+
+    h4 {
+      font-size: 18px;
+      color: $neon-purple;
+      margin-bottom: 5px;
+      margin-top: 10px;
+      display: block;
+      font-family: inherit;
+      font-weight: inherit;
+      padding-left: 0;
+
+      &:first-child {
+        margin-top: -2px;
+      }
+
+      &:before {
+        display: none;
+      }
+    }
   }
 
   .swatches {
