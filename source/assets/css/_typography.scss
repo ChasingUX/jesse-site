@@ -258,40 +258,22 @@ blockquote:not(.twitter-tweet) {
   }
 }
 
-.Note {
-  margin: 45px 0 35px 0;
-  padding: 25px;
-  font-size: 16px;
-  @extend p;
-  @include linear-gradient(35deg, $polar-purple 0%, $transparent 65%);
-  border: 1px solid $featured-purple;
-  color: $light-purple;
-  background-repeat: no-repeat;
+//print styles to remove images and leave just copy
+// @media print {
+//   .tripletWrap, .enlarge, .Caption--faux, footer, .Header-nav, .Header-intro.Wrapper h3, .Header-intro.Wrapper ul, .work .Offset, .Cube-wrap, .Cube-wrap .Cube .cube-face, .Caption--faux {
+//     display: none!important;
+//   }
 
-  &.noTop {
-    margin-top: 0;
-  }
+//   .work .Header-intro.Wrapper {
+//     margin-bottom: 0;
+//   }
 
-  p {
-    margin-bottom: 15px;
-  
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
+//   .project.Wrapper {
+//     font-size: 15px;
+//   }
 
-  a:before {
-    background: lighten($light-purple, 5%)
-  }
-
-  h4 {
-    font-size: 17px;
-    color: $neon-purple;
-    margin-bottom: 5px;
-    margin-top: 10px;
-
-    &:first-child {
-      margin-top: -2px;
-    }
-  }
-}
+//   blockquote:not(.twitter-tweet), .project.Wrapper h2 {
+//     font-size: 17px;
+//     padding-left: 0;
+//   }
+// }

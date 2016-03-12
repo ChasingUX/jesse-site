@@ -6,7 +6,7 @@
   }
 
   .bottom {
-    margin-top: 55px;
+    margin-top: 75px;
     padding: 65px 0 250px 0;
     @include linear-gradient(180deg, $transparent 0%, $polar-green 50%);
     z-index: -1;
@@ -58,23 +58,19 @@
 }
 
 .headshot {
-  background: image-url("jesseC.jpg") no-repeat;
-  padding-top: 20px;
-  min-width: 220px;
-  width: 30%;
-  max-width: 350px;
+  background: image-url("jesse.jpg") no-repeat;
+  border-radius: 50%;
+  margin-top: 15px;
   margin-right: 6%;
   background-size: contain;
-  min-height: 340px;
-  background-position: center top;
+  width: 230px;
+  height: 230px;
+  border: 1px solid rgba(89, 52, 246, 0.16);
 
   @media (max-width: $medium) {
-    width: 100%;
-    max-width: inherit;
-    margin-right: 0;
-    background-size: cover;
-    min-height: 350px;
-    margin-bottom: 30px;
+    margin: 0 0 30px 0;
+    width: 180px;
+    height: 180px;
   }
 }
 
@@ -93,6 +89,23 @@
 
   @media (max-width: $small) {
      font-size: 16px;
+  }
+
+  h2 {
+    @media (max-width: $medium) {
+      display: table;
+      padding: 0;
+      margin: 0 auto 14px auto;
+    }
+  }
+
+  p {
+    @media (max-width: $medium) {
+      text-align: center;
+      max-width: 470px;
+      margin: 0 auto 30px auto;
+      width: 100%;
+    }
   }
 }
 

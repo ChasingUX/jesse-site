@@ -2,7 +2,7 @@
 title: "DigitalOcean Cloud"
 date: 2015-3-30
 summary: "A simple cloud hosting platform built for developers by developers."
-link_copy: "Visit DO"
+link_copy: "Visit Cloud"
 url: http://cloud.digitalocean.com/
 tags: regular
 ---
@@ -65,7 +65,7 @@ The early DigitalOcean marketing language read, "Spin up a Droplet in 55 seconds
   Droplet Create page in its entirely
 </a>
 
-####Choose an Image
+<h4 class="ribbon">Choose an Image</h4>
 The create process starts by askng the developer what they would like to build. A user can select a raw linux distro (and a pertaining version), a one-click app like Wordpress or Drone, or a pre-existing backup or snapshot. After this process, a user selects the size of server, where it lives, and final options such as naming and SSH keys.
 
 <div class="halfWrap">
@@ -94,7 +94,7 @@ The index is searchable and filterable, and is primarily used as a dashboard to 
   The cloud home today – a searchable & sortable list of the user's Droplets
 </a>
 
-####Individual Droplet
+<h4 class="ribbon">Individual Droplet</h4>
 The individual Droplet page allows a user to monitor or take action on their Droplet. The graphs tab is shown by default so system administrators can quickly and easily monitor the performance and load of their servers. 
 
 Users can also resize, rebuild, backup, access the console, or destroy their Droplet (amongst other things). The centralized Droplet interface makes it relatively easy and quick to take action on a Droplet.
@@ -128,46 +128,19 @@ During Droplet creation, we can enable backups which automatically create an ima
 
 The process is simple – we choose a preexisting powered-down Droplet, give it a name, and a copy is asynchronously made and automatially powered back on.
 
-####Contextual Menus
+<h4 class="ribbon">Contextual Menus</h4>
 
 After an image is created, we keep the interface simple by tucking away the actions into a contextual menu. Here we can transfer an image to another region or user. 
 
-<div class="tripletWrap">
-  <a class="enlarge triplet border" href="/assets/images/projects/digitalocean/contextual1.jpg">
+<div class="halfWrap">
+  <a class="enlarge half border" href="/assets/images/projects/digitalocean/contextual1.jpg">
     <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/digitalocean/contextual1.jpg">
-  </a><a class="enlarge triplet border" href="/assets/images/projects/digitalocean/contextual2.jpg">
-  <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/digitalocean/contextual2.jpg">
-  </a><a class="enlarge triplet border" href="/assets/images/projects/digitalocean/contextual3.jpg">
-  <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/digitalocean/contextual3.jpg">
-  </a>
-</div> 
-<span class="Caption--faux">Contextual sliding menus for more actions</span>
-
-
-We chose to use a interaction pattern that converts the menu into a panel. This pattern created a sense of continuation by animating the container height and width to that of it's new contents, and simultaniously sliding in the new panel.
-
-<div class="halfWrap constrain">
-  <a class="enlarge half border" href="/assets/images/projects/digitalocean/contextual.gif">
-  <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/digitalocean/contextual.gif">
-  Image contextual menu interaction
-  </a>
+  </a><a class="enlarge half border" href="/assets/images/projects/digitalocean/contextual.gif">
+  <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/digitalocean/contextual.gif"></a>
 </div>
-
-
-##Networking
-
-<div class="tripletWrap">
-  <a class="enlarge triplet border" href="/assets/images/projects/digitalocean/networking1.jpg">
-    <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/digitalocean/networking1.jpg">
-  </a><a class="enlarge triplet border" href="/assets/images/projects/digitalocean/networking2.jpg">
-  <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/digitalocean/networking2.jpg">
-  </a><a class="enlarge triplet border" href="/assets/images/projects/digitalocean/networking3.jpg">
-  <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/digitalocean/networking3.jpg">
-  </a>
-</div> 
 <span class="Caption--faux">Contextual sliding menus for more actions</span>
 
+We chose to use a interaction pattern that animates the menu into the targeted panel. This pattern creates a sense of context by animating the container height and width to that of it's new contents, and simultaniously sliding in the new panel.
 
 ##Future
-
-something about this is just a small sampling, reiterate this doesnt include flows, research, etc, and is just a taste of the product.
+This is just a small sampling of UI patterns and screens of the DigitalOcean product. As previously mentioned, while this doesnt include any flow or heavy product design thinking, I will be creating additional targeted case studies which break down the thought, research, and results of the design decisions.

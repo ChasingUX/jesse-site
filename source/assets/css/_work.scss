@@ -208,7 +208,8 @@ $bracket-color: $light-purple;
       &.protected {
         .Link--box {
           cursor: not-allowed;
-          background: lighten($border-grey, 7%);
+          background: lighten($border-grey, 5%);
+          border: 0;
 
           .protected {
             color: $navy;
