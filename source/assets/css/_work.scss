@@ -188,6 +188,44 @@ $bracket-color: $light-purple;
     display: flex;
     position: relative;
     
+    &.protected {
+      .Link--box {
+        cursor: not-allowed;
+        background: lighten($border-grey, 5%);
+        border: 0;
+
+        .protected {
+          color: $navy;
+          opacity: .4;
+        }
+
+        &:hover {
+          border-color: $border-grey;
+
+          .topLeft, .Register {
+            opacity: 0;
+          }
+
+          h3 {
+            color: inherit;
+          }
+
+          p {
+            opacity: .4;
+            color: inherit;
+          }
+
+          ul {
+            color: $lavender;
+
+            a, .Link--faux {
+              color: $neon-purple;
+            }
+          }
+        }
+      }
+    }
+      
     @media (min-width: $large-up) {
       width: 33.333%;
 
@@ -202,44 +240,6 @@ $bracket-color: $light-purple;
         .bottomRight {
           opacity: 1;
           visibility: visible;
-        }
-      }
-
-      &.protected {
-        .Link--box {
-          cursor: not-allowed;
-          background: lighten($border-grey, 5%);
-          border: 0;
-
-          .protected {
-            color: $navy;
-            opacity: .4;
-          }
-
-          &:hover {
-            border-color: $border-grey;
-
-            .topLeft, .Register {
-              opacity: 0;
-            }
-
-            h3 {
-              color: inherit;
-            }
-
-            p {
-              opacity: .4;
-              color: inherit;
-            }
-
-            ul {
-              color: $lavender;
-
-              a, .Link--faux {
-                color: $neon-purple;
-              }
-            }
-          }
         }
       }
     }

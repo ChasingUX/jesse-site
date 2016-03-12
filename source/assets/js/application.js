@@ -7,11 +7,6 @@
 //= require vendor/greensock/TweenMax.js
 //= require vendor/greensock/TimelineLite.js
 //= require vendor/greensock/easing/EasePack.js
-//= require vendor/greensock/plugins/CSSPlugin.js
-//= require vendor/greensock/plugins/ScrollToPlugin.js
-//= require vendor/greensock/plugins/BezierPlugin.js
-//= require vendor/greensock/plugins/CSSRulePlugin.js
-//= require vendor/greensock/plugins/AttrPlugin.js
 //= require main
 //= require projects
 //= require about

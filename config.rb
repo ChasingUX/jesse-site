@@ -62,25 +62,15 @@ set :js_dir,     'assets/js'
 set :images_dir, 'assets/images'
 
 
-
 # Build-specific configuration
 configure :build do
-  # For example, change the Compass output style for deployment
-  # activate :minify_css
-
-  activate :autoprefixer
-
-  # Minify Javascript on build
-  # activate :minify_javascript
-
-  # Enable cache buster
-  # activate :asset_hash
-
-  # Use relative URLs
+  activate :autoprefixer do |config|
+    config.browsers = ['last 20 versions']
+  end
+  activate :minify_javascript
+  activate :minify_css
+  activate :asset_hash
   activate :relative_assets
-
-  # Or use a different image path
-  #set :http_prefix, "http://jessecha.se/jesse/"
 end
 
 activate :blog do |work|
