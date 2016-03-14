@@ -210,8 +210,6 @@
         opacity: 1;
       }
     }
-
-    
   }
 
   li {
@@ -224,12 +222,12 @@
     transition: opacity .5s, padding .3s ease, border .3s ease;
     will-change: opacity, padding, border;
 
+    &:first-child {
+      margin-left: 0;
+    }
+
     @media (max-width: 900px) {
       margin-left: 20px;
-    
-      &:first-child {
-        margin-left: 5px;
-      }
     }
 
     @media (max-width: $medium) {

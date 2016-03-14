@@ -39,11 +39,16 @@ Now, we have climbed the ranks to the second largest hosting company in the worl
   <h4>Cloud Hosting 101</h4>
   <p>Without going into the highly technical details of cloud hosting, we can think of a cloud as a combination of compute, networking, and storage resources created on virtualized servers. Servers are provisioned for heavy computation, communication, and storage of assets and databases.</p>
 
-  <p>While DigitalOcean is diligently working to build out storage and networking features today, our current product offering is based on the Droplet - a compute instance. This case study mainly focuses on the Droplet (compute), less networking and storage.</p>
+  <p>While DigitalOcean is diligently working to build out storage and networking features today, our current product offering is based on the Droplet - a compute instance. This case study mainly focuses on the Droplet, less networking and storage.</p>
 </div>
 
 ##Cloud Information Architecture
 The cloud's information architecture is designed to be supportive of our primary product – the Droplet. As we build out storage and networking products, the architecture will likely change. Let's break down each section of the control panel in a nutshell:
+
+<a class="enlarge border" href="/assets/images/projects/digitalocean/ia.jpg">
+  <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/digitalocean/ia.jpg">
+  Control Panel IA Diagram
+</a>
 
 1. **Droplets:** Create a new Droplet, or manage & monitor existing Droplets. Each Droplet has its own management page where actions can be performed, servers can be reprovisioned and resized, and users can monitor server performance. This is the core of our product.
 2. **Images:** An image is simply a backup of a Droplet at a point in time that can be restored or easily transitioned into a new Droplet. 
@@ -51,11 +56,6 @@ The cloud's information architecture is designed to be supportive of our primary
 4. **API:** Many large customers configure their app to size up or size down their infrastructure depending on server load using the DigitalOcean API. The API section allows users to create new apps and tokens, and manage their access & permissions.
 5. **Support:** The support section attempts to help answer user's questions by surfacing documentation and community tutorials. If the problem persists, a user can open a ticket and await a response from our support staff.
 6. **Settings:** User and team settings, billing, referrals, security, and notifications are found here. These settings do not relate to infrastructure, but are user and team-specific settings.
-
-<a class="enlarge border" href="/assets/images/projects/digitalocean/ia.jpg">
-  <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/digitalocean/ia.jpg">
-  Control Panel IA Diagram
-</a>
 
 ##Droplet Create
 The early DigitalOcean marketing language read, "Spin up a Droplet in 55 seconds or less." While this sounded like a salesy hook, it was very much true. The Droplet create process is quick, intuitive, and in my biased opinion, enjoyable! 
