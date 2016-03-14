@@ -117,6 +117,10 @@ $(function () {
     }
   });
 
+  if($('body').hasClass('work_brandassets')) {
+    $('a.enlarge').shuffle();
+  }
+
   $(".enlarge img").unveil(300, function() {
     var $thisImage = $(this);
 
@@ -139,6 +143,7 @@ $(function () {
       $(this).addClass('show');
     });
   });
+  
 
   if($('body').hasClass('work_buoy')) {
     returnTweets(['690495916822904832', '688844171935789056', '685987064362496000', '684439509111472128', '682566424221585410', '682428554009690112', '679656274615754752', '692503794110849024']);
@@ -177,5 +182,3 @@ $(function () {
     return false;
   });
 });
-
-

@@ -1,0 +1,11 @@
+<%= partial "back", locals: { is_labs: false } %>
+
+<% wrap_layout :layout do %>
+
+  <header class="Header-intro Wrapper">
+    <h1><%= current_page.title %></h1>
+    <h3><%= current_page.data.summary %></h3>
+  </header>
+
+  <div class="Grid"><%= yield %></div>
+<% end %>

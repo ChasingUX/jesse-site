@@ -468,3 +468,34 @@
     }
   }
 }
+
+.work_brandassets {
+  .bg {
+    display: none;
+  }
+}
+
+.Grid {
+  p {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex:1;
+
+
+    a.enlarge {
+      max-width: 320px;
+      min-width: 200px;
+      margin: 10px;
+      align-self: center;
+      flex: 1 0 25%;
+
+      img {
+        width: inherit;
+        display: flex;
+        margin: 0;
+      }
+    }
+  }
+  
+}
