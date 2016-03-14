@@ -85,7 +85,7 @@ As tags play a vital role in classifying resources, we tested their usefulness a
 </div> -->
 
 ##Consuming Tutorial Content
-The core of the DigitalOcean community lies with tutorial content and the reading experience. As the majority of content-consumers come from Google search results, the reading experience must be optimized for quick and easy consumption. Users are presented with a distraction free, easy to follow tutorial with tools such as tables of contents and multi-lingual translations.
+The core of the [DigitalOcean Community](https://www.digitalocean.com/community/) lies with tutorial content and the reading experience. As the majority of content-consumers come from Google search results, the reading experience must be optimized for quick and easy consumption. Users are presented with a distraction free, easy to follow tutorial with tools such as tables of contents and multi-lingual translations.
 
 <a class="enlarge border" href="/assets/images/projects/community/tutorial-single.jpg">
   <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/community/tutorial-single.jpg">
