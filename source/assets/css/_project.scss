@@ -325,5 +325,9 @@
     @media (max-width: $medium) {
       max-width: 100%!important;
     }
+
+    @media (max-width: $small) {
+      display: none!important;
+    }
   }
 }
