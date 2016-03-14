@@ -592,6 +592,7 @@ $bracket-color: $light-purple;
     visibility: hidden;
     opacity: 0;
     max-height: 0;
+    overflow: hidden;
   }
 
   .quad {
