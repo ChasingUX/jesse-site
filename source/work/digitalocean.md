@@ -66,7 +66,7 @@ The early DigitalOcean marketing language read, "Spin up a Droplet in 55 seconds
 </a>
 
 <h4 class="ribbon">Choose an Image</h4>
-The create process starts by askng the developer what they would like to build. A user can select a raw linux distro (and a pertaining version), a one-click app like Wordpress or Drone, or a pre-existing backup or snapshot. After this process, a user selects the size of server, where it lives, and final options such as naming and SSH keys.
+The create process starts by asking the developer what they would like to build. A user can select a raw linux distro (and a pertaining version), a one-click app like Wordpress or Drone, or a pre-existing backup or snapshot. After this process, a user selects the size of server, where it lives, and final options such as naming and SSH keys.
 
 <div class="halfWrap">
   <a class="enlarge border half" href="/assets/images/projects/digitalocean/choose_image.jpg">
