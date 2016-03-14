@@ -118,7 +118,10 @@ $(function () {
   });
 
   if($('body').hasClass('work_brandassets')) {
-    $('a.enlarge').shuffle();
+    $('.photoSection').shuffle();
+    $('.photoSection').each(function(){
+      $(this).find('a.enlarge').shuffle();
+    })
   }
 
   $(".enlarge img").unveil(300, function() {
