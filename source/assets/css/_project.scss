@@ -301,12 +301,6 @@
   }
 }
 
-// .invision {
-//   @media (max-width: $small) {
-//     display: none!important;
-//   }
-// }
-
 .Tweets {
   @extend p;
   -webkit-column-count: 2; 
@@ -330,6 +324,91 @@
 
     @media (max-width: $medium) {
       max-width: 100%!important;
+    }
+  }
+}
+
+.Direction {
+  width: 100%;
+  float: left;
+  margin: 50px 0 -1px 0;
+  border-top: 1px solid $border-polar-purple;
+  border-bottom: 1px solid $border-polar-purple;
+
+  .Direction--previous, .Direction--next{
+    width: 50%;
+    float: left;
+    
+    a {
+      display: block;
+      padding: 100px 0;
+      text-align: center;
+
+      &:before {
+        display: none;
+      }
+
+      &:hover {
+        cursor: pointer;
+
+        p {
+          &:after {
+            left: -.5em;
+            width: calc(100% + .9em);
+            height: .9em;
+            bottom: -6px;
+          }
+        }
+      }
+    }
+
+    div {
+      text-align: left;
+      display: inline-block;
+    }
+
+    span {
+      display: block;
+      font-family: 'GT Pressura';
+      color: $light-purple;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 23px;
+      margin-top: -4px;
+      position: relative;
+      display: inline-block;
+
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: -3px;
+        left: -.2em;
+        width: calc(100% + .6em);
+        z-index: -1;
+        height: .7em;
+        background: $polar-green-light;
+        transition: all .3s ease;
+      }
+    }
+  }
+
+  .Direction--previous {
+    width: calc(50% - 1px);
+    border-right: 1px solid $border-polar-purple;
+  }
+
+  .Direction--next {
+    a {
+      p:after {
+        background: $light-salmon;
+      }
+    }
+
+    div {
+      text-align: right;
     }
   }
 }

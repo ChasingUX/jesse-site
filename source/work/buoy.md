@@ -125,7 +125,7 @@ Aside from ease-of-use, Buoy represents a great overhaul in the look and feel of
 # Implementing Buoy
 So how does one implement a style guide on an extremely messy codebase? How do we remove tens of thousands of lines of Sass and Haml and replace it with a shared style guide in small, calculated steps? I will not go into great detail, but its important to understand that these changes needed to be released in incremental steps over the course of a few weeks. Introducing a brand new CSS codebase on top of another can result in some major conflicts. When you have a heavily scoped v1 CSS codebase, and an unscoped v2 css codebase, v1 will win the war due to its high level of specificity. Due to this, we converted each page on Cloud to Buoy, using a system of flags, `uses_v2: true`. Based on this flag, each page pulled from v1 or v2 codebase, but never both.
 
-Although we ran into some conflicts, the transition was fairly seamless: before we knew it, we had a shiny new cloud to show off. On the dat Buoy was merged ubti Ckiyd the feeling was one of pure victory. It represented a mass destruction of tens of thousands of lines of ugly CSS and markup. 
+Although we ran into some conflicts, the transition was fairly seamless: before we knew it, we had a shiny new cloud to show off. On the day Buoy was merged into Cloud the feeling was one of pure victory. It represented a mass destruction of tens of thousands of lines of ugly CSS and markup. 
 
 <a class="enlarge border" href="/assets/images/projects/buoy/buoy-build.gif">
   <img data-src="/assets/images/projects/buoy/buoy-build.gif" src="/assets/images/blank.jpg">
