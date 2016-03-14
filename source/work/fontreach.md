@@ -9,7 +9,7 @@ tags: featured
 color: blue
 ---
 
-FontReach was born from a problem of not having enough information about font usage. In trying to choose a font for a project, a factor I consider is how 'trendy' it is, or how often it is seen on the web. Until the release of FontReach, we could not assess the uniqueness of a particular font on the web.
+FontReach was born out of a lack of information on font usage. In trying to choose a font for a project, a factor I consider is how 'trendy' it is, or how often it is seen on the web. Until the release of FontReach, we could not assess the popularity of a particular font on the web.
 
 <!-- <a class="enlarge border" href="/assets/images/projects/fontreach/loader.gif">
   <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/fontreach/loader.gif">
@@ -26,16 +26,16 @@ FontReach was born from a problem of not having enough information about font us
     <div class='cube-face cube-face-top'>#</div>
   </div>
 </div>
-<span class="Caption--faux">FontReach's css Isometric loader (using this site's colors)</span>
+<span class="Caption--faux">FontReach's CSS Isometric loader (using this site's colors)</span>
 
-FontReach crawls the top million websites (based on Alexa), and surfaces data about font usage across the web. It allows us to answer questions like, How many sites use Proxima Nova? What is it’s rank? I can now say that Proxima is ranked as the 26th most utilized webfont; over 22,000 sites in the top million, most notably Instagram, Buzzfeed, and Flickr use it.
+FontReach crawls the top million websites (based on Alexa), and surfaces data about font usage across the web. It allows us to answer questions like, How many sites use Proxima Nova? What is it’s rank? I can now say that Proxima is ranked as the 26th most utilized webfont; over 22,000 sites in the top million, most notably Instagram, Buzzfeed, and Flickr, use it.
 
 <div class="Note">
 <h4>Update</h4>
 Feb 23 - FontReach API was updated in February, 2016. In the three months since I launched FontReach, Proxima Nova is now ranked 25th most utilized webfont and over 31,470 sites in the top million. That is a 57% increase in usage over three months!
 </div>
 
-Having this type of data helps designers make more informed font decisions, but also allows us to follow font usage trends on the web. If Hoefler & Co were to release a new typeface, we can accurately track the adoption of it over the course of time.
+Having this type of data helps designers make more informed font decisions, but also allows us to follow font usage trends on the web. If Hoefler & Co were to release a new typeface, we can accurately track its adoption over the course of time.
 
 <a class="enlarge border" href="/assets/images/projects/fontreach/home.jpg">
   <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/fontreach/home.jpg">
@@ -44,7 +44,7 @@ Having this type of data helps designers make more informed font decisions, but 
 
 ##FontReach’s Design
 
-**FontReach is simple.** Users are presented with a simple UI composed of input, directions, and one-click access to top fonts — only the bare minimum that allows for a user to start consuming data in seconds. Copy is concise and without distraction. The simple nature invites continued browsing.
+**FontReach is simple.** Users are presented with a simple UI composed of input, directions, and one-click access to top fonts — This is the bare minimum that allows a user to start consuming data in seconds. Copy is concise and without distraction. The simple nature invites continued browsing.
 
 <a class="enlarge border" href="/assets/images/projects/fontreach/search.jpg">
   <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/fontreach/search.jpg">
@@ -70,7 +70,7 @@ Having this type of data helps designers make more informed font decisions, but 
 
 <span class="Caption--faux">FontReach Gradient Swatches</span>
 
-**FontReach is an infinite experience.** If a user has nowhere to go, they generally leave. While FontReach is a simple search tool, it invites exploration through continuous querying. For example, let’s say a user comes to FontReach with the goal of identifying usage for the font ‘Helvetica Neue.’ After seeing the list of domains that use it, the user clicks on a domain to see the complete stack of fonts it uses, which leads to additional insights. Keyboard contorls throughout also invite continued browsing. Creating experiences that encourage continued browsing leads to a highly enjoyable, almost addictive experience. 
+**FontReach is an infinite experience.** If a user has nowhere to go, they generally leave. While FontReach is a simple search tool, it invites exploration through continuous querying. For example, a user comes to FontReach with the goal of identifying usage for the font ‘Helvetica Neue.’ After seeing the list of domains that utilize it, the user clicks on a domain to see the complete stack of fonts it uses. This leads to additional insights. Keyboard controls also invite continued browsing. Creating experiences that encourage continued browsing leads to a highly enjoyable, almost addictive experience. 
 
 <a class="enlarge" href="/assets/images/projects/fontreach/helvetica-neue.jpg">
   <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/fontreach/helvetica-neue.jpg">
@@ -78,7 +78,7 @@ Having this type of data helps designers make more informed font decisions, but 
 </a>
 
 ##FontReach is a Domain Explorer
-Outside of exploring font usage, it becomes quite interesting to see what other fonts different brands are using. In some cases, it is shocking to see the quantity of fonts loaded on certain sites. The FontReach domain interface allows for quick toggling of domains to explore brand usage. 
+Along with exploring font usage, it becomes quite interesting to see which fonts different brands are using. In some cases, it is shocking to see the quantity of fonts loaded on certain sites. The FontReach domain interface allows for quick toggling of domains to explore brand usage. 
 
 <a class="enlarge" href="/assets/images/projects/fontreach/domain-switch.gif">
   <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/fontreach/domain-switch.gif">
@@ -99,7 +99,7 @@ Outside of exploring font usage, it becomes quite interesting to see what other 
 
 Without delving too deeply into the technical details of FontReach, certain features should be understood. In the world of web colors, red is red and blue is blue– there is no variance in how colors are referenced. This is far from the truth when referencing fonts on the web. When embedding a font with @font-face we can name Proxima Nova ‘Fraggle Rock’ if we wanted to. With web services such as Google Fonts or Typekit, font names tend to vary from one service to the next.
 
-As FontReach crawls the top million sites, it does its very best to look for variation in font names and intelligently combines similar font names into groups. FontReach only looks at the first font in the font-family stack in an effort to provide us with a list of fonts that are truly being used, versus aggregating fallback font data as well.
+As FontReach crawls the top million sites, it does its very best to look for variation in font names and intelligently combines similar font names into groups. FontReach only looks at the first font in the font-family stack in an effort to provide us with a list of fonts that are truly being used, versus aggregating fallback font data in the process.
 
 ##Moving Forward
-The growth of apps and digital products is staggering, and we — designers and developers — are the ones building them. Having certain information at our fingertips can better prepare us in making decisions that shape the web of the future. Be it a library, a font, or other usage information, <em>we should have the tools necessary to identify trends in how we build the modern web.</em>
+The growth of apps and digital products is staggering, and we, designers and developers, are building them. Having certain information at our fingertips can better prepare us in making decisions that shape the web of the future. Be it a library, a font, or other usage information, <em>we should have the tools necessary to identify trends in how we build the modern web.</em>
