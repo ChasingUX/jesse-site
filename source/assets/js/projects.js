@@ -151,6 +151,8 @@ $(function () {
       $('.invision').attr('src', '//invis.io/RT6C6ZIZP');
     } else {
       $('.invision').remove();
+      $('.revealMe').toggleClass('hidden');
+      $('.revealTrigger').closest('p').remove;
     }
   }
 
