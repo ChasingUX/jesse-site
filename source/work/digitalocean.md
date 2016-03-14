@@ -8,9 +8,9 @@ tags: regular
 ---
 
 ##Prologue
-The DigitalOcean cloud is a highly complex product, which warrants a series of case studies with singular focus. In the coming months, I will be releasing detailed case studies covering the following aspects of cloud: user onboarding, team accounts, abuse flow, objects and networks, rails to ember conversion, DNS, floating IPs, and the Droplet experience.
+The DigitalOcean Cloud is a highly complex product, which warrants a series of case studies with singular focus. In the coming months, I will be releasing detailed case studies covering the following aspects of cloud: user onboarding, team accounts, abuse flow, objects and networks, rails to ember conversion, DNS, floating IPs, and the Droplet experience.
 
-Below is a deliberate oversimplification of the product by highlighting the information architecture on a per-page basis. Research, prototyping, flow work, and learnings will be released in future cloud case studies, as outlined above. 
+Below is a deliberate oversimplification of the product by highlighting the information architecture on a per-page basis. Research, prototyping, flow work, and learnings will be released in future cloud case studies, as listed above. 
 
 ##The early days
 When I started working at DigitalOcean in September of 2013, our product had a reputation for being an extremely simple hosting platform. It was known for it's ease-of-use, SSD drives, and quick spin-up time. 
@@ -20,7 +20,7 @@ When I started working at DigitalOcean in September of 2013, our product had a r
   DigitalOcean control panel in early 2013
 </a>
 
-Our competition was comprised of major tech jaugernauts – Amazon, Google, Microsoft, and Rackspace. These companies provided a far more robust feature set, which was believed neccesary to compete in this space. But the competition did not place much of a focus on the UX and aesthetic of the interface. As their product offering grew, the experiences grew more complex.
+Our competition was comprised of major tech jaugernauts – Amazon, Google, Microsoft, and Rackspace. These companies provided a far more robust feature set, which was believed neccesary to compete in this space. But the competition did not place much focus on the UX and aesthetic of the interface. As their product offerings grew, the experiences grew more unwieldy and difficult to use.
 
 ##A simple approach, today
 DigitalOcean had a pretty outragious opportunity. We could disrupt this space by providing an extremely simple and straightforward experience designed to make the complex task of managing infrastructure easier. While we were already revered for our simple approach, there was much room for streamlining the overall experience and making infrastucture management a much easier pill to swallow. Now, we have climbed the ranks to the second largest hosting company in the world, based on <a href="http://news.netcraft.com/archives/2015/05/01/digitalocean-becomes-the-second-largest-hosting-company-in-the-world.html" target="_blank">NetCraft's data</a>.
@@ -37,13 +37,13 @@ Now, we have climbed the ranks to the second largest hosting company in the worl
 
 <div class="Note">
   <h4>Cloud Hosting 101</h4>
-  <p>Without going into the highly technical details of cloud hosting, we can think of a cloud as a combination of compute, networking, and storage resources created on virtualized servers. Servers are provisioned for heavy computation, communication, and storage of assets and databases.</p>
+  <p>Without going into the highly technical details of Cloud Hosting, we can think of a cloud as a combination of compute, networking, and storage resources created on virtualized servers. Servers are provisioned for heavy computation, communication, and storage of assets and databases.</p>
 
-  <p>While DigitalOcean is diligently working to build out storage and networking features today, our current product offering is based on the Droplet - a compute instance. This case study mainly focuses on the Droplet, less networking and storage.</p>
+  <p>While DigitalOcean is diligently working to build out storage and networking features today, our current product offering is based on the Droplet - a compute instance. This case study focuses mainly on the Droplet, less networking and storage.</p>
 </div>
 
 ##Cloud Information Architecture
-The cloud's information architecture is designed to be supportive of our primary product – the Droplet. As we build out storage and networking products, the architecture will likely change. Let's break down each section of the control panel in a nutshell:
+The Cloud's information architecture is designed to be supportive of our primary product – the Droplet. As we build out storage and networking products, the architecture will likely change. Let's break down each section of the control panel:
 
 <a class="enlarge border" href="/assets/images/projects/digitalocean/ia.jpg">
   <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/digitalocean/ia.jpg">
@@ -85,9 +85,9 @@ The create process starts by askng the developer what they would like to build. 
 </a> -->
 
 ##Droplet Management
-Droplets are managed from a central interface that serves as a linear index of your entire infrastructure setup. While it does not show relationships, networks, and tagging, that will be shipping soon! For example, if I have an app that uses 2 database servers, 10 load balanced compute servers, and a Floating IP, I want to see a visual interpretation of these relationships.
+Droplets are managed from a central interface that serves as a linear index of a user's entire infrastructure setup. While it does not show relationships, networks, and tagging, these products and features will be shipping soon! For example, if I have an app that uses 2 database servers, 10 load balanced compute servers, and a Floating IP, I want to see a visual interpretation of these relationships.
 
-The index is searchable and filterable, and is primarily used as a dashboard to dive into particular Droplet pages.
+The index is searchable and filterable, and is primarily used as a dashboard for diving into particular Droplet pages.
 
 <a class="enlarge border" href="/assets/images/projects/digitalocean/droplet_index.jpg">
   <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/digitalocean/droplet_index.jpg">
@@ -95,9 +95,9 @@ The index is searchable and filterable, and is primarily used as a dashboard to 
 </a>
 
 <h4 class="ribbon">Individual Droplet</h4>
-The individual Droplet page allows a user to monitor or take action on their Droplet. The graphs tab is shown by default so system administrators can quickly and easily monitor the performance and load of their servers. 
+The individual Droplet page allows a user to monitor or take action on their Droplet. The graphs tab is shown by default, so system administrators can quickly and easily monitor the performance and load of their servers. 
 
-Users can also resize, rebuild, backup, access the console, or destroy their Droplet (amongst other things). The centralized Droplet interface makes it relatively easy and quick to take action on a Droplet.
+Users can also resize, rebuild, backup, access the console, or destroy their Droplet (amongst other possibilities). The centralized Droplet interface makes it relatively easy and quick to take action on a Droplet.
 
 <a class="enlarge border" href="/assets/images/projects/digitalocean/manage_droplet_snapshot.jpg">
   <img src="/assets/images/blank.jpg" data-src="/assets/images/projects/digitalocean/manage_droplet_snapshot.jpg">
@@ -126,7 +126,7 @@ During Droplet creation, we can enable backups which automatically create an ima
 </div> 
 <span class="Caption--faux noHover">Create a Snapshot from the Images page</span>
 
-The process is simple – we choose a preexisting powered-down Droplet, give it a name, and a copy is asynchronously made and automatially powered back on.
+The process is simple: we choose a preexisting powered-down Droplet, give it a name, and a copy is asynchronously made and automatially powered back on.
 
 <h4 class="ribbon">Contextual Menus</h4>
 
@@ -140,7 +140,7 @@ After an image is created, we keep the interface simple by tucking away the acti
 </div>
 <span class="Caption--faux">Contextual sliding menus for more actions</span>
 
-We chose to use a interaction pattern that animates the menu into the targeted panel. This pattern creates a sense of context by animating the container height and width to that of it's new contents, and simultaniously sliding in the new panel.
+We chose to use an interaction pattern that animates the menu into the targeted panel. This pattern creates a sense of context by animating the container height and width to that of its new contents, simultaniously sliding in the new panel.
 
 ##Future
-This is just a small sampling of UI patterns and screens of the DigitalOcean product. As previously mentioned, while this doesnt include any flow or heavy product design thinking, I will be creating additional targeted case studies which break down the thought, research, and results of the design decisions.
+This is just a small sampling of UI patterns and screens of the DigitalOcean product. While this doesn't include any flow work or heavy product design thinking, as I previously mentioned, I will be creating additional targeted case studies which break down the thought, research, and results of the design decisions.
