@@ -542,20 +542,24 @@ $bracket-color: $light-purple;
 .halfWrap {
   @extend p;
   .half {
+    width: 47%;
     max-width: 47%;
     flex-grow: 1;
 
     @media (max-width: $small) {
+      width: 100%;
       max-width: 100%;
       margin-bottom: 20px;
     }
   }
 
   .three-quarter {
+    width: 78%;
     max-width: 78%;
     flex-grow: 1;
 
     @media (max-width: $small) {
+      width: 100%;
       max-width: 100%;
       margin-bottom: 20px;
     }
@@ -566,16 +570,13 @@ $bracket-color: $light-purple;
   margin-bottom: 13px;
 
   .triplet {
+    width: 31%;
     max-width: 31%;
     flex-grow: 1;
 
     @media (max-width: $small) {
+      width: 100%;
       max-width: 100%;
-      // margin-bottom: 0;
-
-      // &:nth-child(2), &:nth-child(3) {
-      //   display: none;
-      // }
     }
 
     img {
@@ -597,11 +598,13 @@ $bracket-color: $light-purple;
 
   .quad {
     max-width: 23%;
+    width: 23%;
     flex-grow: 1;
     position: relative;
 
     @media (max-width: $small) {
       max-width: 100%;
+      width: 100%;
     }
 
     img {
