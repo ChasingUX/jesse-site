@@ -4,7 +4,11 @@
 
   <header class="Header-intro Wrapper">
     <h1><%= current_page.title %></h1>
-    <h3><%= current_page.data.summary %></h3>
+    <% if current_page.data.has_key?('extended')  %>
+      <h3><%= current_page.data.extended %></h3>
+    <% else %>
+      <h3>sdfd<%= current_page.data.summary %></h3>
+    <% end %>
   </header>
 
   <div class="Grid"><%= yield %></div>
