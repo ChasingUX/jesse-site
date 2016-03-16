@@ -1,0 +1,38 @@
+<%= partial "back", locals: { is_labs: false } %>
+
+<% wrap_layout :layout do %>
+
+  <header class="Header-intro Wrapper">
+    <h1><%= current_page.title %></h1>
+    <h3><%= current_page.data.extended %></h3>
+    <h4>Big credit to <a href="https://dribbble.com/masamikubo" target="_blank">Masami Kubo</a>, <a href="https://dribbble.com/kabojanowska" target="_blank">Kasia Bojanowska</a>, <a href="https://dribbble.com/amostov" target="_blank">Alexander Mostov</a>, and <a href="https://dribbble.com/MeltWizard" target="_blank">Scott Alden</a>.</h4>
+  </header>
+
+  <div class="Grid"><%= yield %></div>
+
+  <div class="Direction">
+    <div class="Direction--previous">
+      <% prev_article = current_article.previous_article %>
+      <% if prev_article %>
+        <a href="<%= prev_article.url %>" rel="prev" title="Previous article: <%= prev_article.title %>">
+          <div>
+            <span>Previous Project</span>
+            <p><%= prev_article.title %></p>
+          </div>
+        </a>
+      <% end %>
+    </div>
+
+    <div class="Direction--next">
+      <% next_article = current_article.next_article %>
+      <% if next_article %>
+        <a href="<%= next_article.url %>" rel="prev" title="Next article: <%= next_article.title %>">
+          <div>
+            <span>Next Project</span>
+            <p><%= next_article.title %></p>
+          </div>
+        </a>
+      <% end %>
+    </div>
+  </div>
+<% end %>

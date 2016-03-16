@@ -468,3 +468,73 @@
     }
   }
 }
+
+.work_brandassets {
+  .bg {
+    display: none;
+  }
+}
+
+.photoHeader {
+  text-align: center;
+  color: $neon-purple;
+  font-size: 30px;
+  margin: 0 0 50px 0;
+  width: 100%; 
+}
+
+.Grid {
+  margin-top: 50px;
+
+  .photoSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex:1;
+    padding: 0;
+
+    &.hasHeader {
+      padding: 60px 0 100px 0;
+      margin-top: 80px;
+      border-top: 1px solid $border-polar-purple;
+
+      &:first-child {
+        margin-top: 0;
+        padding-bottom: 0;
+      }
+    }
+    
+    &:first-child {
+      border: 0;
+      padding-top: 0;
+
+      h3 {
+        margin-top: 0;
+      }
+    }
+
+    a.enlarge {
+      max-width: 320px;
+      min-width: 200px;
+      margin: 10px;
+      align-self: center;
+      flex: 1 0 25%;
+
+      @media (max-width: $large) {
+        margin: 8px;
+      }
+
+      @media (max-width: $small) {
+        max-width: 100%;
+        margin: 5px 10px;
+      }
+
+      img {
+        width: inherit;
+        display: flex;
+        margin: 0;
+      }
+    }
+  }
+  
+}

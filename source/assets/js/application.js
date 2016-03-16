@@ -1,4 +1,5 @@
 //= require vendor/jquery-1.11.1.min.js
+//= require vendor/shuffle.js
 //= require vendor/jquery.ba-throttle-debounce.min.js
 //= require vendor/jquery.fluidbox.js
 //= require vendor/jquery.unveil.js
