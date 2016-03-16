@@ -1,8 +1,8 @@
 ---
-title: "DigitalOcean Brand Assets"
-date: 2010-1-01
-summary: "A collection of DigitalOcean brand assets from my illustration team."
-extended: "While these are not my original work, part of my role at DigitalOcean was to build the brand. As creators of high quality content, one of my initiatives was vastly increasing tutorial engagement through illustration."
+title: "Building the DO Brand"
+date: 2015-2-01
+summary: "A collection of DigitalOcean assets from my Brand team."
+extended: "Building a team of talented illustrators came as a result of my initiative to build a visually engaging brand. As we are content creators, we engage our audience through assets like the sampling below:"
 tags: regular
 layout: grid
 ---

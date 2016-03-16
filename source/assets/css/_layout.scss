@@ -312,12 +312,16 @@ footer {
     }
   }
 
-  h3 {
+  h3, h4 {
     text-align: center;
     color: $neon-purple;
     line-height: 1.5;
     margin: 0 auto;
     max-width: 450px;
+  }
+
+  h4 {
+    margin-top: 20px;
   }
 
   ul {

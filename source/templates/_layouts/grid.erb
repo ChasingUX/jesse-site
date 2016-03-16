@@ -4,11 +4,8 @@
 
   <header class="Header-intro Wrapper">
     <h1><%= current_page.title %></h1>
-    <% if current_page.data.has_key?('extended')  %>
-      <h3><%= current_page.data.extended %></h3>
-    <% else %>
-      <h3>sdfd<%= current_page.data.summary %></h3>
-    <% end %>
+    <h3><%= current_page.data.extended %></h3>
+    <h4>Big credit to <a href="https://dribbble.com/masamikubo" target="_blank">Masami Kubo</a>, <a href="https://dribbble.com/kabojanowska" target="_blank">Kasia Bojanowska</a>, <a href="https://dribbble.com/amostov" target="_blank">Alexander Mostov</a>, and <a href="https://dribbble.com/MeltWizard" target="_blank">Scott Alden</a>.</h4>
   </header>
 
   <div class="Grid"><%= yield %></div>
