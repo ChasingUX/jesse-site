@@ -118,7 +118,7 @@ $(function () {
   });
 
   if($('body').hasClass('work_brandassets')) {
-    $('.photoSection').shuffle();
+    $('.swap').shuffle();
     $('.photoSection').each(function(){
       $(this).find('a.enlarge').shuffle();
     })
@@ -129,6 +129,9 @@ $(function () {
 
     $thisImage.load(function() {
       var naturalWidth = $thisImage[0].naturalWidth;
+        // naturalHeight = $thisImage[0].naturalHeight,
+        // ratio = naturalWidth / naturalHeight;
+      // $thisImage.parent().attr("data-ratio", ratio);
 
       $(this).closest('.enlarge').fluidbox({ maxwidth: naturalWidth})
       .on('openend.fluidbox', function() {

@@ -475,6 +475,26 @@
   }
 }
 
+.photoHeader {
+  text-align: center;
+  color: $neon-purple;
+  font-size: 30px;
+  margin: 0 0 50px 0;
+  width: 100%; 
+
+  &.noMar {
+    margin-bottom: 0;
+  }
+}
+
+.photoCopy {
+  text-align: center;
+  margin: 10px auto 50px auto;
+  max-width: 700px;
+  width: 100%;
+  padding: 0 25px;
+}
+
 .Grid {
   margin-top: 70px;
 
@@ -483,9 +503,19 @@
     flex-wrap: wrap;
     justify-content: center;
     flex:1;
-    border-top: 1px solid $border-polar-purple;
-    padding: 60px 0 100px 0;
+    padding: 0;
 
+    &.hasHeader {
+      padding: 60px 0 100px 0;
+      margin-top: 80px;
+      border-top: 1px solid $border-polar-purple;
+
+      &:first-child {
+        margin-top: 0;
+        padding-bottom: 0;
+      }
+    }
+    
     &:first-child {
       border: 0;
       padding-top: 0;
@@ -495,21 +525,21 @@
       }
     }
 
-    h3 {
-      text-align: center;
-      color: $neon-purple;
-      font-size: 30px;
-      margin: 0 0 50px 0;
-      width: 100%;
-      
-    }
-
     a.enlarge {
       max-width: 320px;
       min-width: 200px;
       margin: 10px;
       align-self: center;
       flex: 1 0 25%;
+
+      @media (max-width: $large) {
+        margin: 8px;
+      }
+
+      @media (max-width: $small) {
+        max-width: 100%;
+        margin: 5px 10px;
+      }
 
       img {
         width: inherit;
