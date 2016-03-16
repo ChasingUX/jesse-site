@@ -129,9 +129,6 @@ $(function () {
 
     $thisImage.load(function() {
       var naturalWidth = $thisImage[0].naturalWidth;
-        // naturalHeight = $thisImage[0].naturalHeight,
-        // ratio = naturalWidth / naturalHeight;
-      // $thisImage.parent().attr("data-ratio", ratio);
 
       $(this).closest('.enlarge').fluidbox({ maxwidth: naturalWidth})
       .on('openend.fluidbox', function() {
