@@ -526,7 +526,9 @@
 
       @media (max-width: $small) {
         max-width: 100%;
-        margin: 5px 10px;
+        margin: 0;
+        flex: 1 0 100%;
+        padding: 5px 9px;
       }
 
       img {
