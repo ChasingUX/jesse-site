@@ -1,7 +1,7 @@
 ---
 title: "DigitalOcean Brand Assets"
 date: 2010-1-01
-summary: "A collection of DigitalOcean brand assets from my illustration team"
+summary: "A collection of DigitalOcean brand assets from my illustration team. While these are not my original work, part of my role at DigitalOcean was to build the brand. As creators of high quality content, one of my initiatives was vastly increasing tutorial engagement through illustration."
 tags: regular
 layout: grid
 ---
