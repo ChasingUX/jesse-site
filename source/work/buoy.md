@@ -12,21 +12,21 @@ Maintaining a messy codebase <strike>can be</strike> is an absolute nightmare. T
 Maintaining a messy front end <strike>can be</strike> is an absolute nightmare.
 </blockquote>
 
-At the time, DigitalOcean was planning on shipping some major additions to our product, but I was uncomfortable proceeding without a strong handle on the front end. We were in dire need of a set of standards and methodologies to guide us in the design and build of our product. So with the help of my team, I set out to build a style guide that conformed to by a logical set of beliefs and patterns.
+At the time, DigitalOcean was planning on shipping some major additions to our product, but I was uncomfortable proceeding without a strong handle on the front end. We were in dire need of a set of standards and methodologies to guide us in the design and build of our product. So with the help of my team, I set out to build a style guide that conformed to a logical set of design beliefs and patterns.
 
 <a class="enlarge border" href="/assets/images/projects/buoy/buoy.jpg">
   <img data-src="/assets/images/projects/buoy/buoy.jpg" src="/assets/images/blank.jpg">
   The Buoy Logo
 </a>
 
-After research and benchmarking, I had a strong idea of how to architect Buoy. It would be comprised of Layout mMdules, Elements, Components, and Utilities. Through these collections, a designer has an understanding of the pattern library and a developer could quickly and easily code the designer's work. Layout would house the page structure like grids and whitespace, Elements would house individual elements like buttons or inputs, Components would house the interactive elements like modals or tabs, and Utilities would house utility helpers like a clearfix and text align utility.
+After research and benchmarking, I had an idea of how to architect Buoy. It would be comprised of Layout Modules, Elements, Components, and Utilities. Through these collections, a designer has an understanding of the pattern library and a developer could quickly and easily code the designer's work. Layout would house the page structure like grids and whitespace, Elements would house individual elements like buttons or inputs, Components would house the interactive elements like modals or tabs, and Utilities would house utility helpers like a clearfix or text align utility.
 
 <a class="enlarge border" href="/assets/images/projects/buoy/grid.jpg">
   <img data-src="/assets/images/projects/buoy/grid.jpg" src="/assets/images/blank.jpg">
   Buoy grid layout page
 </a>
 
-These four units were created after conducting a thorough audit of our cloud: what patterns were currently used, where were the inconsistencies, and how can everything be brought together into a series of UX patterns that would improve the overall experience? Before building out the UI patterns, **we had to agree upon a set of goals for the project:**
+These four units were created after conducting a thorough audit of our cloud: what patterns were currently used, where were the inconsistencies, and how can everything be brought together into a series of UI patterns that would improve the overall experience? Before building out these patterns, **we had to agree upon a set of goals for the project:**
 
 ##App Agnostic
 Buoy needed the ability to be shared across many projects. This meant that it had to live in a location outside of a particular app. This also meant that Buoy should not be restricted by a particular stack or framework (Node versus RoR). Buoy also needed to be flexible and to allow for an ‘a la carte’ selection of components or elements for use in different projects.
