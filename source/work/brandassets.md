@@ -6,9 +6,6 @@ tags: regular
 layout: grid
 ---
 
-<h3 class="photoHeader noMar">Illustrations</h3>
-<p class="photoCopy">While these are not my original work, part of my role at DigitalOcean was to build the brand. As creators of high quality content, one of my initiatives was vastly increasing tutorial engagement through illustration.</p>
-
 <div class="photoSection swap">
   <a class="enlarge" href="/assets/images/dribbble/5ways-facebook_1x.png"><img data-src="/assets/images/dribbble/5ways-facebook_1x.png" src="/assets/images/blank.jpg"></a>
   <a class="enlarge" href="/assets/images/dribbble/ansible_1x.jpg"><img data-src="/assets/images/dribbble/ansible_1x.jpg" src="/assets/images/blank.jpg"></a>
