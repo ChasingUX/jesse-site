@@ -130,7 +130,7 @@ The process is simple: we choose a preexisting powered-down Droplet, give it a n
 
 <h4 class="ribbon">Contextual Menus</h4>
 
-After an image is created, we keep the interface simple by tucking away the actions into a contextual menu. Here we can transfer an image to another region or user. 
+After an image is created, we keep the interface simple by tucking away the actions into a contextual menu. Credit to <a href="https://twitter.com/colinkeany" target="_blank">Colin Keany</a> for this pattern! Here we can transfer an image to another region or user. 
 
 <div class="halfWrap">
   <a class="enlarge half border" href="/assets/images/projects/digitalocean/contextual1.jpg">

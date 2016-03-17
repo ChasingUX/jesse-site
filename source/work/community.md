@@ -37,7 +37,7 @@ By leveraging the community's existing content and readership, we were able to c
 </a>
 
 #The New Community
-Community 2.0 is a brand new app, rebuilt to meet our goals. The content is comprised of three main sections:
+Community 2.0 is a brand new app, rebuilt to meet our goals. Big thanks to <a href="https://twitter.com/apnny" target="_blank">Alex Penny</a> for his design contributions! The content is comprised of three main sections:
 
 <ol>
   <li><strong>Tutorials</strong><br>1300+ tutorials written with love by DigitalOcean writers. </li>

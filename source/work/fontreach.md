@@ -3,7 +3,7 @@ title: "FontReach"
 date: 2015-8-03
 summary: "FontReach crawls the top million websites and surfaces data about font usage across the web."
 link_copy: "Search FontReach"
-url: http://libscore.com/
+url: http://fontreach.com/
 article: https://insidedigitalocean.com/fontreach-font-usage-visualized-b6c5b6294787#.bm37436ce
 tags: featured
 color: blue
