@@ -57,11 +57,6 @@ $(function () {
     } 
   });
 
-  // window.onhashchange = function() {
-  //   $fade.removeClass('hide'); 
-  //   TweenLite.to($header, .7,{autoAlpha: 0, ease: Linear.easeNone})
-  // }
-
    $linkBox.hover(function(){
     $(this).addClass('hover');  
   }, function(){

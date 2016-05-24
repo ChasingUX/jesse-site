@@ -36,7 +36,7 @@ We recorded their sign up sessions, and followed up with user interviews. I will
 3. Cost isn’t broken down by serving, requiring users to do the math. Ultimately, users are concerned with cost per meal.
 4. Delivery ‘windows' did not disclose the window, just the day of delivery.
 
-Through our research, we identified many of the experiential pain points within the flow. OOf the users who made it to the final step of the flow, only 42% of them successfully entered their card information and subscribed. So the majority of users who are making it through the first few steps of the sign up flow are leaving! We need to fix this.
+Through our research, we identified many of the experiential pain points within the flow. Of the users who made it to the final step of the flow, only 42% of them successfully entered their card information and subscribed. So the majority of users who are making it through the first few steps of the sign up flow are leaving! We need to fix this.
 
 <blockquote>
   I don’t trust the company right now since it’s hiding so much information from me...seems like they’re trying to bait and switch me...

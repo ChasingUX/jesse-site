@@ -21,8 +21,6 @@ $(function () {
     if ($this[0].className == 'hover' || $this[0].className == 'active' ) {} 
 
     else {
-      // console.log("Map moving to: " + city);
-
       $notHovers = $location.not($(this));
       $notHovers.removeClass('hover');
       $notHovers.parent().removeClass('hovered');
@@ -38,14 +36,13 @@ $(function () {
 
   mapboxgl.accessToken = 'pk.eyJ1IjoiamJpcmQxMTExIiwiYSI6ImNpazVwYzdhNzAwN3BpZm0yZHhhOWp6c3IifQ.6EQjuObxFgOTrafXG9Juig';
 
-  var start = [-74.005, 40.717];
+  var start = [-122.403, 37.787];
 
   var map = new mapboxgl.Map({
       container: 'map',
       style: 'mapbox://styles/jbird1111/cil48x6cd000x9jm1ajh9yjw5',
       center: start,
       zoom:14,
-      // dragPan: false,
       scrollZoom: false,
       attributionControl: false
   });
@@ -58,7 +55,7 @@ $(function () {
       zoom: zoom,
       bearing: 0,
       load: function(){
-        alert('poo')
+        
       }
     });
   }
